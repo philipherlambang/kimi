@@ -41,7 +41,7 @@ body{
 }
 
 .searchbar-mobile .input-group{
-    width: 290px !important;
+    width: 100% !important;
 }
 
 .searchbar-mobile input{
@@ -150,6 +150,15 @@ a.button-green-top-nav:hover{
     font-size: 22px !important;
     color: #4A4A4A !important;
     font-weight:500 !important;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+    width: 6px !important;
+    height:6px !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background: #20BDCA !important;
 }
 
 a.text-secondary:hover{
@@ -295,6 +304,10 @@ a.text-secondary:hover{
 
 .less-padding-left{
     padding-left: 0;
+}
+
+.maya-tiny-padding{
+    padding: 10px;
 }
 
 .maya-small-padding{
