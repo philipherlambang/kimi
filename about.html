@@ -1,0 +1,397 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kimi is a curated foods and beverages artisans.">
+    <meta name="author" content="Johnson Chandra, Allysa Prabandani, Philipus Herlambang, Maya Editorial">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+
+    <meta name="twitter:card" content="summary">
+    <meta name="title" content="Back to Kimi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Language" content="en-id">
+
+
+    <!-- open graph metadata facebook, slack, whatsapp line -->
+    <meta property="fb:app_id" content="150112802189143"/>
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Back to Kimi" />
+    <meta property='og:site_name' content='Kimi | Curated Foods and Beverages' />
+    <meta property="og:url" content="http://kimistatic.s3-website-ap-southeast-1.amazonaws.com/" />
+    <meta property="og:description" content="Kimi is a curated foods and beverages artisans." />
+    <meta property='og:image' content="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/apple-touch-icon.png" />
+
+
+    <!-- open graph metadata twitter -->
+    <meta name="twitter:title" content="Back to Kimi">
+    <meta name="twitter:url" content="http://www.backtokimi.com">
+    <meta name="twitter:description" content="Kimi is a curated foods and beverages artisans.">
+    <meta name="twitter:image" content="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/apple-touch-icon.png">
+    <meta name="twitter:site" content="@backtokimi">
+
+
+    <link rel="icon" href="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/favicon.ico">
+    <link rel="apple-touch-icon" href="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/apple-touch-icon.png">
+
+    <title>About Kimi</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/kimi.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+
+    <![endif]-->
+</head>
+
+<body style="background-color: #fff;">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+
+
+    <div class="container-fluid hidden-xs">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <button class="pull-left search-button" id="buttonOpenSearchbar"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <button class="pull-left search-button" id="buttonCloseSearchbar" style="display: none;"><i class="fa fa-times" aria-hidden="true"></i></button>
+
+                <div id="searchbar" style="display: none;">
+                    <div>
+                        <div class="top-nav-searchbar">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search for" autofocus="autofocus">
+                            </div><!-- /input-group -->
+                        </div>
+                    </div>
+                </div>
+                <p class="help-text hidden-sm hidden-md" id="helpText">Find any troubles? Drop us an email at <a href="mailto:grow@backtokimi.com" class="text-secondary">grow@backtokimi.com</a> </p>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <p class="text-center logo-container"><a href="index.html"><img src="images/logo.png" width="170"></a></p>
+            </div>
+            <div class="col-md-4 less-padding-right">
+                <a href="#" class="btn pull-right button-green-top-nav">Be Kimi Merchant</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background: white;">
+        <div class="navbar-header pull-left" style="border-right: 1px solid #E6EAEA; padding-right: 10px; margin-right: 0px; padding-left: 10px;">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar icon-short"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar icon-medium"></span>
+            </button>
+        </div>
+        <div class="visible-xs" style="width: 70%; float: left;">
+            <p class="text-center logo-container visible-xs"><a href="index.html"><img src="images/logo.png" width="150"></a></p>
+        </div>
+        <div class="visible-xs pull-right">
+            <button class="pull-left search-button-mobile" id="buttonOpenSearchbarMobile"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="fly-searchbar" style="display: none;">
+            <div class="top-nav-searchbar searchbar-mobile">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for" autofocus="autofocus">
+                    <button class="pull-right" id="buttonCloseSearchbarMobile"><i class="fa fa-times" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Shop</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">How to Order</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Location <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Jakarta Barat</a></li>
+                        <li><a href="#">Jakarta Selatan</a></li>
+                        <li><a href="#">Jakarta Pusat</a></li>
+                        <li><a href="#">Jakarta Utara</a></li>
+                        <li><a href="#">Jakarta Timur</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Depok</a></li>
+                        <li><a href="#">Tangerang</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Login / Register</a></li>
+                <li><a href="about.html">About Kimi</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cart (2)</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="cart-flyout">
+                                <h4 class="text-oswald">Recently Added Product(s)</h4>
+                                <div class="row">
+                                    <div class="col-sm-2 less-padding">
+                                        <img src="images/brownies.jpg" width="100%">
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <span class="text-gray-1">Brownies Chocolate</span>
+                                        <p class="text-gray-2">1 x 50.000</p>
+                                    </div>
+                                    <!--<div class="col-sm-2">-->
+                                    <!--<button><i class="fa fa-times-circle" aria-hidden="true"></i></button>-->
+                                    <!--</div>-->
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-2 less-padding">
+                                        <img src="images/lapisSurabaya.jpg" width="100%">
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <span class="text-gray-1">Lapis Surabaya</span>
+                                        <p class="text-gray-2">1 x 175.000</p>
+                                    </div>
+
+                                </div>
+                                <hr>
+
+                                <div class="row">
+                                    <div class="col-sm-6 less-padding"><h4><small>Total</small><br><span>IDR 225.000</span></h4></div>
+                                    <div class="col-sm-6 less-padding">
+                                        <a href="checkout2.html" class="button-green-top-nav btn pull-right btn-block text-oswald text-uppercase">View Cart</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+</nav>
+
+
+<div class="container-fluid kimi-container less-padding">
+    <img src="images/birds-eye-1500w.jpg" width="100%">
+</div>
+
+
+<div class="container">
+
+    <div class="">
+        <!--breadcrumb start-->
+        <ol class="breadcrumb hidden-xs">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">About Kimi</li>
+        </ol>
+
+        <div class="box-bg-gray visible-xs less-padding-left">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+            <a style="margin-right: 15px;" class="text-black" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Show Order Summary <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </a>
+
+            <strong class="pull-right">IDR 250.000</strong>
+
+            <div class="clearfix"></div>
+            <div class="collapse" id="collapseExample">
+                <div class="row">
+                    <div class="box-bg-gray">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <img src="images/brownies.jpg" width="100%">
+                            </div>
+                            <div class="col-xs-5">
+                                <span>Brownies Chocolate</span><br/>
+                                <small>Sucicakes</small>
+                            </div>
+                            <div class="col-xs-4">
+                                <p class="text-right">IDR 50.000</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <img src="images/lapisSurabaya.jpg" width="100%">
+                            </div>
+                            <div class="col-xs-5">
+                                <span>Lapis Surabaya</span><br/>
+                                <small>Sucicakes</small>
+                            </div>
+                            <div class="col-xs-4">
+                                <p class="text-right">IDR 175.000</p>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <form class="form-inline">
+                            <div class="col-xs-8">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="" placeholder="Discount Code">
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <button type="submit" class="btn btn-default button-black-medium">Apply</button>
+                            </div>
+                        </form>
+                        <hr/>
+
+                        <div class="row">
+                            <div class="col-xs-6">Subtotal</div>
+                            <div class="col-xs-6"><p class="text-right"><strong>IDR 225.000</strong></p></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-6">Shipping + Trx Fee</div>
+                            <div class="col-xs-6"><p class="text-right"><strong> IDR 25.000 </strong></p></div>
+                        </div>
+
+                        <hr/>
+
+                        <div class="pull-left">Total</div>
+                        <div class="pull-right"><strong>IDR 250.000</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1" style="margin-bottom: 40px;">
+                <h5 class="about-first-text text-center text-center" style="">Kimi adalah sebuah program teknologi yang mengkoneksikan usaha makanan & minuman rumahan Anda dengan masyarakat, serta membantu mengembangkannya.</h5>
+
+                <div class="maya-well-padding"></div>
+                <h5 class="about-first-text text-center">Why Kimi</h5>
+
+                <p class="helvetica-18 text-gray-3 text-center text-thin">Anda berkreasi & berinovasi dengan menu Anda, kimi tangani transaksi dan pengiriman.</p>
+                <p class="helvetica-18 text-gray-3 text-center text-thin">Kimi akan membuat Anda mudah bertransaksi, membantu promosikan tentang Anda dan produk-produk Anda, dan mengelola pengantaran pesanan. Kami akan terus menguji dan belajar bersama untuk meningkatkan volume penjualan, menjaga kelancaran operasional, dan membuat pelanggan Anda terkesan.
+                </p>
+                <div class="maya-well-padding"></div>
+
+                <h5 class="about-first-text text-center">How Kimi Works</h5>
+                <h4 class="text-bold text-center">Sign up Now</h4>
+                <p class="helvetica-18 text-gray-3 text-thin text-center">
+                    Sign Up sekarang di <a class="text-secondary" href="signup.html"> backtokimi.com</a>, (Hubungi kami untuk membuka Channel (toko). Lihat pada Contact Us). Lalu upload logo keren Anda, foto-foto produk Anda beserta harga, min. order, deskripsi produk, dan keterangan mengenai Channel Anda.
+                    Channel (toko) Anda dapat dikelola oleh beberapa user (dengan email yang berbeda) jika Anda menunjuk seseorang untuk membantu Anda mengelola Channel, kami menyebutnya Multi Users 1 Channel.
+                    Dan berlaku sebaliknya, jika Anda memiliki beberapa Channel bisa dikelola oleh Anda sendiri (1 user), kami menyebutnya 1 User Multi Channels.
+                    (Hubungi kami, jika Anda berminat untuk membuat Multi Users 1 Channel ataupun 1 User Multi Channels.)
+                </p>
+                <div class="maya-small-padding"></div>
+
+                <h4 class="text-bold text-center">Your Schedule is in Your Hand</h4>
+
+                <p class="helvetica-18 text-gray-3 text-thin text-center">Program kimi dibuat untuk Chef rumahan seperti Anda. Buyer (Pembeli) memesan/request produk paling lambat 1 hari sebelum pesanan dibuat dan diantar (Pre Order).
+                    Anda juga dapat mengaturnya sendiri sesuai kapasitas Anda untuk mempermudah Anda menyiapkan bahan-bahan, peralatan, bahkan tenaga kerja.
+                </p>
+                <div class="maya-small-padding"></div>
+
+                <h4 class="text-bold text-center">Focus to Your Strengths</h4>
+                <p class="helvetica-18 text-gray-3 text-thin text-center">
+                    Karena kami percaya, waktu adalah hal yang berharga. Kami memberikan kemudahan bagi Anda mengenai delivery.
+                    Kimi akan mengatur setiap pengantaran untuk semua pesanan Anda yang masuk melalui backtokimi.com. Anda dapat menggunakan waktu Anda untuk mengasah kelebihan Anda dengan melahirkan produk baru, bentuk baru, dan rasa baru yang bisa menjadi daya tarik bisnis kuliner Anda.
+                </p>
+                <div class="maya-well-padding"></div>
+
+                <div>
+                    <h5 class="about-first-text text-center">What We Handle</h5>
+                    <h4 class="text-bold text-center">Transactions</h4>
+                    <p class="helvetica-18 text-gray-3 text-thin text-center">yang masuk melalui backtokimi.com selalu terekam dalam Order Dashboard sehingga para Chef dapat mengetahui jelas apa saja yang telah terjadi dan dapat mengecek ulang untuk menghindari kesalahan.
+                    </p>
+                    <div class="maya-small-padding"></div>
+                </div>
+
+
+                <div>
+                    <h4 class="text-bold text-center">Delivery</h4>
+                    <p class="helvetica-18 text-gray-3 text-thin text-center">kimi telah bekerja sama dengan jasa-jasa delivery. Para Chef hanya perlu mengerjakan pesanan yang telah dipesan dan mencatat nama, alamat lengkap, no. handphone para Buyer (pembeli) yang terekam dalam Order Dashboard pada pesanan tersebut, sehingga para Server (pengantar) dapat jelas mengantar pesanan-pesanan Anda dan kimi jadwalkan pengantaran untuk semua pesanan Anda yang masuk melalui backtokimi.com.
+                        Jika ada pesanan masuk dan Anda menerima (tap approve) pesanan tersebut, maka sistem kimi akan langsung menjadwalkan kepada jasa delivery untuk setiap pesanan yang Anda terima.
+
+                    </p>
+                    <div class="maya-small-padding"></div>
+                </div>
+
+                <div>
+                    <h4 class="text-bold text-center">Product Statistic</h4>
+                    <p class="helvetica-18 text-gray-3 text-thin text-center">Statistik ini dapat Anda lihat di setiap produk Anda.
+                        Hal ini untuk membantu Anda menganalisa produk mana yang paling diminati oleh masyarakat dan produk mana yang perlu Anda dorong untuk meningkatkan penjualan.
+                    </p>
+                    <div class="maya-small-padding"></div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+</div><!-- /.container -->
+
+<footer class="container-fluid">
+    <div class="col-md-3">
+        <h4>Contact</h4>
+        <address class="text-thin">
+            Maya Katalis Cipta Buana<br>
+            Jalan Plumpang Semper No 23<br>
+            Jakarta Utara 14260<br>
+            Indonesia
+        </address>
+    </div>
+    <div class="col-md-3">
+        <div class="clearfix maya-small-padding"></div>
+        <a href="mailto:info@backtokimi.com" class="text-white text-thin">info@backtokimi.com</a><br>
+        <a href="tel:6221567898765" class="text-white text-thin">+62 21 567898765</a>
+    </div>
+    <div class="col-md-3">
+        <h4>Social</h4>
+        <a href="#" class="text-white" style="font-size: 32px;"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    </div>
+    <div class="col-md-3">
+        <h4 class="text-white">Maya Engine 2016</h4>
+    </div>
+</footer>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./js/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="./js/bootstrap.min.js"></script>
+
+<script>
+    $('#buttonOpenSearchbar').on('click', function(){
+        $('#helpText, #buttonOpenSearchbar').hide();
+        $('#searchbar, #buttonCloseSearchbar').show();
+    });
+
+    $('#buttonCloseSearchbar').on('click', function(){
+        $('#helpText, #buttonOpenSearchbar').show();
+        $('#searchbar, #buttonCloseSearchbar').hide();
+
+    });
+
+    $('#buttonOpenSearchbarMobile').on('click', function () {
+        $('.fly-searchbar').show();
+    });
+
+    $('#buttonCloseSearchbarMobile').on('click', function(){
+        $('.fly-searchbar').hide();
+    })
+</script>
+
+</body>
+</html>

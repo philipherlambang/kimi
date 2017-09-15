@@ -1,0 +1,479 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kimi is a curated foods and beverages artisans.">
+    <meta name="author" content="Johnson Chandra, Allysa Prabandani, Philipus Herlambang, Maya Editorial">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+
+    <meta name="twitter:card" content="summary">
+    <meta name="title" content="Back to Kimi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Language" content="en-id">
+
+
+    <!-- open graph metadata facebook, slack, whatsapp line -->
+    <meta property="fb:app_id" content="150112802189143"/>
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Back to Kimi" />
+    <meta property='og:site_name' content='Kimi | Curated Foods and Beverages' />
+    <meta property="og:url" content="http://kimistatic.s3-website-ap-southeast-1.amazonaws.com/" />
+    <meta property="og:description" content="Kimi is a curated foods and beverages artisans." />
+    <meta property='og:image' content="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/apple-touch-icon.png" />
+
+
+    <!-- open graph metadata twitter -->
+    <meta name="twitter:title" content="Back to Kimi">
+    <meta name="twitter:url" content="http://www.backtokimi.com">
+    <meta name="twitter:description" content="Kimi is a curated foods and beverages artisans.">
+    <meta name="twitter:image" content="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/apple-touch-icon.png">
+    <meta name="twitter:site" content="@backtokimi">
+
+
+    <link rel="icon" href="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/favicon.ico">
+    <link rel="apple-touch-icon" href="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/apple-touch-icon.png">
+
+    <title>Merchant Guide</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/kimi.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+
+    <![endif]-->
+</head>
+
+<body style="background-color: #fff;">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+
+
+    <div class="container-fluid hidden-xs">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <button class="pull-left search-button" id="buttonOpenSearchbar"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <button class="pull-left search-button" id="buttonCloseSearchbar" style="display: none;"><i class="fa fa-times" aria-hidden="true"></i></button>
+
+                <div id="searchbar" style="display: none;">
+                    <div>
+                        <div class="top-nav-searchbar">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search for" autofocus="autofocus">
+                            </div><!-- /input-group -->
+                        </div>
+                    </div>
+                </div>
+                <p class="help-text hidden-sm hidden-md" id="helpText">Find any troubles? Drop us an email at <a href="mailto:grow@backtokimi.com" class="text-secondary">grow@backtokimi.com</a> </p>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <p class="text-center logo-container"><a href="index.html"><img src="images/logo.png" width="170"></a></p>
+            </div>
+            <div class="col-md-4 less-padding-right">
+                <a href="#" class="btn pull-right button-green-top-nav">Be Kimi Merchant</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background: white;">
+        <div class="navbar-header pull-left" style="border-right: 1px solid #E6EAEA; padding-right: 10px; margin-right: 0px; padding-left: 10px;">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar icon-short"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar icon-medium"></span>
+            </button>
+        </div>
+        <div class="visible-xs" style="width: 70%; float: left;">
+            <p class="text-center logo-container visible-xs"><a href="index.html"><img src="images/logo.png" width="150"></a></p>
+        </div>
+        <div class="visible-xs pull-right">
+            <button class="pull-left search-button-mobile" id="buttonOpenSearchbarMobile"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="fly-searchbar" style="display: none;">
+            <div class="top-nav-searchbar searchbar-mobile">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for" autofocus="autofocus">
+                    <button class="pull-right" id="buttonCloseSearchbarMobile"><i class="fa fa-times" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Shop</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">How to Order</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Location <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Jakarta Barat</a></li>
+                        <li><a href="#">Jakarta Selatan</a></li>
+                        <li><a href="#">Jakarta Pusat</a></li>
+                        <li><a href="#">Jakarta Utara</a></li>
+                        <li><a href="#">Jakarta Timur</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Depok</a></li>
+                        <li><a href="#">Tangerang</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Login / Register</a></li>
+                <li><a href="about.html">About Kimi</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cart (2)</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="cart-flyout">
+                                <h4 class="text-oswald">Recently Added Product(s)</h4>
+                                <div class="row">
+                                    <div class="col-sm-2 less-padding">
+                                        <img src="images/brownies.jpg" width="100%">
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <span class="text-gray-1">Brownies Chocolate</span>
+                                        <p class="text-gray-2">1 x 50.000</p>
+                                    </div>
+                                    <!--<div class="col-sm-2">-->
+                                    <!--<button><i class="fa fa-times-circle" aria-hidden="true"></i></button>-->
+                                    <!--</div>-->
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-2 less-padding">
+                                        <img src="images/lapisSurabaya.jpg" width="100%">
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <span class="text-gray-1">Lapis Surabaya</span>
+                                        <p class="text-gray-2">1 x 175.000</p>
+                                    </div>
+
+                                </div>
+                                <hr>
+
+                                <div class="row">
+                                    <div class="col-sm-6 less-padding"><h4><small>Total</small><br><span>IDR 225.000</span></h4></div>
+                                    <div class="col-sm-6 less-padding">
+                                        <a href="checkout2.html" class="button-green-top-nav btn pull-right btn-block text-oswald text-uppercase">View Cart</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+</nav>
+
+
+<div class="container-fluid kimi-container less-padding">
+    <img src="images/pasta.jpg" width="100%">
+</div>
+
+
+<div class="container">
+
+    <div class="">
+        <!--breadcrumb start-->
+        <ol class="breadcrumb hidden-xs">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">Merchant Guidelines</li>
+        </ol>
+
+        <div class="row">
+            <div>
+                <!--<h2 class="text-bold text-center">How Does Kimi Works</h2>-->
+                <div class="col-md-6">
+                    <ul class="list-unstyled guideline-container">
+                        <li>
+                            <h5 class="about-first-text">Apa saja persyaratan untuk menjadi Chef (penjual) di kimi?</h5>
+                            <ol>
+                                <li class="helvetica-16 text-gray-3 text-thin">memiliki usaha makanan atau minuman skala rumahan (bukan restoran).</li>
+                                <li class="helvetica-16 text-gray-3 text-thin">memproduksi produk Anda sendiri (bukan reseller & pabrik).</li>
+                                <li class="helvetica-16 text-gray-3 text-thin">memproduksi makanan & minuman yang mudah diantar dengan motor dan tidak membutuhkan penanganan yang sangat khusus, seperti suhu dingin, diantar dengan sangat pelan atau hati-hati.</li>
+                                <li class="helvetica-16 text-gray-3 text-thin">memiliki tempat produksi/dapur Jabodetabek (untuk saat ini karena keterbatasan kapasitas kami, maka kami mengutamakan area Jabodetabek).</li>
+                                <li class="helvetica-16 text-gray-3 text-thin">memiliki email yang selalu aktif untuk menerima notifikasi (untuk fase ini kami memberikan notifikasi melalui email. Aplikasi untuk Google Play dan App Store sedang dalam proses).</li>
+                                <li class="helvetica-16 text-gray-3 text-thin">memiliki rekening BCA (untuk mentransfer hasil penjualan).</li>
+                                <li class="helvetica-16 text-gray-3 text-thin">telah sign up di backtokimi.com</li>
+                            </ol>
+                            <div class="maya-small-padding"></div>
+                        </li>
+
+                        <li>
+                            <h5 class="about-first-text">Bagaimana cara mengoperasikan kimi?</h5>
+                            <strong class="text-uppercase">Account</strong>
+                            <p class="helvetica-16 text-gray-3 text-thin">
+                                Account adalah rekening Anda pada kimi.
+                                Anda dapat melihat pemasukan Anda dari hasil penjualan, serta weekly cash out yang harus kimi bayarkan ke rekening Anda setiap minggu.
+                            </p>
+                            <div class="maya-small-padding"></div>
+
+                            <strong class="text-uppercase">Channel</strong>
+                            <p class="helvetica-16 text-gray-3 text-thin">
+                                Channel adalah tempat Anda untuk berjualan.<br/>
+                                Anda bisa membuat beberapa Channel jika Anda memiliki beberapa toko makanan.<br/>
+                                Toko-toko Anda tersebut juga dapat dikelola oleh beberapa user yang Anda berikan otoritas untuk mengelola.<br/>
+                                Atau jika Anda hanya ingin memasak dan memantau saja, pilih teman atau saudara atau anak yang Anda percayakan dapat membantu Anda dalam bertransaksi.
+                            </p>
+
+                            <p class="helvetica-16 text-gray-3 text-thin"><strong>Channel Detail</strong> : disini Anda dapat melihat toko Anda dengan produk-produk istimewa Anda.</p>
+                            <p class="helvetica-16 text-gray-3 text-thin"><strong>Edit Channel</strong> : isi keterangan mengenai Channel (toko) Anda seperti nama Channel, Alamat Produksi (dapur), nomor handphone yang bisa dihubungi, serta keterangan toko Anda. Pastikan status Channel Anda Active sehingga Buyer dapat menemukan Channel Anda.</p>
+                            <p class="helvetica-16 text-gray-3 text-thin"><strong>Image Management</strong> : ini seperti banner untuk Channel/toko Anda. Upload logo, gambar produk best seller atau produk yang ingin Anda tingkatkan penjualannya atau pengumuman mengenai produk baru dari Channel Anda.
+                                Choose File, lalu pilih gambar yang ingin Anda upload.</p>
+                            <p class="helvetica-16 text-gray-3 text-thin"><strong>Order Dashboard</strong> : semua pesanan yang masuk bisa dicek disini. History pemesanan maupun pesanan yang sedang dalam proses request & payment pending.</p>
+                            <p class="helvetica-16 text-gray-3 text-thin"><strong>Product Dashboard</strong> : upload produk-produk Anda disini.</p>
+                            <ul>
+                                <li class="helvetica-16 text-gray-3 text-thin">Create New Product : klik setiap ingin membuat produk baru.
+                                    Beri nama, harga per unit, minimum pemesanan, ukuran per unit (box/botol/jar/toples/bowl/dll), berapa waktu yg dibutuhkan utk membuat produk tersebut, keterangan makanan, serta tipe produk basah atau kering.
+                                </li>
+                                <li class="helvetica-16 text-gray-3 text-thin">Image Management : upload gambar produk sesuai keterangan yang telah dicantumkan.</li>
+                                <li class="helvetica-16 text-gray-3 text-thin">Product Statistic : parameter Anda untuk mengetahui siapa saja yg telah melihat produk Anda, berapa banyak, berapa kali, sehingga Anda bisa secara spesifik melakukan pendekatan kepada Buyer tersebut.</li>
+                            </ul>
+                            <div class="maya-small-padding"></div>
+
+
+                            <strong class="text-uppercase">Edit Profile</strong>
+                            <p class="helvetica-16 text-gray-3 text-thin">
+                                Edit Profile tentunya untuk merubah nama Anda, dan mencantumkan tanggal ulang tahun Anda.
+                            </p>
+                            <div class="maya-small-padding"></div>
+
+                            <strong class="text-uppercase">Change Password</strong>
+                            <p class="helvetica-16 text-gray-3 text-thin">
+                                Anda dapat merubah password Anda disini.
+                            </p>
+                            <div class="maya-small-padding"></div>
+                        </li>
+
+                        <li>
+                            <h5 class="about-first-text">Apakah ada biaya jika bergabung menjadi Chef di kimi?</h5>
+                            <p class="helvetica-16 text-gray-3 text-thin">
+                                backtokimi.com mengenakan charge 10% pada setiap transaksi yang berhasil. <br/>
+                                Contoh :<br/>
+                                Buyer memesan…<br/>
+                                Green Crunchy Brownies (20 x 10 x 5cm) = 10 pcs<br/>
+                                Brownies dengan rasa & aroma matcha, dengan sensasi kriuk rice crispy.<br/>
+                                Rp. 75.000 (tanpa harga delivery)<br/><br/>
+
+                                alamat Buyer : Karet, Semanggi Jakarta Selatan<br/>
+                                misal delivery fee = Rp. 25.000 (biaya pengantaran akan dihitung oleh sistem kami)<br/>
+
+                                Maka, yang harus dibayarkan Buyer :<br/>
+                                Rp. 75.000 x 10 = Rp. 750.000 + Rp. 25.000 (ongkir)<br/>
+                                Total : Rp. 775.000<br/>
+                                Jadi, uang yang akan Anda terima dari transaksi tersebut sebesar Rp. 675.000.<br/>
+                                Anda bisa menaikan harga produk atau menaikan minimum order supaya tetap menguntungkan.
+
+                            </p>
+                            <div class="maya-small-padding"></div>
+                        </li>
+
+
+                        <li>
+                            <h5 class="about-first-text">Apa yang terjadi jika ada Buyer (pembeli) memesan produk?</h5>
+                            <ul>
+                                <li class="helvetica-16 text-gray-3 text-thin">Pada Order Dashboard Anda akan ada Order Request dan Anda akan menerima notifikasi melalui email Anda yang telah Anda registrasikan pada backtokimi.com.</li>
+                                <li class="helvetica-16 text-gray-3 text-thin">cek tanggal & jam yang diinginkan Buyer pada Request Delivery Time.</li>
+                                <ul>
+                                    <li class="helvetica-16 text-gray-3 text-thin">Jika Anda merasa tidak mampu, Anda bisa mengajukan tanggal atau jam yang Anda rasa sanggup untuk mengerjakan pesanan tersebut. Buyer akan ternotifikasi. Buyer dapat menerima “Request” , merubah tanggal, atau “Cancel” usulan tanggal atau jam yang Anda telah ajukan.</li>
+                                    <li class="helvetica-16 text-gray-3 text-thin">Jika Anda merasa mampu, Anda bisa langsung “Approve” Order Request tersebut.</li>
+                                </ul>
+                                <li class="helvetica-16 text-gray-3 text-thin">Setelah itu, Buyer akan ternotifikasi untuk melakukan pembayaran.</li>
+                                <li class="helvetica-16 text-gray-3 text-thin">Sistem kami akan melakukan pengecekan pembayaran yang dilakukan Buyer dan menotifikasikan pada Order Dashboard Anda, bahwa Pending Transactions telah menjadi Paid Transactions, dan Anda dapat mengerjakan pesanan tersebut sesuai tanggal dan jam yang telah diajukan.</li>
+                                <li class="helvetica-16 text-gray-3 text-thin">Kimi akan langsung menjadwalkan Server (pengantar) dari jasa delivery untuk menjemput & mengantarkan pesanan Anda pada tanggal dan jam yang sudah disepakati.</li>
+                            </ul>
+                            <div class="maya-small-padding"></div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+
+                        <li>
+                            <h5 class="about-first-text">Apa maksud dari Pre Order?</h5>
+                            <p class="helvetica-16 text-gray-3 text-thin">
+                                Pesanan yang dipesan hari ini (batas max. pukul 14.00), akan diterima keesokan hari dimana paling pagi jam 09.30 dan paling malam jam 18.30.
+                                Jika melewati pukul 14.00, maka order akan dibuat & diantar ke hari berikutnya.
+                                Jika Anda merasa waktu tersebut masih belum cukup, Anda sendiri dapat langsung merubah Request Delivery Time pesanan yang masuk pada Order Dashboard.
+                            </p>
+                            <div class="maya-small-padding"></div>
+                        </li>
+
+                        <li>
+                            <h5 class="about-first-text">Apa itu Pick Up Time dan Delivery Time?</h5>
+                            <p class="helvetica-16 text-gray-3 text-thin">
+                                Pick Up Time adalah waktu/jam dimana Server (pengantar) tiba di lokasi dapur Chef.
+                                Delivery Time adalah waktu/jam dimana order tiba di lokasi Buyer yang telah dipesan.
+                            </p>
+                            <div class="maya-small-padding"></div>
+                        </li>
+
+                        <li>
+                            <h5 class="about-first-text">Apa itu Special Instruction?</h5>
+                            <p class="helvetica-16 text-gray-3 text-thin">
+                                Instruksi yang harus diperhatikan oleh Chef mengenai alergi yang Buyer miliki ataupun ketidak sukaan mereka atau dietary yang bersangkutan dengan order yang mereka pesan
+                            </p>
+                            <div class="maya-small-padding"></div>
+                        </li>
+
+
+                        <li>
+                            <h5 class="about-first-text">Bagaimana aliran uang yang dibayarkan Buyer hingga sampai ke rekening Chef?</h5>
+                            <ul>
+                                <li class="helvetica-16 text-gray-3 text-thin">
+                                    Setiap Buyer yang memesan melalui backtokimi.com akan mentransfer uang mereka untuk total biaya pesanan dan pengiriman ke rekening BCA perusahaan (MAYA KATALIS CIPTA BUANA) terlebih dahulu.
+                                </li>
+                                <li class="helvetica-16 text-gray-3 text-thin">
+                                    Kimi akan menjumlahkan semua transaksi yang terjadi dalam 1 minggu (Senin sampai Sabtu), dan akan kimi transfer setiap hari Rabu minggu berikutnya untuk semua transaksi yang terjadi 1 minggu lalu.
+                                    <p class="helvetica-16 text-gray-3 text-thin">
+                                        Contoh :<br/>
+                                        Transaksi 1 minggu pertama<br/><br/>
+
+                                        Senin, 1 Januari 2017<br/>
+                                        Rp. 500.000 (5 transaksi)<br/><br/>
+
+                                        Selasa, 2 Januari 2017<br/>
+                                        Rp. 700.000 (7 transaksi)<br/><br/>
+
+                                        Rabu, 3 Januari 2017<br/>
+                                        Rp. 800.000 (8 transaksi)<br/><br/>
+
+                                        Kamis, 4 Januari 2017<br/>
+                                        Rp. 500.000 (5 transaksi)<br/><br/>
+
+                                        Jumat, 5 Januari 2017<br/>
+                                        Rp. 500.000 (5 transaksi)<br/><br/>
+
+                                        Total : Rp. 3.000.000 (30 transaksi)<br/>
+                                        Maka kimi akan mentransfer Rp. 2.700.000 (sudah dikurang 10%) pada hari Rabu, 10 Januari 2017 ke rekening Anda.<br/><br/>
+                                    </p>
+                                </li>
+                            </ul>
+                            <div class="maya-small-padding"></div>
+                        </li>
+
+                        <li>
+                            <h5 class="about-first-text">Bagaimana jika Buyer membatalkan pesanan?</h5>
+                            <p class="helvetica-16 text-gray-3 text-thin">
+                                Jika Buyer sudah membayar pesanan, maka Buyer tidak bisa membatalkan pesanan.
+                            </p>
+                            <div class="maya-small-padding"></div>
+                        </li>
+
+                        <li>
+                            <h5 class="about-first-text">Bagaimana jika Server (pengantar) tidak datang sesuai jadwal pesanan?</h5>
+                            <p class="helvetica-16 text-gray-3 text-thin">
+                                Jika dalam waktu 15 menit Server tidak kunjung datang, mohon untuk segera melapor ke alyssa.prabandari@backtokimi.com
+                            </p>
+                            <div class="maya-small-padding"></div>
+                        </li>
+
+
+                        <li>
+                            <h5 class="about-first-text">Bagaimana jika Chef dengan secara tidak direncanakan tidak bisa mengerjakan pesanan yang telah dipesan?</h5>
+                            <p class="helvetica-16 text-gray-3 text-thin">
+                                Kimi akan mengembalikan uang Buyer dan Chef harus membayar konsekuensi dari kejadian tersebut.
+                            </p>
+                            <div class="maya-small-padding"></div>
+                        </li>
+
+                        <li>
+                            <h5 class="about-first-text">Dapatkah Chef mengantar sendiri pesanan yang masuk melalui kimi?</h5>
+                            <p class="helvetica-16 text-gray-3 text-thin">
+                                Tidak. Supaya kami tetap bisa tracking kurir (pengantar), karena kami telah bekerja sama dengan beberapa jasa delivery yang memiliki sistem untuk mengetahui keberadaan Server (pengantar). Jadi, baik Buyer, Chef, dan kimi dapat terinformasikan dengan jelas mengenai status pesanan yang diantar.
+                            </p>
+                            <div class="maya-small-padding"></div>
+                        </li>
+
+
+
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+</div><!-- /.container -->
+
+<footer class="container-fluid">
+    <div class="col-md-3">
+        <h4>Contact</h4>
+        <address class="text-thin">
+            Maya Katalis Cipta Buana<br>
+            Jalan Plumpang Semper No 23<br>
+            Jakarta Utara 14260<br>
+            Indonesia
+        </address>
+    </div>
+    <div class="col-md-3">
+        <div class="clearfix maya-small-padding"></div>
+        <a href="mailto:info@backtokimi.com" class="text-white text-thin">info@backtokimi.com</a><br>
+        <a href="tel:6221567898765" class="text-white text-thin">+62 21 567898765</a>
+    </div>
+    <div class="col-md-3">
+        <h4>Social</h4>
+        <a href="#" class="text-white" style="font-size: 32px;"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    </div>
+    <div class="col-md-3">
+        <h4 class="text-white">Maya Engine 2016</h4>
+    </div>
+</footer>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./js/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="./js/bootstrap.min.js"></script>
+
+<script>
+    $('#buttonOpenSearchbar').on('click', function(){
+        $('#helpText, #buttonOpenSearchbar').hide();
+        $('#searchbar, #buttonCloseSearchbar').show();
+    });
+
+    $('#buttonCloseSearchbar').on('click', function(){
+        $('#helpText, #buttonOpenSearchbar').show();
+        $('#searchbar, #buttonCloseSearchbar').hide();
+
+    });
+
+    $('#buttonOpenSearchbarMobile').on('click', function () {
+        $('.fly-searchbar').show();
+    });
+
+    $('#buttonCloseSearchbarMobile').on('click', function(){
+        $('.fly-searchbar').hide();
+    })
+</script>
+
+</body>
+</html>
