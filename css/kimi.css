@@ -438,7 +438,7 @@ button, a{
     box-shadow: none;
     -webkit-border-radius:2px;
     -moz-border-radius:2px;
-    border-radius:3px;
+    border-radius:2px;
     border: 1px solid #DFDFDF;
 }
 
@@ -940,7 +940,7 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
     font: 16px/45px "Helvetica";
 }
 
-.edit-channel-form .form-control{
+.edit-channel-form .form-control, .form-medium-padding .form-control{
     height: 45px;
     width: 100%;
     font: 16px Helvetica;
@@ -1007,6 +1007,10 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
 .edit-channel-form{
     padding: 25px;
     background: white;
+}
+
+.form-medium-padding{
+    padding: 25px;
 }
 
 
