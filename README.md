@@ -18,3 +18,13 @@
 - calendar
 - forms
 - 404
+- validation form
+- article list
+- connect with facebook
+- connect with google
+- notification page
+- article detail
+- keep me logged in
+- empty state
+- register merchant
+- profile
