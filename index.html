@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="description" content="Kimi is a curated foods and beverages artisans.">
-    <meta name="author" content="Johnson Chandra, Allysa Prabandani, Philipus Herlambang, Maya Editorial">
+    <meta name="author" content="Philip Herlambang">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
 
@@ -56,8 +56,6 @@
 <body>
 
 <nav class="navbar navbar-default navbar-fixed-top">
-
-
     <div class="container-fluid hidden-xs">
         <div class="row">
             <div class="col-md-4 col-sm-4">
@@ -76,7 +74,7 @@
                 <p class="help-text hidden-sm hidden-md" id="helpText">Find any troubles? Drop us an email at <a href="mailto:grow@backtokimi.com" class="text-secondary">grow@backtokimi.com</a> </p>
             </div>
             <div class="col-md-4 col-sm-4">
-                <p class="text-center logo-container"><a href="index.html"><img src="images/logo.svg" width="180" onerror="this.onerror=null; this.src='image.png'"></a></p>
+                <p class="text-center logo-container"><a href="index.html"><img src="images/logo.png" width="100"></a></p>
             </div>
             <div class="col-md-4 less-padding-right">
                 <a href="#" class="btn pull-right button-green-top-nav">Be Kimi Merchant</a>
@@ -94,7 +92,7 @@
             </button>
         </div>
         <div class="visible-xs" style="width: 70%; float: left;">
-            <p class="text-center logo-container visible-xs"><a href="index.html"><img src="images/logo.svg" width="150" onerror="this.onerror=null; this.src='image.png'"></a></p>
+            <p class="text-center logo-container visible-xs"><a href="index.html"><img src="images/logo.png" width="90"></a></p>
         </div>
         <div class="visible-xs pull-right">
             <button class="pull-left search-button-mobile" id="buttonOpenSearchbarMobile"><i class="fa fa-search" aria-hidden="true"></i></button>
@@ -130,6 +128,7 @@
                     </ul>
                 </li>
                 <li><a href="questions.html">FAQs</a></li><li>
+                <li><a href="about.html">About</a></li><li>
                 <li><a href="merchantGuide.html">Merchant Guide</a></li>
                 <li><a href="login.html">Login / Register</a></li>
             </ul>
@@ -347,6 +346,12 @@
 
 <!--kimi basic js-->
 <script src="js/kimi.js"></script>
+
+<script>
+    $(function(){
+        $("#top_navigation").load("include/top_navigation.html");
+    });
+</script>
 
 </body>
 </html>

@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta name="description" content="Kimi is a curated foods and beverages artisans.">
     <meta name="author" content="Philip Herlambang">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -39,22 +40,22 @@
     <link rel="icon" href="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/favicon.ico">
     <link rel="apple-touch-icon" href="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/apple-touch-icon.png">
 
-    <title>Checkout 1</title>
+    <title>Articles</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="css/kimi.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
 
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/owl_carousel/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl_carousel/owl.theme.default.css">
 
-    <![endif]-->
 </head>
 
 <body>
 
 <nav class="navbar navbar-default navbar-fixed-top">
-
-
     <div class="container-fluid hidden-xs">
         <div class="row">
             <div class="col-md-4 col-sm-4">
@@ -91,7 +92,7 @@
             </button>
         </div>
         <div class="visible-xs" style="width: 70%; float: left;">
-            <p class="text-center logo-container visible-xs"><a href="index.html"><img src="images/logo.png" width="100"></a></p>
+            <p class="text-center logo-container visible-xs"><a href="index.html"><img src="images/logo.png" width="90"></a></p>
         </div>
         <div class="visible-xs pull-right">
             <button class="pull-left search-button-mobile" id="buttonOpenSearchbarMobile"><i class="fa fa-search" aria-hidden="true"></i></button>
@@ -110,8 +111,8 @@
 
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Shop</a></li>
-                <li><a href="#">Articles</a></li>
+                <li><a href="index.html">Shop</a></li>
+                <li class="active"><a href="#">Articles</a></li>
                 <li><a href="#">How to Order</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Location <span class="caret"></span></a>
@@ -126,8 +127,10 @@
                         <li><a href="#">Tangerang</a></li>
                     </ul>
                 </li>
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">Login / Register</a></li>
+                <li><a href="questions.html">FAQs</a></li><li>
+                <li><a href="about.html">About</a></li><li>
+                <li><a href="merchantGuide.html">Merchant Guide</a></li>
+                <li><a href="login.html">Login / Register</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
@@ -174,167 +177,156 @@
                 </li>
 
             </ul>
-        </div><!--/.nav-collapse -->
-    </div><!--/.container-fluid -->
+        </div>
+    </div>
 </nav>
 
-
-
 <div class="container">
-
+    <div class="maya-tiny-padding"></div>
     <div class="kimi-container">
         <!--breadcrumb start-->
         <ol class="breadcrumb hidden-xs">
-            <li><a href="#">Cart</a></li>
-            <li><a href="#">Customer Information</a></li>
-            <li><a href="#">Shipping Mehtod</a></li>
-            <li class="active">Payment Method</li>
+            <li><a href="#">Home</a></li>
+            <li class="active">Article List</li>
         </ol>
 
-        <div class="box-bg-gray visible-xs less-padding-left">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-
-            <a style="margin-right: 15px;" class="text-black" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                Show Order Summary <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </a>
-
-            <strong class="pull-right">IDR 250.000</strong>
-
-            <div class="clearfix"></div>
-            <div class="collapse" id="collapseExample">
-                <div class="row">
-                    <div class="box-bg-gray">
-                        <div class="row">
-                            <div class="col-xs-3">
-                                <img src="images/brownies.jpg" width="100%">
-                            </div>
-                            <div class="col-xs-5">
-                                <span>Brownies Chocolate</span><br/>
-                                <small>Sucicakes</small>
-                            </div>
-                            <div class="col-xs-4">
-                                <p class="text-right">IDR 50.000</p>
-                            </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <a href="articleDetails.html" class="thumbnail less-padding" style="margin-bottom: 0;">
+                    <img src="images/article0.jpg" alt="article title">
+                </a>
+                <div class="caption box" style="background: white; padding: 10px;">
+                    <h3>Lemon Seafood Risotto</h3>
+                    <div class="row">
+                        <div class="col-sm-8 col-xs-6">
+                            <p>Kimi Editorial's Pick</p>
+                            <span class="last-text">September 14, 2017</span>
                         </div>
 
-                        <div class="row">
-                            <div class="col-xs-3">
-                                <img src="images/lapisSurabaya.jpg" width="100%">
-                            </div>
-                            <div class="col-xs-5">
-                                <span>Lapis Surabaya</span><br/>
-                                <small>Sucicakes</small>
-                            </div>
-                            <div class="col-xs-4">
-                                <p class="text-right">IDR 175.000</p>
-                            </div>
+                        <div class="col-sm-4 col-xs-6">
+                            <a href="profile.html">
+                                <img src="images/face1.jpg" width="40" class="pull-right img-circle">
+                            </a>
                         </div>
 
-                        <hr>
+                    </div>
+                </div>
+            </div>
 
-                        <form class="form-inline">
-                            <div class="col-xs-8">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="" placeholder="Discount Code">
-                                </div>
-                            </div>
-                            <div class="col-xs-4">
-                                <button type="submit" class="btn btn-default button-black-medium">Apply</button>
-                            </div>
-                        </form>
-                        <hr/>
-
-                        <div class="row">
-                            <div class="col-xs-6">Subtotal</div>
-                            <div class="col-xs-6"><p class="text-right"><strong>IDR 225.000</strong></p></div>
+            <div class="col-sm-6 col-md-4">
+                <a href="articleDetails.html" class="thumbnail less-padding" style="margin-bottom: 0;">
+                    <img src="images/article1.jpg" alt="article title">
+                </a>
+                <div class="caption box" style="background: white; padding: 10px;">
+                    <h3>Lemon Seafood Risotto</h3>
+                    <div class="row">
+                        <div class="col-sm-8 col-xs-6">
+                            <p>Kimi Editorial's Pick</p>
+                            <span class="last-text">September 14, 2017</span>
                         </div>
 
-                        <div class="row">
-                            <div class="col-xs-6">Shipping + Trx Fee</div>
-                            <div class="col-xs-6"><p class="text-right"><strong> IDR 25.000 </strong></p></div>
+                        <div class="col-sm-4 col-xs-6">
+                            <a href="profile.html">
+                                <img src="images/face2.jpg" width="40" class="pull-right img-circle">
+                            </a>
                         </div>
 
-                        <hr/>
+                    </div>
+                </div>
+            </div>
 
-                        <div class="pull-left">Total</div>
-                        <div class="pull-right"><strong>IDR 250.000</strong></div>
+            <div class="col-sm-6 col-md-4">
+                <a href="articleDetails.html" class="thumbnail less-padding" style="margin-bottom: 0;">
+                    <img src="images/article2.jpg" alt="article title">
+                </a>
+                <div class="caption box" style="background: white; padding: 10px;">
+                    <h3>Lemon Seafood Risotto</h3>
+                    <div class="row">
+                        <div class="col-sm-8 col-xs-6">
+                            <p>Kimi Editorial's Pick</p>
+                            <span class="last-text">September 14, 2017</span>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-6">
+                            <a href="profile.html">
+                                <img src="images/face3.jpg" width="40" class="pull-right img-circle">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <a href="articleDetails.html" class="thumbnail less-padding" style="margin-bottom: 0;">
+                    <img src="images/article3.jpg" alt="article title">
+                </a>
+                <div class="caption box" style="background: white; padding: 10px;">
+                    <h3>Lemon Seafood Risotto</h3>
+                    <div class="row">
+                        <div class="col-sm-8 col-xs-6">
+                            <p>Kimi Editorial's Pick</p>
+                            <span class="last-text">September 14, 2017</span>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-6">
+                            <a href="profile.html">
+                                <img src="images/face4.jpg" width="40" class="pull-right img-circle">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <a href="articleDetails.html" class="thumbnail less-padding" style="margin-bottom: 0;">
+                    <img src="images/article4.jpg" alt="article title">
+                </a>
+                <div class="caption box" style="background: white; padding: 10px;">
+                    <h3>Lemon Seafood Risotto</h3>
+                    <div class="row">
+                        <div class="col-sm-8 col-xs-6">
+                            <p>Kimi Editorial's Pick</p>
+                            <span class="last-text">September 14, 2017</span>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-6">
+                            <a href="profile.html">
+                                <img src="images/face3.jpg" width="40" class="pull-right img-circle">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <a href="articleDetails.html" class="thumbnail less-padding" style="margin-bottom: 0;">
+                    <img src="images/article1.jpg" alt="article title">
+                </a>
+                <div class="caption box" style="background: white; padding: 10px;">
+                    <h3>Lemon Seafood Risotto</h3>
+                    <div class="row">
+                        <div class="col-sm-8 col-xs-6">
+                            <p>Kimi Editorial's Pick</p>
+                            <span class="last-text">September 14, 2017</span>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-6">
+                            <a href="profile.html">
+                                <img src="images/face3.jpg" width="40" class="pull-right img-circle">
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="clearfix"></div>
-
-
         <div class="row">
-            <div class="col-md-8">
-
-                <div class="">
-                    <div class="box-bg-white">
-                        <h3 class="section-title">Alamat Pengiriman</h3>
-                        <div class="row">
-                            <div class="col-sm-10">
-                                <p class="text-gray-4">Jalan Madrasah 2 no 30 D RT 08 / RW 02 Kelurahan Sukabumi Utara Kecamatan Kebon Jeruk Jakarta 11540</p>
-                            </div>
-
-                            <div class="col-sm-2">
-                                <button class="btn btn-default button-black-medium">Edit</button>
-                            </div>
-                        </div>
-
-
-                        <h3 class="section-title">Waktu Kedatangan Pesanan</h3>
-                        <div class="row">
-                            <div class="col-sm-10">
-                                <p class="text-gray-4"><strong style="font-size: 24px" class="text-black">12:30</strong> <span>Diantar oleh <strong class="text-black">Porter.id</strong>. Estimasi kedatangan 1 jam Rp 25.000</span></p>
-                            </div>
-
-                            <div class="col-sm-2">
-                                <button class="btn btn-default button-black-medium">Edit</button>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="">
-                    <div class="box-bg-white col-md-12">
-                        <h3 class="section-title">Metode Pembayaran Bank Transfer</h3>
-
-                        <p class="text-gray-4">Terima kasih atas kepercayaanmu telah berbelanja di Backtokimi.com. <br>Mohon segera lakukan pembayaran sebelum:</p>
-                        <h4>Jumat, 11 Agustus 2017 Pukul 17:13 WIB (1x24 jam)</h4>
-
-                        <p class="text-gray-4">Lakukan pembayaran sebesar:</p>
-                        <h4>IDR 232.140</h4>
-                        <p class="text-gray-4">TEPAT hingga 3 digit terakhir. Perbedaan nilai transfer akan menghambat proses verifikasi</p>
-                        <p>Pembayaran dapat dilakukan ke  nomor rekening a/n <strong>PT Maya Katalis Cipta Buana</strong>, BCA Yos Sudarso</p>
-                        <img src="images/bca.gif">  <p style="font-size: 18px; line-height: 50px;"><strong>Nomor Rekening 691 035 5536</strong> </p>
-
-
-                    </div>
-                </div>
-                <a href="checkout2.html" class="text-gray-1"><i class="fa fa-angle-left" aria-hidden="true"></i> Shipping Method</a>
-                <a href="thankyou.html" class="btn btn-default pull-right button-black">Complete Order</a>
-                <div class="clearfix maya-small-padding"></div>
-
-            </div>
-
-            <div class="col-md-4">
-                <div class="box-bg-white">
-                    <div class="clearfix maya-small-padding"></div>
-                    <h3 class="text-right text-oswald">Need Help ? </h3>
-                    <p class="text-right text-gray-3 text-medium text-thin">Find any troubles? We will respond. Call or write question by email</p>
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p class="text-gray-2 text-thin">Everyday<br>from 9.00 - 18.00</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p class="text-right">+62 21 567898765<br><a class="text-black text-underline" href="mailto: info@backtokimi.com">info@backtokimi.com</a></p>
-                        </div>
-                    </div>
-                    <div class="clearfix maya-small-padding"></div>
-                </div>
+            <div class="product-detail-tag-container col-md-4 col-md-offset-4">
+                <button class="btn outline-white-button">Load More</button>
             </div>
         </div>
     </div>
@@ -366,32 +358,22 @@
 </footer>
 
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
 <script src="./js/jquery.min.js"></script>
+
+<!-- owl carousel -->
+<script src="js/owl_carousel/owl.carousel.js"></script>
+
+<!--boostrap js-->
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 <script src="./js/bootstrap.min.js"></script>
 
+<!--kimi basic js-->
+<script src="js/kimi.js"></script>
+
 <script>
-    $('#buttonOpenSearchbar').on('click', function(){
-        $('#helpText, #buttonOpenSearchbar').hide();
-        $('#searchbar, #buttonCloseSearchbar').show();
+    $(function(){
+        $("#top_navigation").load("include/top_navigation.html");
     });
-
-    $('#buttonCloseSearchbar').on('click', function(){
-        $('#helpText, #buttonOpenSearchbar').show();
-        $('#searchbar, #buttonCloseSearchbar').hide();
-
-    });
-
-    $('#buttonOpenSearchbarMobile').on('click', function () {
-        $('.fly-searchbar').show();
-    });
-
-    $('#buttonCloseSearchbarMobile').on('click', function(){
-        $('.fly-searchbar').hide();
-    })
 </script>
 
 </body>

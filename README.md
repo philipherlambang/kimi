@@ -8,3 +8,23 @@
 - [Unsplash](https://unsplash.com/)
 - [Uifaces](http://uifaces.com/)
 
+
+#todo:
+- tag in homepage use owl carousel as well
+- library widget
+- invoice / order details
+- tables
+- buttons
+- calendar
+- forms
+- 404
+- validation form
+- article list
+- connect with facebook
+- connect with google
+- notification page
+- article detail
+- keep me logged in
+- empty state
+- register merchant
+- profile

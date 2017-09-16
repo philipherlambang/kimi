@@ -438,7 +438,7 @@ button, a{
     box-shadow: none;
     -webkit-border-radius:2px;
     -moz-border-radius:2px;
-    border-radius:3px;
+    border-radius:2px;
     border: 1px solid #DFDFDF;
 }
 
@@ -940,7 +940,7 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
     font: 16px/45px "Helvetica";
 }
 
-.edit-channel-form .form-control{
+.edit-channel-form .form-control, .form-medium-padding .form-control{
     height: 45px;
     width: 100%;
     font: 16px Helvetica;
@@ -960,6 +960,34 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
     resize: none;
     height: 5em !important;
 }
+
+/*widgets*/
+.box h3{
+    font-size: 18px;
+    font-weight: 400;
+    color: #4a4a4a;
+    margin-top: 10px;
+}
+
+.box p{
+    color: #7d7d7d;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    margin-bottom: 0;
+}
+
+.box .last-text{
+    font-size: 12px;
+    font-weight: bold;
+    color: #7b7b7b;
+}
+
+.box{
+    margin-bottom:25px;
+}
+
+/*widgets ends*/
+
 
 /*map starts*/
 #map-canvas{
@@ -1007,6 +1035,10 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
 .edit-channel-form{
     padding: 25px;
     background: white;
+}
+
+.form-medium-padding{
+    padding: 25px;
 }
 
 
