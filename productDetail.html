@@ -71,7 +71,7 @@
                 <p class="help-text hidden-sm hidden-md" id="helpText">Find any troubles? Drop us an email at <a href="mailto:grow@backtokimi.com" class="text-secondary">grow@backtokimi.com</a> </p>
             </div>
             <div class="col-md-4 col-sm-4">
-                <p class="text-center logo-container"><a href="shoppingCart.html"><img src="images/logo.png" width="100"></a></p>
+                <p class="text-center logo-container"><a href="index.html"><img src="images/logo.png" width="100"></a></p>
             </div>
             <div class="col-md-4 less-padding-right">
                 <a href="#" class="btn pull-right button-green-top-nav">Be Kimi Merchant</a>
@@ -109,8 +109,8 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Shop</a></li>
-                <li><a href="#">Articles</a></li>
-                <li><a href="#">How to Order</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="merchantGuide.html">Chef Guide</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Location <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -125,7 +125,8 @@
                     </ul>
                 </li>
                 <li><a href="questions.html">FAQs</a></li>
-                <li><a href="#">Login / Register</a></li>
+                <li><a href="about.html">About Kimi</a></li>
+                <li><a href="login.html">Login / Register</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
@@ -410,26 +411,10 @@
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 <script src="./js/bootstrap.min.js"></script>
 
+<!--kimi basic js-->
+<script src="js/kimi.js"></script>
+
 <script>
-    $('#buttonOpenSearchbar').on('click', function(){
-        $('#helpText, #buttonOpenSearchbar').hide();
-        $('#searchbar, #buttonCloseSearchbar').show();
-    });
-
-    $('#buttonCloseSearchbar').on('click', function(){
-        $('#helpText, #buttonOpenSearchbar').show();
-        $('#searchbar, #buttonCloseSearchbar').hide();
-
-    });
-
-    $('#buttonOpenSearchbarMobile').on('click', function () {
-        $('.fly-searchbar').show();
-    });
-
-    $('#buttonCloseSearchbarMobile').on('click', function(){
-        $('.fly-searchbar').hide();
-    })
-
     jQuery(document).ready(function($) {
 
         $('#myCarousel').carousel({

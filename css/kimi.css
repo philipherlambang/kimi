@@ -107,6 +107,10 @@ a.button-green-top-nav:hover{
     margin-bottom: 40px;
 }
 
+.bg-white{
+    background: #ffffff;
+}
+
 .box-bg-gray{
     background: #F5F7F6;
     padding: 10px 10px;
@@ -987,6 +991,26 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
 }
 
 /*widgets ends*/
+
+
+/* zoom hover */
+.thumbnail_item {
+    position: relative;
+    overflow: hidden;
+}
+.thumbnail_item img {
+    max-width: 100%;
+
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.thumbnail_item:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+/*zoom hover*/
 
 
 /*map starts*/
