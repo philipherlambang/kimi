@@ -118,9 +118,9 @@
                         <li><a href="index.html">Logout</a></li>
                     </ul>
                 </li>
-                <li class="active"><a href="#">Shop</a></li>
-                <li><a href="#">Articles</a></li>
-                <li><a href="#">How to Order</a></li>
+                <li class="active"><a href="index.html">Shop</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="merchantGuide.html">Chef Guide</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Location <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -135,7 +135,7 @@
                     </ul>
                 </li>
                 <li><a href="questions.html">FAQs</a></li>
-                <li><a href="merchantGuide.html">Merchant Guide</a></li>
+                <li><a href="about.html">About Kimi</a></li>
                 <li><a href="index.html">Logout</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -447,26 +447,8 @@
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 <script src="./js/bootstrap.min.js"></script>
 
-<script>
-    $('#buttonOpenSearchbar').on('click', function(){
-        $('#helpText, #buttonOpenSearchbar').hide();
-        $('#searchbar, #buttonCloseSearchbar').show();
-    });
-
-    $('#buttonCloseSearchbar').on('click', function(){
-        $('#helpText, #buttonOpenSearchbar').show();
-        $('#searchbar, #buttonCloseSearchbar').hide();
-
-    });
-
-    $('#buttonOpenSearchbarMobile').on('click', function () {
-        $('.fly-searchbar').show();
-    });
-
-    $('#buttonCloseSearchbarMobile').on('click', function(){
-        $('.fly-searchbar').hide();
-    })
-</script>
+<!--kimi basic js-->
+<script src="js/kimi.js"></script>
 
 </body>
 </html>
