@@ -29,6 +29,8 @@
 - tipue search
 - shop the articles
 - metainfo article
+- merchant list
+- contact us
 
 ### done
 - article list
