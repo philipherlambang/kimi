@@ -39,7 +39,7 @@
     <link rel="icon" href="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/favicon.ico">
     <link rel="apple-touch-icon" href="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/apple-touch-icon.png">
 
-    <title>Thank you</title>
+    <title>Register Merchant</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -110,9 +110,9 @@
 
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Shop</a></li>
-                <li><a href="#">Articles</a></li>
-                <li><a href="#">How to Order</a></li>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="merchantGuide.html">Chef Guide</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Location <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -127,8 +127,8 @@
                     </ul>
                 </li>
                 <li><a href="questions.html">FAQs</a></li>
-                <li><a href="about.html">About Kimi</a></li>
-                <li><a href="login">Login / Register</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="active"><a href="login.html">Login / Register</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
@@ -186,221 +186,43 @@
     <div class="kimi-container">
         <!--breadcrumb start-->
         <ol class="breadcrumb hidden-xs">
-            <li><a href="#">Cart</a></li>
-            <li><a href="#">Customer Information</a></li>
-            <li><a href="#">Shipping Mehtod</a></li>
-            <li class="active">Payment Method</li>
+            <li><a href="index.html">Home</a></li>
+            <li class="active">Register</li>
         </ol>
-
-        <div class="box-bg-gray visible-xs less-padding-left">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-
-            <a style="margin-right: 15px;" class="text-black" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                Show Order Summary <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </a>
-
-            <strong class="pull-right">IDR 250.000</strong>
-
-            <div class="clearfix"></div>
-            <div class="collapse" id="collapseExample">
-                <div class="row">
-                    <div class="box-bg-gray">
-                        <div class="row">
-                            <div class="col-xs-3">
-                                <img src="images/brownies.jpg" width="100%">
-                            </div>
-                            <div class="col-xs-5">
-                                <span>Brownies Chocolate</span><br/>
-                                <small>Sucicakes</small>
-                            </div>
-                            <div class="col-xs-4">
-                                <p class="text-right">IDR 50.000</p>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-xs-3">
-                                <img src="images/lapisSurabaya.jpg" width="100%">
-                            </div>
-                            <div class="col-xs-5">
-                                <span>Lapis Surabaya</span><br/>
-                                <small>Sucicakes</small>
-                            </div>
-                            <div class="col-xs-4">
-                                <p class="text-right">IDR 175.000</p>
-                            </div>
-                        </div>
-
-                        <hr>
-
-                        <form class="form-inline">
-                            <div class="col-xs-8">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="" placeholder="Discount Code">
-                                </div>
-                            </div>
-                            <div class="col-xs-4">
-                                <button type="submit" class="btn btn-default button-black-medium">Apply</button>
-                            </div>
-                        </form>
-                        <hr/>
-
-                        <div class="row">
-                            <div class="col-xs-6">Subtotal</div>
-                            <div class="col-xs-6"><p class="text-right"><strong>IDR 225.000</strong></p></div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-xs-6">Shipping + Trx Fee</div>
-                            <div class="col-xs-6"><p class="text-right"><strong> IDR 25.000 </strong></p></div>
-                        </div>
-
-                        <hr/>
-
-                        <div class="pull-left">Total</div>
-                        <div class="pull-right"><strong>IDR 250.000</strong></div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="clearfix"></div>
 
 
         <div class="row">
-            <div class="col-md-8">
-
+            <div class="col-md-4 col-md-offset-4">
                 <div class="row">
-                    <div class="box-bg-white col-md-12 col-xs-12">
-                        <h3 class="section-title">Thank you</h3>
-                        <p class="">Your order has been received. Here is the detail of your order</p>
+                    <div class="box-bg-white col-md-12 col-xs-12 form-medium-padding">
+                        <h3 class="text-center text-gray-1">Kimi Chef Registration</h3>
+                        <div class="clearfix maya-small-padding"></div>
 
-                        <div class="row" style="margin-top: 30px;">
-                            <div class="col-sm-6">
-                                <p><strong>Nama Pemesan:</strong><br> <span class="text-gray-1">Philip Herlambang</span></p>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="business_name" placeholder="Business Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="tagline" class="form-control" id="tagline" placeholder="Business Tagline">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="bank_account" placeholder="Bank Account Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" id="account_number" placeholder="Account Number">
                             </div>
 
-                            <div class="col-sm-6">
-                                <p><strong>Email:</strong><br> <span class="text-gray-1">philip.herlambang@gmail.com</span></p>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <p><strong>Order Number:</strong><br> <span class="text-gray-1">BK125</span></p>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="bank_account_name" placeholder="Bank Account Name">
                             </div>
 
-                            <div class="col-sm-6">
-                                <p><strong>Hari / Tanggal:</strong><br> <span class="text-gray-1">Kamis 10 Agustus 2017</span></p>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <p><strong>Hari Tanggal Pesanan:</strong><br> <span class="text-gray-1">Jumat 11 Agustus 2017</span></p>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <p><strong>Jam Kedatangan Pesanan:</strong><br> <span class="text-gray-1">12:30 dengan Porter.id</span></p>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <p><strong>Alamat Pengiriman</strong><br> <span class="text-gray-1">Jl Madrasah 2 no 30 D RT 08 / RW 02 Kelurahan Sukabumi Utara Kecamatan Kebon Jeruk Jakarta Barat 11540</span></p>
-                            </div>
-                        </div>
-
-
+                            <button type="submit" class="btn btn-block button-green-free btn-lg">Register</button>
+                        </form>
+                        <div class="clearfix maya-tiny-padding"></div>
+                        <p class="text-center">Already a Kimi Chef? <a href="login.html" class="text-secondary">Login to Your Dashboard</a></p>
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="box-bg-white col-md-12 col-xs-12">
-                        <h3 class="section-title">Order Details</h3>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <p>1 x Brownies Chocolate</p>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <p>IDR 50.000</p>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <p>1 x Lapis Surabaya</p>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <p>IDR 175.000</p>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <strong>Sub Total</strong>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <strong>IDR 225.000</strong>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <p>Shipping Cost and Transaction Fee</p>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <p>IDR 25.000</p>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <strong>Grand Total</strong>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <strong>IDR 250.000</strong>
-                            </div>
-                        </div>
-
-                        <div class="row" style="margin-top: 30px;">
-                            <div class="col-sm-6">
-                                <strong>Payment method</strong>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <p>Bank Transfer (BCA) <br> PT Maya Katalis Cipta Buana:<br>BCA Yos Sudarso, <strong>691 035 5536</strong></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="index.html" class="btn btn-default pull-right button-black">Back to Homepage</a>
-                <div class="clearfix maya-small-padding"></div>
-
-            </div>
-
-            <div class="col-md-4">
-
-                <div class="box-bg-white">
-                    <div class="clearfix maya-small-padding"></div>
-                    <h3 class="text-right text-oswald">Need Help ? </h3>
-                    <p class="text-right text-gray-3 text-medium text-thin">Find any troubles? We will respond. Call or write question by email</p>
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p class="text-gray-2 text-thin">Everyday<br>from 9.00 - 18.00</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p class="text-right">+62 21 567898765<br><a class="text-black text-underline" href="mailto: info@backtokimi.com">info@backtokimi.com</a></p>
-                        </div>
-                    </div>
-                    <div class="clearfix maya-small-padding"></div>
                 </div>
             </div>
         </div>
