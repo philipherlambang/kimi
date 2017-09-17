@@ -1,3 +1,11 @@
+
+/*
+kimi css 0.1
+Copyright (c) 2017 Kimi
+kimi themes is released under the MIT License
+https://backtokimi.com
+*/
+
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 
@@ -54,6 +62,22 @@ body{
     line-height: 30px;
     font-size: 20px;
 }
+
+.searchbox-search-result{
+    background: white;
+    padding: 10px;
+    width: 400px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: 1px solid #f5f5f5;
+    height: 50px;
+}
+
+.searchbox-search-result::-webkit-input-placeholder{
+    color:#ccc;
+}
+
 
 .help-text{
     font-size: 12px;
