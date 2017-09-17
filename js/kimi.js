@@ -22,7 +22,7 @@ $('#buttonCloseSearchbarMobile').on('click', function(){
 
 // firing owl carousel
 
-$('.owl-carousel').owlCarousel({
+$('.homepage-slider').owlCarousel({
     loop:false,
     margin:10,
     // nav:true,
@@ -35,6 +35,24 @@ $('.owl-carousel').owlCarousel({
         },
         1000:{
             items:1
+        }
+    }
+});
+
+
+$('.slider-shop').owlCarousel({
+    loop:false,
+    margin:10,
+    // nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:3
         }
     }
 });

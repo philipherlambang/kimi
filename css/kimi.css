@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 
 body{
     background-color: #F5F7F6;
@@ -321,6 +322,111 @@ a.text-secondary:hover{
 .maya-well-padding{
     padding: 40px 0;
 }
+
+
+/*article*/
+.article-header .row h1 {
+    width: 700px;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 115%;
+}
+
+.article-header row{
+    margin-bottom:15px;
+}
+
+.article-header .info {
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.article-header .list-share-circles {
+    float: none;
+    padding-top: 8px;
+}
+
+.list-share-circles {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.list-share-circles ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    float: left;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    padding-left: 0;
+}
+
+.list-share-circles li {
+    display: inline-block;
+    margin-right: 6px;
+    font-size: 14px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.bt-circle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #ffffff;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.bt-circle:hover{
+    border: 1px solid #20BDCA;
+    color:#20BDCA;
+}
+
+.article-body p{
+    font-size: 17px;
+    line-height: 1.7em;
+    font-weight:300;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom:25px;
+    color:#202121;
+}
+
+.first-letter>p:first-child:first-letter{
+    float: left;
+    margin-right: 10px;
+    margin-left: -5px;
+    margin-top: 10px;
+    line-height: 0.73em;
+    font-size: 5.5em;
+    font-weight: 800;
+}
+
+.article-body img{
+    margin: 40px 0;
+}
+
 
 /*buttons*/
 button.outline-default-button{

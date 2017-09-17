@@ -19,12 +19,17 @@
 - forms
 - 404
 - validation form
-- article list
 - connect with facebook
 - connect with google
 - notification page
-- article detail
 - keep me logged in
 - empty state
 - register merchant
 - profile
+- tipue search
+- shop the articles
+- metainfo article
+
+### done
+- article list
+- article detail
