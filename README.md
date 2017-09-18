@@ -5,7 +5,7 @@
 **Find and use it any way you want**
 
 
-!["Kimi Themes"](https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/screenshot.jpg)
+![](https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/screenshot.jpg)*Kimi Themes*
 
 ### Image Credits
 - [Unsplash](https://unsplash.com/)
