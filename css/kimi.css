@@ -349,7 +349,7 @@ a.text-secondary:hover{
 
 
 /*article*/
-.article-header .row h1 {
+.article-header .row h1, .heading-large{
     width: 700px;
     max-width: 100%;
     margin: 0 auto;
@@ -428,7 +428,11 @@ a.text-secondary:hover{
     color:#20BDCA;
 }
 
-.article-body p{
+.bt-circle i{
+    font-size: 18px;
+}
+
+.article-body p, .text-paragraph{
     font-size: 17px;
     line-height: 1.7em;
     font-weight:300;
