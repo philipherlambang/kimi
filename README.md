@@ -29,7 +29,6 @@
 - empty state
 - register merchant
 - profile
-- tipue search
 - shop the articles
 - metainfo article
 - merchant list
@@ -38,3 +37,4 @@
 ### done
 - article list
 - article detail
+- tipue search

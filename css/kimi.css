@@ -93,7 +93,7 @@ body{
 }
 
 a.button-green-top-nav{
-    background: #20BDCA;
+    background: #fc9159;
     color:white;
     border: none;
     border-radius: 0;
@@ -109,7 +109,7 @@ a.button-green-top-nav:hover{
 }
 
 .button-green-free{
-    background: #20BDCA;
+    background: #fc9159;
     color:white;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -122,7 +122,7 @@ a.button-green-top-nav:hover{
 }
 
 .merchant-menu li a:hover{
-    color:#20BDCA !important;
+    color:#fc9159 !important;
 }
 
 .box-bg-white{
@@ -157,7 +157,7 @@ a.button-green-top-nav:hover{
 }
 
 .breadcrumb li{
-    color: #20BDCA;
+    color: #fc9159;
     font-size: 12px;
 }
 
@@ -187,7 +187,7 @@ a.button-green-top-nav:hover{
 }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
-    background: #20BDCA !important;
+    background: #fc9159 !important;
 }
 
 a.text-secondary:hover{
@@ -198,7 +198,7 @@ a.text-secondary:hover{
 /*typography*/
 
 .text-secondary{
-    color:#20BDCA;
+    color:#fc9159;
 }
 
 .text-red{
@@ -245,7 +245,7 @@ a.text-secondary:hover{
 }
 
 .text-black{
-    color: #000;
+    color: #000 !important;
 }
 
 .text-white{
@@ -279,12 +279,12 @@ a.text-secondary:hover{
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
     background: none;
-    color:#20BDCA !important;
+    color:#fc9159 !important;
 }
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
     background: none;
-    color: #20BDCA;
+    color: #fc9159;
 }
 
 .navbar-default .navbar-nav>li>a{
@@ -424,8 +424,8 @@ a.text-secondary:hover{
 }
 
 .bt-circle:hover{
-    border: 1px solid #20BDCA;
-    color:#20BDCA;
+    border: 1px solid #fc9159;
+    color:#fc9159;
 }
 
 .bt-circle i{
@@ -509,7 +509,7 @@ button, a{
 }
 
 .default-userProductList-CardList-button{
-    background: #20BDCA;
+    background: #fc9159;
     font-family: Oswald;
     color: white;
     text-transform: uppercase;
@@ -527,14 +527,14 @@ button, a{
 }
 
 .button-add-to-bag{
-    background: #20BDCA;
+    background: #fc9159;
     color: #ffffff;
     padding: 15px 25px;
     font-size: 16px;
     font-weight: 500;
     border: none;
     border-radius: 2px;
-    border: 1px solid #20BDCA;
+    border: 1px solid #fc9159;
 }
 
 .button-add-to-bag:hover{
@@ -569,7 +569,7 @@ button, a{
 
 .dropdown-menu>li>a:hover{
     background: none;
-    color:#20BDCA;
+    color:#fc9159;
 }
 
 .form-control{
@@ -646,7 +646,7 @@ footer p, footer address{
 }
 
 footer a:hover{
-    color:#20BDCA;
+    color:#fc9159;
 }
 
 .hr-short{
@@ -925,8 +925,8 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
 }
 
 .product-detail-tag-container button:hover{
-    background: #20BDCA;
-    border: 1px solid #20BDCA;
+    background: #fc9159;
+    border: 1px solid #fc9159;
     color:#ffffff;
 }
 
@@ -982,7 +982,7 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
 .button-green{
     font-family: Helvetica;
     color:white;
-    background: #20BDCA;
+    background: #fc9159;
     font-size:12px;
     border-radius: 2px;
     padding: 3px 12px;
@@ -1015,7 +1015,7 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
 }
 
 .button-add-product{
-    background: #20BDCA;
+    background: #fc9159;
     color:#fff;
     border-radius: 2px;
     margin-bottom: 10px;
@@ -1031,7 +1031,7 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
 }
 
 .text-base-image{
-    background: #20BDCA;
+    background: #fc9159;
     color:white;
     position: absolute;
     width: 80%;
@@ -1044,7 +1044,7 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
 .nav-pills>li.active>a, .nav-stacked-kimi li a:hover, .nav-pills>li.active>a:hover{
     background: #FCFCFC;
     border: 1px solid #E7EAEA;
-    color: #20BDCA;
+    color: #fc9159;
     font-weight:bold;
 }
 
@@ -1168,7 +1168,7 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
 /*map ends*/
 
 .box-ad{
-    background:#20BDCA;
+    background:#fc9159;
     padding: 15px;
     color: #ffffff;
 }
@@ -1187,7 +1187,7 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
 
 .button-outline:hover{
     background: white;
-    color: #20BDCA;
+    color: #fc9159;
 }
 
 .edit-channel-form{
@@ -1197,6 +1197,20 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
 
 .form-medium-padding{
     padding: 25px;
+}
+
+.logo-avatar{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    overflow: hidden;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+a:hover{
+    text-decoration: none;
 }
 
 
@@ -1211,7 +1225,7 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
     .navbar-toggle .icon-bar{
         height: 4px;
         background-color: #333 !important;
-        /*background-color: #20BDCA !important;*/
+        /*background-color: #fc9159 !important;*/
     }
 
     .navbar-toggle .icon-bar+.icon-bar{
