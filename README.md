@@ -27,14 +27,15 @@
 - notification page
 - keep me logged in
 - empty state
-- register merchant
 - profile
 - shop the articles
 - metainfo article
-- merchant list
-- contact us
+
 
 ### done
 - article list
 - article detail
 - tipue search
+- contact us
+- register merchant
+- merchant list / Chef Directory
