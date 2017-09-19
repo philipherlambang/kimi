@@ -5,7 +5,7 @@
 **Find and use it any way you want**
 
 
-!["Kimi Themes"](https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/screenshot.jpg "Kimi Themes")
+![](https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/screenshot_kimi.jpg)*Kimi Themes*
 
 ### Image Credits
 - [Unsplash](https://unsplash.com/)
@@ -27,14 +27,15 @@
 - notification page
 - keep me logged in
 - empty state
-- register merchant
 - profile
-- tipue search
 - shop the articles
 - metainfo article
-- merchant list
-- contact us
+
 
 ### done
 - article list
 - article detail
+- tipue search
+- contact us
+- register merchant
+- merchant list / Chef Directory
