@@ -61,15 +61,13 @@
 - forms
 - 404
 - validation form
-- connect with facebook
-- connect with google
 - notification page
-- keep me logged in
 - empty state
 - profile
 - shop the articles
-- metainfo article
 - edit tipue search content
+- terms and conditions
+- privacy policy
 
 
 ### done
@@ -79,3 +77,7 @@
 - contact us
 - register merchant
 - merchant list / Chef Directory
+- keep me logged in
+- metainfo article
+- connect with facebook
+- connect with google

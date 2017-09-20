@@ -239,10 +239,29 @@
                     <div style="position: relative;">
                         <img src="images/risotto.jpg" width="100%">
 
-                        <div style="position:absolute; width: 100px;  right: 0; bottom: 50px;">
-                            <a class="text-gray-2" href="#" data-toggle="tooltip" title="Photo by Julien Pianetti">
-                                <i class="fa fa-info-circle" aria-hidden="true" style="font-size: 20px; color:#333;"></i>
-                            </a>
+                        <button class="text-gray-2 hidden-xs" id="imageMetainfo">
+                            <i class="fa fa-info-circle" aria-hidden="true" style="font-size: 20px; color:#333;"></i>
+                        </button>
+
+
+                        <div class="metainfo-wrapper hidden-xs" style="display: none;" id="metainfoWrapper">
+                            <h5>Make</h5>
+                            <p>Canon</p>
+
+                            <h5>Location</h5>
+                            <p>Kimi Studio</p>
+
+                            <h5>Photographer</h5>
+                            <p>Julien Pianetti</p>
+
+                            <h5>Property</h5>
+                            <p>Kimi's Property</p>
+
+                            <h5>Style</h5>
+                            <p>Julien Pianetti</p>
+
+                            <h5>Date</h5>
+                            <p>September 17 2017</p>
                         </div>
                     </div>
                         
@@ -271,6 +290,18 @@
 
                             The rice is first cooked briefly in a soffritto of onion and butter or olive oil, to coat each grain in a film of fat, called tostatura; white wine is added and must be absorbed by the grains. When it has been absorbed the heat is raised to medium high, and boiling stock is gradually added in small amounts, while stirring constantly. The constant stirring, with only a small amount of liquid present, forces the grains to rub against each other and release the starch molecules from the outside of the grains into the surrounding liquid, creating a smooth creamy-textured mass.[11][12] When the rice is cooked the pot is taken off the heat for mantecatura, vigorously beating in refrigerated balls of grated parmesan cheese and butter, to make the texture as creamy and smooth as possible. It may be removed from the heat a few minutes earlier and left to cook with its residual heat.
                         </p>
+
+                        <div class="clearfix maya-small-padding"></div>
+                        <section>
+                            <div class="metainfo-wrapper-mobile visible-xs">
+                                <p>Make: Canon</p>
+                                <p>Location: Kimi Studio</p>
+                                <p>Photographer: Julien Pianetti</p>
+                                <p>Property: Kimi's Property</p>
+                                <p>Style: Julien Pianetti</p>
+                                <p>Date: September 17 2017</p>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
@@ -337,29 +368,8 @@
 
 </div><!-- /.container -->
 
-<footer class="container-fluid">
-    <div class="col-md-3">
-        <h4>Contact</h4>
-        <address class="text-thin">
-            Maya Katalis Cipta Buana<br>
-            Jalan Plumpang Semper No 23<br>
-            Jakarta Utara 14260<br>
-            Indonesia
-        </address>
-    </div>
-    <div class="col-md-3">
-        <div class="clearfix maya-small-padding"></div>
-        <a href="mailto:info@backtokimi.com" class="text-white text-thin">info@backtokimi.com</a><br>
-        <a href="tel:6221567898765" class="text-white text-thin">+62 21 567898765</a>
-    </div>
-    <div class="col-md-3">
-        <h4>Social</h4>
-        <a href="#" class="text-white" style="font-size: 32px;"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-    </div>
-    <div class="col-md-3">
-        <h4 class="text-white">Maya Engine 2016</h4>
-    </div>
-</footer>
+<!--include footer-->
+<div class="include-footer"></div>
 
 
 <script src="./js/jquery.min.js"></script>
