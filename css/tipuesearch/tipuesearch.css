@@ -54,7 +54,7 @@ http://www.tipue.com/search
 }
 #tipue_search_warning a
 {
-     color: #20BDCA;
+     color: #fc9159;
      text-decoration: none;
 }
 #tipue_search_warning a:hover
@@ -82,7 +82,7 @@ http://www.tipue.com/search
 }
 .tipue_search_content_url a, .tipue_search_related_text a
 {
-     color: #20BDCA;
+     color: #fc9159;
      text-decoration: none;
 }
 .tipue_search_content_url a:hover, .tipue_search_related_text a:hover, .tipue_search_related_before, .tipue_search_related_after

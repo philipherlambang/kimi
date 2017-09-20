@@ -27,6 +27,14 @@ $(function () {
         $('#tipue_search_input').tipuesearch();
     });
 
+// article metainfo
+$('#imageMetainfo').on('click', function(){
+    $('#metainfoWrapper').toggle();
+});
+
+
+// include footer
+    $('.include-footer').load('footer.html');
 
 // firing owl carousel
 
