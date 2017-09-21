@@ -17,6 +17,7 @@ button, a{
     cursor: pointer;
 }
 
+a{color:#fc9159}
 
 .search-button{
     background: none;
@@ -231,6 +232,15 @@ a.text-secondary:hover{
 
 .text-oswald{
     font-family: 'Oswald';
+}
+
+.text-roboto-light{
+    font-family: Roboto;
+    font-weight: 300;
+}
+
+.roboto-14{
+    font-size: 14px;
 }
 
 .text-bold{
@@ -449,6 +459,19 @@ a.text-secondary:hover{
     color:#202121;
 }
 
+.text-paragraph-small{
+    font-size: 14px;
+    font-weight:300;
+    margin-bottom: 12px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    font-family: 'Roboto', sans-serif;
+    color:#202121;
+    height: inherit;
+    white-space: inherit;
+    overflow: visible;
+}
+
 .first-letter>p:first-child:first-letter{
     float: left;
     margin-right: 10px;
@@ -636,6 +659,9 @@ button, a{
     box-shadow: none;
 }
 
+
+/*footer*/
+
 footer{
     background: #676767;
     padding: 30px 0 100px 0;
@@ -656,6 +682,51 @@ footer p, footer address{
 footer a:hover{
     color:#fc9159;
 }
+
+.social-icons-wrapper a{
+    margin: 0 5px;
+}
+
+.menu-footer a{
+    margin-right:10px;
+}
+
+/*footer ends*/
+
+
+
+/*card info*/
+.card-info{
+    position: relative;
+    padding: 0;
+}
+
+.content{
+    padding: 30px;
+    background-color: #fcfcfc;
+}
+
+.avatar{
+    margin-bottom: 15px;
+    overflow: hidden
+}
+
+.card-info h3{
+    font-size: 17px;
+    font-weight: 800;
+    font-family: Roboto;
+    color: black;
+}
+
+.card-footer p{
+    color:gray;
+    font-family:Roboto;
+    font-weight:300;
+    color:#202121;
+}
+/*card info ends*/
+
+
 
 .hr-short{
     width: 20%;
