@@ -5,7 +5,7 @@
 **Find and use it any way you want**
 
 
-![](https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/preview.jpg)*Kimi Theme*
+![](https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/preview.jpg)
 
 ### Image Credits
 - [Unsplash](https://unsplash.com/)
@@ -46,6 +46,8 @@
 - [FAQs](https://philipherlambang.github.io/kimi/questions.html)
 - [Search Result - Try to search first. eg: tipue](https://philipherlambang.github.io/kimi/search.html)
 
+- [Job List](https://philipherlambang.github.io/kimi/jobs.html)
+
 
 
 
@@ -68,6 +70,7 @@
 - edit tipue search content
 - terms and conditions
 - privacy policy
+- job details
 
 
 ### done
@@ -81,3 +84,4 @@
 - metainfo article
 - connect with facebook
 - connect with google
+- job list

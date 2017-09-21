@@ -1,4 +1,7 @@
 $(function () {
+    // truncate paragraph
+    $('.short-description').truncate({max_length: 225});
+
     // basic toggle navigation menu
 
     $('#buttonOpenSearchbar').on('click', function(){
