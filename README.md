@@ -74,6 +74,7 @@
 - image resizer (cloudinary)
 - share buttons
 - off canvas menu
+- houzz
 
 
 ### done
