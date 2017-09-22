@@ -768,44 +768,7 @@ footer a:hover{
     font-size: 18px;
 }
 
-.tag-container-nasi, .tag-container-pastry, .tag-container-sideDish, .tag-container-cake, .tag-container-healthy, .tag-container-mie{
-    background-repeat:no-repeat;
-    -webkit-background-size: cover;
-    background-size:cover;
-    text-align: center;
-    height: 80px;
-    line-height: 80px;
-    border: none;
-    border-radius: 2px;
-    padding: 0;
-    position: relative;
-}
-
-.tag-container-nasi{
-    background-image: url('../images/nasi.jpg');
-}
-
-.tag-container-pastry{
-    background-image: url('../images/pastry.jpg');
-}
-
-.tag-container-sideDish{
-    background-image: url('../images/sosisSolo.jpg');
-}
-
-.tag-container-cake{
-    background-image: url('../images/browniesMini.jpg');
-}
-
-.tag-container-healthy{
-    background-image: url('../images/roti_tawar_multigrain_landscape.jpg');
-}
-
-.tag-container-mie{
-    background-image: url('../images/mie_ijo_landscape.jpg');
-}
-
-.thumbnail .scrim{
+.item .scrim{
     position: absolute;
     top: 0;
     left: 0;
@@ -815,11 +778,7 @@ footer a:hover{
     opacity: .4;
 }
 
-.default-userProductTagList-ButtonList-block .col-xs-4{
-    padding: 0 5px;
-}
-
-.default-userProductTagList-ButtonList-block .thumbnail p{
+.item p{
     color: white;
     text-decoration: none;
     font-family: Oswald;
@@ -828,6 +787,9 @@ footer a:hover{
     margin: 0 auto;
     font-size:15px;
     text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
 }
 
 
