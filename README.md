@@ -54,7 +54,6 @@
 ### todo list
 - Product Management
 - Order Management
-- tag in homepage use owl carousel as well
 - library widget
 - invoice / order details
 - tables
@@ -71,6 +70,10 @@
 - terms and conditions
 - privacy policy
 - job details
+- pagination
+- image resizer (cloudinary)
+- share buttons
+- off canvas menu
 
 
 ### done
@@ -85,3 +88,4 @@
 - connect with facebook
 - connect with google
 - job list
+- tag in homepage use owl carousel as well
