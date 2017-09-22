@@ -45,8 +45,8 @@
     less: 'less',
     css_more_class: 'truncator-link truncator-more',
     css_less_class: 'truncator-link truncator-less',
-    link_prefix: ' (',
-    link_suffix: ')'
+    link_prefix: ' ',
+    link_suffix: ''
   };
 
   function recursivelyTruncate(node, max_length) {

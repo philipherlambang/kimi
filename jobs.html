@@ -101,7 +101,9 @@
         <div class="fly-searchbar" style="display: none;">
             <div class="top-nav-searchbar searchbar-mobile">
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search for" autofocus="autofocus">
+                    <form action="search.html">
+                        <input class="form-control" type="text" name="q" id="tipue_search_input" placeholder="Search for" autofocus="autofocus">
+                    </form>
                     <button class="pull-right" id="buttonCloseSearchbarMobile"><i class="fa fa-times" aria-hidden="true"></i></button>
                 </div>
             </div>
@@ -225,8 +227,8 @@
                                 </div>
 
                                 <div class="row card-footer">
-                                    <div class="col-md-6"><p>Category: Chef</p></div>
-                                    <div class="col-md-6"><p class="text-right"><i class="fa fa-clock-o" aria-hidden="true"></i> 5 days ago</p></div>
+                                    <div class="col-md-6 col-xs-6"><p>Category: Chef</p></div>
+                                    <div class="col-md-6 col-xs-6"><p class="text-right"><i class="fa fa-clock-o" aria-hidden="true"></i> 5 days ago</p></div>
                                 </div>
 
                             </div>
@@ -238,7 +240,7 @@
                         <a href="#">
                             <div class="card-info content">
                                 <div class="avatar">
-                                    <img width="36" src="images/nasi_bakar_logo.jpg" alt="sucicakes">
+                                    <img width="36" src="images/nasi_bakar_logo.jpg" alt="nasi bakar 58">
                                 </div>
 
                                 <p class="text-roboto-light roboto-14 text-black">Kebon Jeruk</p>
@@ -256,8 +258,8 @@
                                 </div>
 
                                 <div class="row card-footer">
-                                    <div class="col-md-6"><p>Category: Chef</p></div>
-                                    <div class="col-md-6"><p class="text-right"><i class="fa fa-clock-o" aria-hidden="true"></i> 5 days ago</p></div>
+                                    <div class="col-md-6 col-xs-6"><p>Category: Chef</p></div>
+                                    <div class="col-md-6 col-xs-6"><p class="text-right"><i class="fa fa-clock-o" aria-hidden="true"></i> 5 days ago</p></div>
                                 </div>
 
                             </div>
@@ -287,8 +289,8 @@
                                 </div>
 
                                 <div class="row card-footer">
-                                    <div class="col-md-6"><p>Category: Chef</p></div>
-                                    <div class="col-md-6"><p class="text-right"><i class="fa fa-clock-o" aria-hidden="true"></i> 5 days ago</p></div>
+                                    <div class="col-md-6 col-xs-6"><p>Category: Chef</p></div>
+                                    <div class="col-md-6 col-xs-6"><p class="text-right"><i class="fa fa-clock-o" aria-hidden="true"></i> 5 days ago</p></div>
                                 </div>
 
                             </div>
@@ -317,6 +319,11 @@
 
 <!--kimi basic js-->
 <script src="js/kimi.js"></script>
+
+<script>
+    // truncate paragraph
+    $('.short-description').truncate({max_length: 200});
+</script>
 
 </body>
 </html>
