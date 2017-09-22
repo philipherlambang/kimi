@@ -42,7 +42,7 @@ $('#imageMetainfo').on('click', function(){
 // firing owl carousel
 
     $('.homepage-slider').owlCarousel({
-        loop:false,
+        loop:true,
         margin:10,
         // nav:true,
         responsive:{
