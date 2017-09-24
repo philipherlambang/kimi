@@ -804,6 +804,10 @@ footer a:hover{
     padding-left: 10px;
 }
 
+#tipue_search_input {
+    line-height: 40px !important;
+}
+
 
 /*product list homepage*/
 a.default-userProductList-CardList-thumbnail{
