@@ -41,7 +41,7 @@ a{color:#fc9159}
 }
 
 .search-button-mobile i{
-    line-height: 40px;
+    line-height: 47px;
     font-size: 22px;
 }
 
@@ -72,7 +72,7 @@ a{color:#fc9159}
 .searchbox-search-result{
     background: white;
     padding: 10px;
-    width: 400px;
+    width: 100%;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
@@ -708,7 +708,7 @@ footer a:hover{
 
 .avatar{
     margin-bottom: 15px;
-    overflow: hidden
+    /*overflow: hidden*/
 }
 
 .card-info h3{
@@ -796,7 +796,7 @@ footer a:hover{
 .item .small-text-overlay{
     font-family: Roboto;
     font-size: 12px;
-    opacity: 0.5;
+    opacity: 0.8;
     position: absolute;
     bottom: 30px;
     color: white;
@@ -1374,13 +1374,21 @@ a:hover{
     text-decoration: none;
 }
 
+code {
+    display: block;
+    white-space: pre-wrap;
+    padding: 15px;
+    background: #f2f2f2;
+    border: 1px solid #e6e6e6;
+}
+
 
 /* --------------- Phone smaller start ------------------------ */
 @media (max-width: 480px) {
     .navbar-toggle{
         border: none;
         margin-right: 0;
-        padding: 9px 0;
+        /*padding: 9px 0;*/
     }
 
     .navbar-toggle .icon-bar{
@@ -1410,7 +1418,7 @@ a:hover{
     }
 
     .kimi-container{
-        padding-top: 52px;
+        padding-top: 60px;
     }
 
     #slider-thumbs{

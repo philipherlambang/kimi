@@ -108,7 +108,9 @@
         <div class="fly-searchbar" style="display: none;">
             <div class="top-nav-searchbar searchbar-mobile">
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search for" autofocus="autofocus">
+                    <form action="search.html">
+                        <input class="form-control" type="text" name="q" id="tipue_search_input" placeholder="Search for" autofocus="autofocus">
+                    </form>
                     <button class="pull-right" id="buttonCloseSearchbarMobile"><i class="fa fa-times" aria-hidden="true"></i></button>
                 </div>
             </div>
@@ -123,14 +125,14 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Location <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Jakarta Barat</a></li>
-                        <li><a href="#">Jakarta Selatan</a></li>
-                        <li><a href="#">Jakarta Pusat</a></li>
-                        <li><a href="#">Jakarta Utara</a></li>
-                        <li><a href="#">Jakarta Timur</a></li>
+                        <li><a href="chefDirectory.html">Jakarta Barat</a></li>
+                        <li><a href="chefDirectory.html">Jakarta Selatan</a></li>
+                        <li><a href="chefDirectory.html">Jakarta Pusat</a></li>
+                        <li><a href="chefDirectory.html">Jakarta Utara</a></li>
+                        <li><a href="chefDirectory.html">Jakarta Timur</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">Depok</a></li>
-                        <li><a href="#">Tangerang</a></li>
+                        <li><a href="chefDirectory.html">Depok</a></li>
+                        <li><a href="chefDirectory.html">Tangerang</a></li>
                     </ul>
                 </li>
                 <li><a href="questions.html">FAQs</a></li>
@@ -339,7 +341,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-md-4" data-behavior="sample_code">
                 <a href="productDetail.html" class="thumbnail_item thumbnail less-padding less-margin">
                     <!--<img src="https://res.cloudinary.com/kimithemes/image/upload/c_thumb,g_center,h_600,q_auto:best,w_600/v1506066842/risotto_ri5sle.jpg" alt="risotto lemon">-->
                     <img src="images/risotto_square.jpg" alt="risotto lemon">

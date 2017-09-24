@@ -1,7 +1,18 @@
-$(function () {
-    // truncate paragraph
-    $('.short-description').truncate({max_length: 225});
+(function () {
+    // article metainfo
+    $('#imageMetainfo').on('click', function(){
+        $('#metainfoWrapper').toggle();
+    });
 
+    //tooltips
+    $('[data-toggle="tooltip"]').tooltip();
+
+
+    // include footer
+    $('.include-footer').load('footer.html');
+})();
+
++function ($) {
     // basic toggle navigation menu
 
     $('#buttonOpenSearchbar').on('click', function(){
@@ -16,31 +27,23 @@ $(function () {
     });
 
     $('#buttonOpenSearchbarMobile').on('click', function () {
-        $('.fly-searchbar').show();
+        $('.fly-searchbar').fadeIn(200);
     });
 
     $('#buttonCloseSearchbarMobile').on('click', function(){
-        $('.fly-searchbar').hide();
+        $('.fly-searchbar').fadeOut(200);
     });
 
-    //tooltips
-    $('[data-toggle="tooltip"]').tooltip();
+}(jQuery);
 
+
++function ($) {
     // tipue search
-        $('#tipue_search_input').tipuesearch();
-    });
+    $('#tipue_search_input').tipuesearch();
+}(jQuery);
 
-// article metainfo
-$('#imageMetainfo').on('click', function(){
-    $('#metainfoWrapper').toggle();
-});
-
-
-// include footer
-    $('.include-footer').load('footer.html');
-
-// firing owl carousel
-
++function ($) {
+    // firing owl carousel
     $('.homepage-slider').owlCarousel({
         loop:true,
         margin:10,
@@ -59,13 +62,14 @@ $('#imageMetainfo').on('click', function(){
     });
 
 
+    // tags / categories carousel
     $('.small-slider').owlCarousel({
         loop:true,
         margin:10,
         dots:false,
         responsive:{
             0:{
-                items:4
+                items:3
             },
             600:{
                 items:4
@@ -75,4 +79,32 @@ $('#imageMetainfo').on('click', function(){
             }
         }
     });
+}(jQuery);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
