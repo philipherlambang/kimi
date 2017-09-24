@@ -1463,6 +1463,76 @@ a:hover{
         margin-bottom:0;
         font-size: 14px;
     }
+
+    .homepage-slider .heading-large{
+        font-size: 18px !important;
+        font-weight: 800;
+        text-align: center;
+        position: absolute;
+        font-family: Roboto;
+        width: 80%;
+        color: #ffffff;
+        /*bottom: 100px;*/
+        vertical-align: 50%;
+        height: 50%;
+        overflow: auto;
+        margin: auto;
+        /*position: absolute;*/
+        top: 0; left: 0; bottom: 0; right: 0;
+    }
+
+    .homepage-slider .item img{
+        height: 250px;
+        width: auto !important;
+    }
+
+    .homepage-slider p{
+        font-family:Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        text-align: center;
+        bottom: 200px;
+        top: 190px;
+        position: absolute;
+        width: 80%;
+        color: #ffffff;
+        vertical-align: 50%;
+        height: 50%;
+        overflow: auto;
+        margin: auto;
+        /*position: absolute;*/
+        left: 0; bottom: 0; right: 0;
+        padding-left: 0;
+    }
+
+    .homepage-slider .row-buttons{
+        position: absolute;
+        width: 100%;
+        height: 60px;
+        background: none;
+        overflow: auto;
+        margin: 0 auto;
+        left: 0; right: 0; bottom: 0;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .row-buttons a.button-outline{
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+        font-size:13px;
+        font-weight:300;
+    }
+
+    .row-buttons a.button-outline:hover{
+        color:#333;
+    }
+
 }
 
 /* large desktop */
