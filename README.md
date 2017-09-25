@@ -66,7 +66,6 @@
 - empty state
 - profile
 - shop the articles
-- edit tipue search content
 - terms and conditions
 - privacy policy
 - job details
@@ -90,3 +89,12 @@
 - connect with google
 - job list
 - tag in homepage use owl carousel as well
+- edit tipue search content. try to search: sucicakes, sosis solo, kimi, risotto
+
+
+
+### update September 25
+- Add featured merchant,
+- Update styling for cart in mobile view,
+- Using cloudinary for transformation in homepage, about and merchant guide
+

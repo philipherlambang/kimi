@@ -1386,6 +1386,11 @@ code {
     border: 1px solid #e6e6e6;
 }
 
+.featured-merchant-slider .item{
+    background: white;
+    padding: 15px;
+}
+
 
 /* --------------- Phone smaller start ------------------------ */
 @media (max-width: 480px) {
