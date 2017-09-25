@@ -46,7 +46,7 @@
     // firing owl carousel
     $('.homepage-slider').owlCarousel({
         loop:true,
-        margin:10,
+        margin:0,
         // nav:true,
         responsive:{
             0:{
@@ -76,6 +76,25 @@
             },
             1000:{
                 items:8
+            }
+        }
+    });
+
+
+    // tags / categories carousel
+    $('.featured-merchant-slider').owlCarousel({
+        loop:true,
+        margin:10,
+        dots:false,
+        responsive:{
+            0:{
+                items:3
+            },
+            600:{
+                items:6
+            },
+            1000:{
+                items:12
             }
         }
     });
