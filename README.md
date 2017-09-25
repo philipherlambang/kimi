@@ -69,7 +69,6 @@
 - terms and conditions
 - privacy policy
 - job details
-- pagination
 - image resizer (cloudinary)
 - share buttons
 - off canvas menu
@@ -90,6 +89,7 @@
 - job list
 - tag in homepage use owl carousel as well
 - edit tipue search content. try to search: sucicakes, sosis solo, kimi, risotto
+- pagination
 
 
 
@@ -97,4 +97,6 @@
 - Add featured merchant,
 - Update styling for cart in mobile view,
 - Using cloudinary for transformation in homepage, about and merchant guide
+- add pagination
+- add load more button in homepage
 

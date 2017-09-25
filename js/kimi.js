@@ -69,7 +69,7 @@
         dots:false,
         responsive:{
             0:{
-                items:3
+                items:3.5
             },
             600:{
                 items:4
@@ -81,14 +81,14 @@
     });
 
 
-    // tags / categories carousel
+    // featured channel carousel
     $('.featured-merchant-slider').owlCarousel({
         loop:true,
         margin:10,
         dots:false,
         responsive:{
             0:{
-                items:3
+                items:3.5
             },
             600:{
                 items:6
