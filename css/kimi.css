@@ -1585,6 +1585,10 @@ ul.pagination li.current a{
         font-size:13px;
     }
 
+    .mobile-full-width-slider{
+        padding: 0;
+    }
+
 }
 
 /* large desktop */
