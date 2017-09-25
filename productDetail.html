@@ -289,7 +289,8 @@
 
         <div class="product-detail-action-button-container">
             <button onclick="location.href='shoppingCart.html'" class="btn button-add-to-bag" style="margin-right: 10px;">Add to Bag</button>
-            <button class="btn btn-default button-black button-learn-more">Learn More</button>
+            <button class="btn btn-default button-black button-learn-more" id="bookmarkButton">Set Favourite</button>
+            <button class="btn btn-default button-black button-learn-more" id="deleteBookmarkButton" style="display: none;">Delete Favourite</button>
         </div>
 
 
@@ -314,71 +315,66 @@
     <hr class="hr-short">
 
     <div class="row">
-        <div class="col-sm-6 col-md-3">
-            <a href="#" class="thumbnail less-padding default-userProductList-CardList-thumbnail">
-                <img src="images/related1.jpg" alt="sosis solo">
-                <div class="caption">
-                    <h3>Cake Pandan Sucicakes</h3>
-                    <div class="row">
-                        <div class="col-sm-8 col-xs-6">
-                            <p class="default-userProductList-CardList-price">Rp 50.000 / pcs</p>
-                            <!--<span class="min-order">10 pcs min order</span>-->
-                        </div>
+        <div class="col-sm-6 col-md-4">
+            <a href="productDetail.html" class="thumbnail_item thumbnail less-padding less-margin">
+                <img src="images/nasi_bakar_ayam_woku_2.jpg" alt="sosis solo">
+            </a>
+            <div class="caption box" style="background: white; padding: 10px;">
+                <h3>Nasi Bakar Ayam Woku</h3>
+                <div class="row">
+                    <div class="col-sm-8 col-xs-6">
+                        <p class="default-userProductList-CardList-price">Rp 23.000 / pcs</p>
+                        <span class="min-order">5 pcs min order</span>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-6">
+                        <button onclick="location.href='shoppingCart.html'" class="btn default-userProductList-CardList-button pull-right" role="button">Add to Cart</button>
                     </div>
                 </div>
-            </a>
+            </div>
         </div>
 
-        <div class="col-sm-6 col-md-3">
-            <a href="#" class="thumbnail less-padding default-userProductList-CardList-thumbnail">
-                <img src="images/related2.jpg" alt="sosis solo">
-                <div class="caption">
-                    <h3>Pastry Smoke Beef Sucicakes</h3>
-                    <div class="row">
-                        <div class="col-sm-8 col-xs-6">
-                            <p class="default-userProductList-CardList-price">Rp 23.000 / pcs</p>
-                            <!--<span class="min-order">5 pcs min order</span>-->
-                        </div>
+        <div class="col-sm-6 col-md-4" data-behavior="sample_code">
+            <a href="productDetail.html" class="thumbnail_item thumbnail less-padding less-margin">
+                <!--<img src="https://res.cloudinary.com/kimithemes/image/upload/c_thumb,g_center,h_600,q_auto:best,w_600/v1506066842/risotto_ri5sle.jpg" alt="risotto lemon">-->
+                <img src="images/risotto_square.jpg" alt="risotto lemon">
+            </a>
+            <div class="caption box" style="background: white; padding: 10px;">
+                <h3>Lemon Risotto</h3>
+                <div class="row">
+                    <div class="col-sm-8 col-xs-6">
+                        <p class="default-userProductList-CardList-price">Rp 45.000 / pcs</p>
+                        <span class="min-order">10 pcs min order</span>
+                    </div>
 
-
+                    <div class="col-sm-4 col-xs-6">
+                        <button onclick="location.href='shoppingCart.html'" class="btn default-userProductList-CardList-button pull-right" role="button">Add to Cart</button>
                     </div>
                 </div>
-            </a>
+            </div>
         </div>
 
-        <div class="col-sm-6 col-md-3">
-            <a href="#" class="thumbnail less-padding default-userProductList-CardList-thumbnail">
-                <img src="images/related3.jpg" alt="sosis solo">
-                <div class="caption">
-                    <h3>Lapis Surabaya Sucicakes</h3>
-                    <div class="row">
-                        <div class="col-sm-8 col-xs-6">
-                            <p class="default-userProductList-CardList-price">Rp 4.500 / pcs</p>
-                            <!--<span class="min-order">10 pcs min order</span>-->
-                        </div>
+        <div class="col-sm-6 col-md-4">
+            <a href="productDetail.html" class="thumbnail_item thumbnail less-padding less-margin">
+                <!--<img src="http://res.cloudinary.com/kimithemes/image/upload/c_thumb,h_480,w_480/v1506069881/IMG_20161004_075006_v8yiq2.jpg" alt="sosis solo">-->
+                <img src="images/sosisSolo.jpg" alt="sosis solo">
+            </a>
+            <div class="caption box" style="background: white; padding: 10px;">
+                <h3>Sosis Solo Sucicakes</h3>
+                <div class="row">
+                    <div class="col-sm-8 col-xs-6">
+                        <p class="default-userProductList-CardList-price">Rp 4.500 / pcs</p>
+                        <span class="min-order">10 pcs min order</span>
+                    </div>
 
-
+                    <div class="col-sm-4 col-xs-6">
+                        <button onclick="location.href='shoppingCart.html'" class="btn default-userProductList-CardList-button pull-right" role="button">Add to Cart</button>
                     </div>
                 </div>
-            </a>
+            </div>
         </div>
 
-        <div class="col-sm-6 col-md-3">
-            <a href="#" class="thumbnail less-padding default-userProductList-CardList-thumbnail">
-                <img src="images/related4.jpg" alt="sosis solo">
-                <div class="caption">
-                    <h3>Bolu Kukus Warna Warni</h3>
-                    <div class="row">
-                        <div class="col-sm-8 col-xs-6">
-                            <p class="default-userProductList-CardList-price">Rp 4.500 / pcs</p>
-                            <!--<span class="min-order">10 pcs min order</span>-->
-                        </div>
 
-
-                    </div>
-                </div>
-            </a>
-        </div>
     </div>
 </div>
 
@@ -399,6 +395,27 @@
 
 <script>
     jQuery(document).ready(function($) {
+
+        // bookmark
+        $('.bookmarked').hide();
+
+
+        $('#bookmarkButton').on('click', function () {
+            $('.bookmarked').fadeIn(200);
+            $('#bookmarkButton').hide();
+            $('#deleteBookmarkButton').show();
+        });
+
+
+
+        // Delete bookmark
+
+        $('#deleteBookmarkButton').on('click', function () {
+            $('.bookmarked').fadeOut(200);
+            $('#bookmarkButton').show();
+            $('#deleteBookmarkButton').hide();
+        });
+
 
         $('#myCarousel').carousel({
             interval: 5000

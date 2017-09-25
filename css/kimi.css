@@ -1465,6 +1465,7 @@ ul.pagination li.current a{
 
     .button-add-to-bag, .button-learn-more{
         padding: 10px 15px;
+        font-size: 13px;
     }
 
     .channel-cover{
@@ -1564,8 +1565,8 @@ ul.pagination li.current a{
     }
 
     .row-buttons a.button-outline{
-        margin-right: 0px;
-        margin-left: 0px;
+        margin-right: 5px;
+        margin-left: 5px;
         padding-left: 10px;
         padding-right: 10px;
         -webkit-border-radius: 30px;
@@ -1580,13 +1581,17 @@ ul.pagination li.current a{
     }
 
     .button-black{
-        padding: 5px 15px;
+        padding: 10px 15px;
         font-family:Roboto;
         font-size:13px;
     }
 
     .mobile-full-width-slider{
         padding: 0;
+    }
+
+    .item p{
+        font-size: 12px;
     }
 
 }
