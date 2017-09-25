@@ -163,12 +163,12 @@ a.button-green-top-nav:hover{
 }
 
 .breadcrumb li{
-    color: #fc9159;
+    color: #333;
     font-size: 12px;
 }
 
 .breadcrumb li a{
-    color: #000;
+    color: #fc9159;
 }
 
 .breadcrumb li a:hover{
@@ -448,6 +448,7 @@ a.text-secondary:hover{
 
 .bt-circle i{
     font-size: 18px;
+    margin: 0 auto;
 }
 
 .article-body p, .text-paragraph{
@@ -965,7 +966,7 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
     float: left;
     margin-right: 10px;
     letter-spacing: 0.4px;
-    font-family:Helvetica;
+    font-family:Roboto;
     font-weight:300;
     font-size: 14px;
     border: 1px solid #E7EAEA;
@@ -1391,6 +1392,34 @@ code {
     padding: 15px;
 }
 
+ul.pagination li a{
+    letter-spacing: 0.4px;
+    font-family:Roboto;
+    font-weight:300;
+    font-size: 15px;
+    border: 1px solid #E7EAEA;
+    /*padding: 8px 20px;*/
+    /*border-radius: 2px;*/
+    background: white;
+    color:#7d7d7d;
+    height: 60px;
+    width: 60px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.pagination>li:first-child>a,
+.pagination>li:first-child>span,
+.pagination>li:last-child>a, .pagination>li:last-child>span{
+    border-radius: 0;
+}
+
+
+ul.pagination li.current a{
+    background: #fc9159;
+    color: #ffffff;
+}
+
 
 /* --------------- Phone smaller start ------------------------ */
 @media (max-width: 480px) {
@@ -1548,6 +1577,12 @@ code {
 
     .row-buttons a.button-outline:hover{
         color:#333;
+    }
+
+    .button-black{
+        padding: 5px 15px;
+        font-family:Roboto;
+        font-size:13px;
     }
 
 }
