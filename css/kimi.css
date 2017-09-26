@@ -1443,7 +1443,7 @@ ul.pagination li.current a{
 
 
 /* --------------- Phone smaller start ------------------------ */
-@media (max-width: 480px) {
+@media (max-width: 767px) {
     .navbar-toggle{
         border: none;
         margin-right: 0;
