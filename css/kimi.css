@@ -93,6 +93,11 @@ a{color:#fc9159}
     margin-bottom: 0;
 }
 
+.logo-center {
+    width: calc(100% - 95.5px); /* 83.5px Get From navbar-menu width 63px +  navbar-search 32.44px */
+    float: left;
+}
+
 .logo-container{
     margin-bottom: 0;
     margin-top:5px;
