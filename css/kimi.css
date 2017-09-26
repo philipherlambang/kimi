@@ -1209,6 +1209,13 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
+.caption.box {
+    padding: 15px 20px;
+    background: white;
+}
+.caption.box h3 {
+    margin-top: 0;
+}
 /*zoom hover*/
 
 
