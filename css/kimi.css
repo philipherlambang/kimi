@@ -305,6 +305,13 @@ a.text-secondary:hover{
     color: #fc9159;
 }
 
+.navbar-header.pull-left {
+    border-right: 1px solid #E6EAEA;
+    padding-right: 10px;
+    margin-right: 0px;
+    padding-left: 10px;
+}
+
 .navbar-default .navbar-nav>li>a{
     font-family: "Oswald";
     font-size: 15px;
