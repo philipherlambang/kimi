@@ -881,6 +881,7 @@ a.default-userProductList-CardList-thumbnail:hover{
 
 .thumbnail {
     padding: 0;
+    border-radius: 0;
 }
 
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
