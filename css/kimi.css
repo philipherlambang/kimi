@@ -963,7 +963,6 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
 }
 
 .product-detail-tag-container button{
-    float: left;
     margin-right: 10px;
     letter-spacing: 0.4px;
     font-family:Roboto;
