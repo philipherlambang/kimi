@@ -583,7 +583,7 @@ button, a{
 
 
 .kimi-container{
-    padding-top: 120px;
+    padding-top: 111px;
 }
 
 .dropdown-menu{
@@ -919,8 +919,8 @@ a.thumbnail:hover{
 }
 
 .desktop-upload-photo-button-container{
-    position: absolute; 
-    bottom: 0; 
+    position: absolute;
+    bottom: 0;
     width: 80%
 }
 
@@ -1456,7 +1456,7 @@ ul.pagination li.current a{
     }
 
     .kimi-container{
-        padding-top: 60px;
+        padding-top: 53px;
     }
 
     #slider-thumbs{
