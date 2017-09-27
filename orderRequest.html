@@ -1,12 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta name="description" content="Kimi is a curated foods and beverages artisans.">
-    <meta name="author" content="Philip Herlambang">
+    <meta name="author" content="Johnson Chandra, Allysa Prabandani, Philipus Herlambang, Maya Editorial">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
 
@@ -39,20 +39,20 @@
     <link rel="icon" href="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/favicon.ico">
     <link rel="apple-touch-icon" href="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/apple-touch-icon.png">
 
-    <title>Blank Page</title>
+    <title>Sucicakes</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="css/kimi.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
 
-
-    <![endif]-->
 </head>
 
 <body>
 
 <nav class="navbar navbar-default navbar-fixed-top">
+
+
     <div class="container-fluid hidden-xs">
         <div class="row">
             <div class="col-md-4 col-sm-4">
@@ -82,7 +82,7 @@
     </div>
 
     <div class="container-fluid" style="background: white;">
-        <div class="navbar-header pull-left">
+        <div class="navbar-header pull-left" style="border-right: 1px solid #E6EAEA; padding-right: 10px; margin-right: 0px; padding-left: 10px;">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar icon-short"></span>
@@ -90,7 +90,7 @@
                 <span class="icon-bar icon-medium"></span>
             </button>
         </div>
-        <div class="visible-xs logo-center">
+        <div class="visible-xs" style="width: 70%; float: left;">
             <p class="text-center logo-container visible-xs"><a href="index.html"><img src="images/logo.png" width="90"></a></p>
         </div>
         <div class="visible-xs pull-right">
@@ -112,9 +112,18 @@
 
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Shop</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aurelia Suci <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="channelEdit.html">Edit Seller Information</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="channelEdit.html">Settings</a></li>
+                        <li><a href="#">Notifications</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Shop</a></li>
                 <li><a href="articles.html">Articles</a></li>
-                <li><a href="#">How to Order</a></li>
+                <li><a href="merchantGuide.html">Chef Guide</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Location <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -132,7 +141,7 @@
                 <li><a href="about.html">About Kimi</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="chefDirectory.html">Chef Directory</a></li>
-                <li><a href="login.html">Login / Register</a></li>
+                <li><a href="index.html">Logout</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
@@ -180,149 +189,151 @@
             </ul>
         </div><!--/.nav-collapse -->
     </div><!--/.container-fluid -->
+
+    <!--merchant menu-->
+    <div class="container-fluid merchant-menu hidden-xs">
+        <ul class="nav navbar-nav">
+            <li><a href="channelDashboard.html">Dashboard</a></li>
+            <li><a href="channelEdit.html">Edit Seller Information</a> </li>
+            <li><a href="#">Products Management</a></li>
+            <li class="active"><a href="orderManagement.html">Order Management</a></li>
+            <li><a href="#">Notifications</a></li>
+        </ul>
+    </div>
+    <!--merchant menu ends-->
 </nav>
 
+<div class="container-fluid kimi-container">
+    <ol class="breadcrumb hidden-xs">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="channelDashboard.html">Channel Dashboard</a></li>
+        <li>Channel Edit</li>
+    </ol>
+</div>
 
+<div class="container-fluid" style="padding-bottom: 50px; padding-top: 20px;">
+    <div class="row">
+        <div class="col-md-3">
+            <ul class="nav nav-pills nav-stacked nav-stacked-kimi">
+                <li role="presentation"><a href="orderManagement.html">Overview</a></li>
+                <li role="presentation" class="active"><a href="orderRequest.html">Order Request</a></li>
+                <li role="presentation"><a href="pendingPayment.html">Pending Payment</a></li>
+                <li role="presentation"><a href="pickupSchedule.html">Jadwal Pickup</a></li>
+                <!--<li role="presentation"><a href="#">Frequently Asked Questions</a></li>-->
+            </ul>
 
-<div class="container">
-
-    <div class="kimi-container">
-        <!--breadcrumb start-->
-        <ol class="breadcrumb hidden-xs">
-            <li><a href="index.html">Home</a></li>
-            <li class="active">Jobs</li>
-        </ol>
-
-        <div class="clearfix"></div>
-
-
-        <div class="row">
-            <div class="col-md-12">
-                <div class="row">
-
-                    <div class="col-md-12 col-xs-12">
-                        <p class="text-right text-paragraph-small">Junior Chef <b>(20)</b> &nbsp; Developer <b>(2)</b></p>
-                    </div>
-
-                    <div class="col-md-4">
-                        <a href="#">
-                            <div class="card-info content">
-                                <div class="avatar">
-                                    <img width="36" src="images/sucicakes_logo.png" alt="sucicakes">
-                                </div>
-
-                                <p class="text-roboto-light roboto-14 text-black">Kebon Jeruk</p>
-
-
-                                <h3>Fondan Artist for Birthday and Wedding Cakes</h3>
-
-
-                                    <p class="text-secondary">Sucicakes</p>
-
-                                <div class="text-paragraph-small short-description">
-                                    Votre mission :&nbsp;
-                                    - Vous « brainstormez » en amont des projets avec les DA afin d’imaginer des sites innovants proposant une expérience utilisateur avancée (animation, effets, etc.)
-                                    - Sur la base des maquettes graphiques de l’équipe créa, vous...
-                                </div>
-
-                                <div class="row card-footer">
-                                    <div class="col-md-6 col-xs-6"><p>Category: Chef</p></div>
-                                    <div class="col-md-6 col-xs-6"><p class="text-right"><i class="fa fa-clock-o" aria-hidden="true"></i> 5 days ago</p></div>
-                                </div>
-
-                            </div>
-                        </a>
-                    </div>
-
-
-                    <div class="col-md-4">
-                        <a href="#">
-                            <div class="card-info content">
-                                <div class="avatar">
-                                    <img width="36" src="images/nasi_bakar_logo.jpg" alt="nasi bakar 58">
-                                </div>
-
-                                <p class="text-roboto-light roboto-14 text-black">Kebon Jeruk</p>
-
-                                <div class="">
-                                    <h3>Fondan Artist for Birthday and Wedding Cakes</h3>
-                                </div>
-
-                                <p class="text-secondary">Sucicakes</p>
-
-                                <div class="text-paragraph-small short-description">
-                                    Votre mission :&nbsp;
-                                    - Vous « brainstormez » en amont des projets avec les DA afin d’imaginer des sites innovants proposant une expérience utilisateur avancée (animation, effets, etc.)
-                                    - Sur la base des maquettes graphiques de l’équipe créa, vous...
-                                </div>
-
-                                <div class="row card-footer">
-                                    <div class="col-md-6 col-xs-6"><p>Category: Chef</p></div>
-                                    <div class="col-md-6 col-xs-6"><p class="text-right"><i class="fa fa-clock-o" aria-hidden="true"></i> 5 days ago</p></div>
-                                </div>
-
-                            </div>
-                        </a>
-                    </div>
-
-
-                    <div class="col-md-4">
-                        <a href="#">
-                            <div class="card-info content">
-                                <div class="avatar">
-                                    <img width="36" src="images/bang_gun_logo.jpg" alt="sucicakes">
-                                </div>
-
-                                <p class="text-roboto-light roboto-14 text-black">Kebon Jeruk</p>
-
-                                <div class="">
-                                    <h3>Fondan Artist for Birthday and Wedding Cakes</h3>
-                                </div>
-
-                                <p class="text-secondary">Sucicakes</p>
-
-                                <div class="text-paragraph-small short-description">
-                                    Votre mission :&nbsp;
-                                    - Vous « brainstormez » en amont des projets avec les DA afin d’imaginer des sites innovants proposant une expérience utilisateur avancée (animation, effets, etc.)
-                                    - Sur la base des maquettes graphiques de l’équipe créa, vous...
-                                </div>
-
-                                <div class="row card-footer">
-                                    <div class="col-md-6 col-xs-6"><p>Category: Chef</p></div>
-                                    <div class="col-md-6 col-xs-6"><p class="text-right"><i class="fa fa-clock-o" aria-hidden="true"></i> 5 days ago</p></div>
-                                </div>
-
-                            </div>
-                        </a>
-                    </div>
-                </div>
+            <div style="background: #FCFCFC; border: 1px solid #E7EAEA; margin-top: 30px; padding: 15px;">
+                <h2>Sucicakes</h2>
+                <h4>This week Sales:</h4>
+                <h2>Rp 40.000</h2>
+                <p>Anda belum berlangganan <a href="#" class="text-secondary">Premium Merchant</a> </p>
+                <p>Berminat jadi Premium Merchant?
+                    Coba gratis selama 1 bulan.
+                    <a href="#" class="text-secondary"> Klik disini</a></p>
             </div>
         </div>
-    </div>
 
-</div><!-- /.container -->
+        <div class="col-md-9">
+
+            <section class="edit-channel-form">
+                <h2 class="title less-margin">Order Request</h2>
+
+                <!--table-->
+                <div class="row">
+                    <div class="col-xs-12 less-padding">
+                        <div class="box">
+                            <div class="box-header">
+                                <p class="text-roboto-light text-black">Semua Order Request akan terdaftar di sini, dan membutuhkan approval Anda. Pastikan Anda sanggup menerima order, <span class="text-red"> apabila merasa tidak sanggup menerima order tersebut, Anda dapat melakukan jadwal ulang di dalam order details</span></p>
+
+                                <!--<div class="box-tools">-->
+                                    <!--<div class="input-group input-group-sm" style="width: 150px;">-->
+                                        <!--<input type="text" name="table_search" class="form-control pull-right" placeholder="Search">-->
+                                        <!--<div class="input-group-btn">-->
+                                            <!--<button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body table-responsive no-padding">
+                                <table class="table table-hover">
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Requester</th>
+                                        <th>Request Date</th>
+                                        <th>Delivery Date</th>
+                                        <th>Status</th>
+                                        <th>Item(s)</th>
+                                        <th>Action</th>
+                                    </tr>
+                                    <tr>
+                                        <td>183</td>
+                                        <td>John Doe</td>
+                                        <td>11-7-2014</td>
+                                        <td>12-2014</td>
+                                        <td><span class="label label-danger">Waiting for your Approval</span></td>
+                                        <td>5 Nasi Bakar Ayam Woku</td>
+                                        <td class="va-middle"><button class="btn button-primary">Details</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>219</td>
+                                        <td>Alexander Pierce</td>
+                                        <td>11-7-2014</td>
+                                        <td>12-7-2014</td>
+                                        <td><span class="label label-danger">Waiting for your Approval</span></td>
+                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                        <td class="va-middle"><button class="btn button-primary">Details</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>657</td>
+                                        <td>Bob Doe</td>
+                                        <td>11-7-2014</td>
+                                        <td>12-7-2014</td>
+                                        <td><span class="label label-danger">Waiting for your Approval</span></td>
+                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                        <td class="va-middle"><button class="btn button-primary">Details</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>175</td>
+                                        <td>Mike Doe</td>
+                                        <td>11-7-2014</td>
+                                        <td>12-7-2014</td>
+                                        <td><span class="label label-danger">Waiting for your Approval</span></td>
+                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                        <td class="va-middle"><button class="btn button-primary">Details</button></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                </div>
+                <!--table ends-->
+            </section>
+            <div class="maya-small-padding"></div>
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+</div>
 
 <!--include footer-->
 <div class="include-footer"></div>
 
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
 <script src="./js/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 <script src="./js/bootstrap.min.js"></script>
 
-<!--truncate paragraph-->
-<script src="js/truncator/jquery.truncator.js"></script>
-
 <!--kimi basic js-->
 <script src="js/kimi.js"></script>
-
-<script>
-    // truncate paragraph
-    $('.short-description').truncate({max_length: 200});
-</script>
 
 </body>
 </html>

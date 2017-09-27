@@ -82,7 +82,7 @@
     </div>
 
     <div class="container-fluid" style="background: white;">
-        <div class="navbar-header pull-left" style="border-right: 1px solid #E6EAEA; padding-right: 10px; margin-right: 0px; padding-left: 10px;">
+        <div class="navbar-header pull-left">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar icon-short"></span>
@@ -90,7 +90,7 @@
                 <span class="icon-bar icon-medium"></span>
             </button>
         </div>
-        <div class="visible-xs" style="width: 70%; float: left;">
+        <div class="visible-xs logo-center">
             <p class="text-center logo-container visible-xs"><a href="index.html"><img src="images/logo.png" width="90"></a></p>
         </div>
         <div class="visible-xs pull-right">
@@ -194,11 +194,11 @@
     <!--merchant menu-->
     <div class="container-fluid merchant-menu hidden-xs">
         <ul class="nav navbar-nav">
-            <li class="active"><a href="channelEdit.html">Edit Seller Information</a> </li>
+            <li class="active"><a href="channelDashboard.html">Dashboard</a></li>
+            <li><a href="channelEdit.html">Edit Seller Information</a> </li>
             <li><a href="#">Products Management</a></li>
             <li><a href="#">Order Management</a></li>
             <li><a href="#">Notifications</a></li>
-            <li><a href="index.html">Logout</a></li>
         </ul>
     </div>
     <!--merchant menu ends-->
@@ -358,7 +358,7 @@
             <button class="btn button-gray-3">See Details</button>
             <button class="btn button-red">Reject with reason</button>
         </div>
-        
+
     </div>
 </div>
 
@@ -393,7 +393,7 @@
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-sm-3">
-                                
+
                                 <label for="file-upload" class="custom-file-upload">
                                     <img src="images/add_photo_desktop.png" width="100%">
                                 </label>
@@ -434,14 +434,14 @@
                                     <div class="form-group">
                                         <input type="text" class="form-control" id="" placeholder="Nama Produk">
                                     </div>
-    
+
                                     <div class="row">
                                         <div class="col-sm-4">
                                             <div class="form-group">
                                                 <input type="number" class="form-control" id="" placeholder="Harga">
                                             </div>
                                         </div>
-    
+
                                         <div class="col-sm-4">
                                             <div class="form-group">
                                                 <input type="number" class="form-control" id="" placeholder="Berat (gram)">
@@ -453,15 +453,15 @@
                                                 <input type="number" class="form-control" id="" placeholder="Minimum Order">
                                             </div>
                                         </div>
-                                        
+
                                         <div class="col-sm-12">
                                             <textarea class="form-control" rows="3" placeholder="Deskripsi Produk"></textarea>
                                         </div>
                                     </div>
-    
+
                                     <div class="clearfix" style="margin-bottom: 15px;"></div>
-                                    
-    
+
+
                                 </form>
                             </div>
                         </div>
@@ -479,7 +479,7 @@
                                                 <input type="number" class="form-control" id="" placeholder="Panjang (cm)">
                                             </div>
                                         </div>
-    
+
                                         <div class="col-sm-4">
                                             <div class="form-group">
                                                 <input type="number" class="form-control" id="" placeholder="Lebar (cm)">
@@ -492,7 +492,7 @@
                                             </div>
                                         </div>
                                     </div>
-    
+
                                     <div class="clearfix" style="margin-bottom: 15px;"></div>
 
                                     <div class="checkbox">
@@ -501,8 +501,8 @@
                                         </label>
                                     </div>
 
-                                    
-    
+
+
                                 </form>
                             </div>
                         </div>
@@ -659,7 +659,7 @@
         <div class="col-sm-6 visible-xs">
             <h3 class="text-red">My Products</h3>
             <p>Currently you have 5 products<a href="#" class="text-red pull-right">Urutkan</a></p>
-            
+
             <button class="btn btn-block button-add-product" data-toggle="modal" data-target="#uploadProductMobile"><i class="fa fa-plus" aria-hidden="true"></i> Add Product</button>
             <div class="maya-small-padding"></div>
         </div>

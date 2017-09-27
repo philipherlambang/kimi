@@ -11,6 +11,7 @@ https://backtokimi.com
 
 body{
     background-color: #F5F7F6;
+    font-family: "Roboto";
 }
 
 button, a{
@@ -91,6 +92,11 @@ a{color:#fc9159}
     font-weight: 400;
     line-height: 56px;
     margin-bottom: 0;
+}
+
+.logo-center {
+    width: calc(100% - 95.5px); /* 83.5px Get From navbar-menu width 63px +  navbar-search 32.44px */
+    float: left;
 }
 
 .logo-container{
@@ -211,7 +217,7 @@ a.text-secondary:hover{
 }
 
 .text-red{
-    color: #CC555B;
+    color: #CC555B !important;
 }
 
 .text-gray-3{
@@ -232,6 +238,10 @@ a.text-secondary:hover{
 
 .text-oswald{
     font-family: 'Oswald';
+}
+
+.text-roboto{
+    font-family: 'Roboto';
 }
 
 .text-roboto-light{
@@ -303,6 +313,13 @@ a.text-secondary:hover{
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
     background: none;
     color: #fc9159;
+}
+
+.navbar-header.pull-left {
+    border-right: 1px solid #E6EAEA;
+    padding-right: 10px;
+    margin-right: 0px;
+    padding-left: 10px;
 }
 
 .navbar-default .navbar-nav>li>a{
@@ -491,27 +508,28 @@ a.text-secondary:hover{
 /*buttons*/
 button.outline-default-button{
     border-radius: 2px;
-    -o-transition: background-color 0.3s linear;
-    -moz-transition: background-color 0.3s linear;
-    -khtml-transition: background-color 0.3s linear;
-    -webkit-transition: background-color 0.3s linear;
-    -ms-transition: background-color 0.3s linear;
-    transition: background-color 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -khtml-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
 }
 
 button.outline-default-button:hover{
     background: black;
     color: white;
     border: 1px solid black;
+
 }
 
 button, a{
-    -o-transition: background-color 0.3s linear;
-    -moz-transition: background-color 0.3s linear;
-    -khtml-transition: background-color 0.3s linear;
-    -webkit-transition: background-color 0.3s linear;
-    -ms-transition: background-color 0.3s linear;
-    transition: background-color 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -khtml-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
 }
 
 .outline-small-default-button{
@@ -583,7 +601,7 @@ button, a{
 
 
 .kimi-container{
-    padding-top: 120px;
+    padding-top: 111px;
 }
 
 .dropdown-menu{
@@ -768,6 +786,12 @@ footer a:hover{
     text-transform: uppercase;
     font-size: 18px;
 }
+.default-userProductList-InfoBar-title > .fa {
+    margin-right: 5px;
+    position: relative;
+    top: -1px;
+    left: -2px;
+}
 
 .item .scrim{
     position: absolute;
@@ -874,6 +898,7 @@ a.default-userProductList-CardList-thumbnail:hover{
 
 .thumbnail {
     padding: 0;
+    border-radius: 0;
 }
 
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
@@ -919,8 +944,8 @@ a.thumbnail:hover{
 }
 
 .desktop-upload-photo-button-container{
-    position: absolute; 
-    bottom: 0; 
+    position: absolute;
+    bottom: 0;
     width: 80%
 }
 
@@ -963,7 +988,6 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
 }
 
 .product-detail-tag-container button{
-    float: left;
     margin-right: 10px;
     letter-spacing: 0.4px;
     font-family:Roboto;
@@ -1052,6 +1076,21 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
     color: #ffffff;
 }
 
+.button-primary{
+    font-family: 'Roboto';
+    color:white;
+    background: #fc9159;
+    font-size:12px;
+    border-radius: 2px;
+    padding: 3px 12px;
+    letter-spacing: 0.4px;
+}
+
+.button-primary:hover{
+    background: black;
+    color: #ffffff;
+}
+
 .button-red i, .button-green i{
     font-size: 20px;
 }
@@ -1122,6 +1161,10 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
     margin-top: -1px;
 }
 
+.va-middle{
+    vertical-align: middle !important;
+}
+
 
 /*about*/
 
@@ -1158,7 +1201,30 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
 }
 
 /*widgets*/
+.box{
+    margin-bottom:25px;
+    position: relative;
+}
+
+.box-header{
+    color: #4A4A4A;
+    display: block;
+    padding: 15px 0;
+    position: relative;
+}
+
+.box-header>.box-tools {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.box-header .form-control{
+    height: 30px !important;
+}
+
 .box h3{
+    font-family: Roboto;
     font-size: 18px;
     font-weight: 400;
     color: #4a4a4a;
@@ -1168,7 +1234,7 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
 .box p{
     color: #7d7d7d;
     font-size: 15px;
-    letter-spacing: 0.5px;
+    /*letter-spacing: 0.5px;*/
     margin-bottom: 0;
 }
 
@@ -1178,9 +1244,18 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
     color: #7b7b7b;
 }
 
-.box{
-    margin-bottom:25px;
+.label-success{
+    background: #42AB9E;
 }
+
+.label-danger{
+    background: darkred;
+}
+
+.label{
+    font-weight: normal;
+}
+
 
 /*widgets ends*/
 
@@ -1201,6 +1276,13 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+.caption.box {
+    padding: 15px 20px;
+    background: white;
+}
+.caption.box h3 {
+    margin-top: 0;
 }
 /*zoom hover*/
 
@@ -1274,6 +1356,10 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
     color: #ffffff;
 }
 
+.box-promo h3{
+    font-family:Roboto;
+}
+
 .box-ad p, .box-ad ul li{
     font: 300 16px/24px helvetica;
 }
@@ -1295,12 +1381,12 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
     background:#325595;
     max-width: 100%;
     height: 50px;
-    -o-transition: background-color 0.3s linear;
-    -moz-transition: background-color 0.3s linear;
-    -khtml-transition: background-color 0.3s linear;
-    -webkit-transition: background-color 0.3s linear;
-    -ms-transition: background-color 0.3s linear;
-    transition: background-color 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -khtml-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
     line-height: 50px;
     font-size: 17px;
     text-align: left;
@@ -1326,12 +1412,12 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
     background:#d14836;
     max-width: 100%;
     height: 50px;
-    -o-transition: background-color 0.3s linear;
-    -moz-transition: background-color 0.3s linear;
-    -khtml-transition: background-color 0.3s linear;
-    -webkit-transition: background-color 0.3s linear;
-    -ms-transition: background-color 0.3s linear;
-    transition: background-color 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -khtml-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
     line-height: 50px;
     font-size: 17px;
     text-align: left;
@@ -1420,9 +1506,19 @@ ul.pagination li.current a{
     color: #ffffff;
 }
 
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+    background:#fcfcfc;
+    color:#4A4A4A;
+}
+
+.edit-channel-form h2.title{
+    font-family: Roboto;
+    font-size: 24px;
+}
+
 
 /* --------------- Phone smaller start ------------------------ */
-@media (max-width: 480px) {
+@media (max-width: 767px) {
     .navbar-toggle{
         border: none;
         margin-right: 0;
@@ -1456,7 +1552,7 @@ ul.pagination li.current a{
     }
 
     .kimi-container{
-        padding-top: 60px;
+        padding-top: 53px;
     }
 
     #slider-thumbs{
