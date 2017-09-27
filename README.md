@@ -48,10 +48,16 @@
 
 - [Job List](https://philipherlambang.github.io/kimi/jobs.html)
 
+- [Order Management](https://philipherlambang.github.io/kimi/orderManagement.html)
+- [Order Request](https://philipherlambang.github.io/kimi/orderRequest.html)
+- [Pending Payment](https://philipherlambang.github.io/kimi/pendingPayment.html)
+- [Pickup Schedule](https://philipherlambang.github.io/kimi/pickupSchedule.html)
 
 
 
-### todo list
+
+
+### Todo list
 - Product Management
 - Order Management
 - library widget
@@ -75,10 +81,13 @@
 - product list page
 - order detail page
 - calendar modal when merchant request change the delivery date
+- empty state shopping cart
+- find nice icons for editors pick, this week favourites, and feature merchant section
+-
 
 
 
-### done
+### Done
 - article list
 - article detail
 - tipue search
@@ -98,12 +107,21 @@
 
 
 
-### update September 25
+### Update September 25
 - Add featured merchant,
 - Update styling for cart in mobile view,
 - Using cloudinary for transformation in homepage, about and merchant guide
 - add pagination
 - add load more button in homepage
 
+
+
+### Update September 27
+- Add Order Management page with sub menus: order request, pending payment, pickup schedule
+- empty state on order management
+- update css for mobile view 480px -767px
+- animation css
+- add modal on order request "details" button
+- remove inline styles on many DOM
 
 

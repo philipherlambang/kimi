@@ -15,6 +15,9 @@
 +function ($) {
     // basic toggle navigation menu
 
+    $('#searchbar').hide();
+    $('#buttonCloseSearchbar').hide();
+
     $('#buttonOpenSearchbar').on('click', function(){
         $('#helpText, #buttonOpenSearchbar').hide();
         $('#searchbar, #buttonCloseSearchbar').show();
