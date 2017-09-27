@@ -39,7 +39,7 @@
     <link rel="icon" href="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/favicon.ico">
     <link rel="apple-touch-icon" href="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/apple-touch-icon.png">
 
-    <title>Reset Password</title>
+    <title>Sucicakes</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -119,10 +119,9 @@
                         <li><a href="#">Shop</a></li>
                         <li><a href="channelEdit.html">Settings</a></li>
                         <li><a href="#">Notifications</a></li>
-                        <li><a href="index.html">Logout</a></li>
                     </ul>
                 </li>
-                <li class="active"><a href="index.html">Shop</a></li>
+                <li><a href="index.html">Shop</a></li>
                 <li><a href="articles.html">Articles</a></li>
                 <li><a href="merchantGuide.html">Chef Guide</a></li>
                 <li class="dropdown">
@@ -195,9 +194,9 @@
     <div class="container-fluid merchant-menu hidden-xs">
         <ul class="nav navbar-nav">
             <li><a href="channelDashboard.html">Dashboard</a></li>
-            <li class="active"><a href="channelEdit.html">Edit Seller Information</a> </li>
+            <li><a href="channelEdit.html">Edit Seller Information</a> </li>
             <li><a href="#">Products Management</a></li>
-            <li><a href="orderManagement.html">Order Management</a></li>
+            <li class="active"><a href="orderManagement.html">Order Management</a></li>
             <li><a href="#">Notifications</a></li>
         </ul>
     </div>
@@ -216,11 +215,11 @@
     <div class="row">
         <div class="col-md-3">
             <ul class="nav nav-pills nav-stacked nav-stacked-kimi">
-                <li role="presentation"><a href="channelEdit.html">Settings</a></li>
-                <li role="presentation"><a href="changePassword.html">Change Password</a></li>
-                <li role="presentation" class="active"><a href="#">Reset Password</a></li>
-                <li role="presentation"><a href="plan.html">Subscription</a></li>
-                <!--<li role="presentation"><a href="questions.html">Frequently Asked Questions</a></li>-->
+                <li role="presentation"><a href="orderManagement.html">Overview</a></li>
+                <li role="presentation"><a href="orderRequest.html">Order Request</a></li>
+                <li role="presentation" class="active"><a href="pendingPayment.html">Pending Payment</a></li>
+                <li role="presentation"><a href="pickupSchedule.html">Jadwal Pickup</a></li>
+                <!--<li role="presentation"><a href="#">Frequently Asked Questions</a></li>-->
             </ul>
 
             <div style="background: #FCFCFC; border: 1px solid #E7EAEA; margin-top: 30px; padding: 15px;">
@@ -234,35 +233,49 @@
             </div>
         </div>
 
-        <div class="col-md-6 edit-channel-form">
+        <div class="col-md-6">
 
-            <form class="form-inline">
-                <p class="text-center text-bold">You are about reset your password. <br>If you wish to continue, fill the field below with your email address</p>
-                <div class="row">
-                    <div class="col-md-3 label-wrapper">
-                        <label for="current_password">Email</label>
-                    </div>
-                    <div class="col-md-9">
-                        <input type="email" class="form-control" id="current_password" placeholder="Email Address">
-                    </div>
+            <section class="edit-channel-form">
+                <h2 class="title less-margin">Order Request</h2>
+                <div style="margin: 0 auto; width: 150px;">
+                    <img src="images/IG_5.svg" width="150">
                 </div>
-                <div class="row">
-                    <div class="col-md-3 col-md-offset-3">
-                        <button class="btn button-green-free btn-lg">Send</button>
-                    </div>
+                <p class="text-roboto text-center">There is no Order Request Right Now.</p>
+                <p class="text-roboto-light text-center">Promote Your Channel Now</p>
+                <p class="text-center"><button class="btn button-green">Promote My Channel</button></p>
+            </section>
+            <div class="maya-small-padding"></div>
+
+            <section class="edit-channel-form">
+                <h2 class="title less-margin">Pending Payment</h2>
+                <div style="margin: 25px auto; width: 150px;">
+                    <img src="images/wallet.png" width="150">
                 </div>
-            </form>
+                <p class="text-roboto text-center">There is no Pending Payment Right Now.</p>
+                <p class="text-roboto-light text-center">Semua payment yang bersifat pending akan terdaftar di sini.</p>
+            </section>
+            <div class="maya-small-padding"></div>
+
+            <section class="edit-channel-form">
+                <h2 class="title less-margin">Pickup Schedule</h2>
+                <div style="margin: 25px auto; width: 150px;">
+                    <img src="images/courier.png" width="150">
+                </div>
+                <p class="text-roboto text-center">There is no Paid Orders and Pick Up Orders Right Now</p>
+                <p class="text-roboto-light text-center">Semua order yang sudah siap diambil oleh kurir kami akan terdaftar di sini.</p>
+            </section>
+
         </div>
 
 
 
         <div class="col-md-3">
             <div class="box-promo">
-                <h3>Let’s become Kimi Premium Merchant</h3>
+                <h3>Penjualan Melesat dengan Premium Account</h3>
                 <p>Premium Merchant menyediakan berbagai fitur istimewa untuk meningkatkan penjualan Anda.</p>
                 <ul>
-                    <li>Badge Premium Seller</li>
-                    <li>Full Statistik Business</li>
+                    <li>Penjualan Meningkat</li>
+                    <li>Prioritas Promosi</li>
                     <li>50% tambahan promosi di berbagai channel ads</li>
                     <li>Premium Support</li>
                 </ul>

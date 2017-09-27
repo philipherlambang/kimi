@@ -69,10 +69,13 @@
 - terms and conditions
 - privacy policy
 - job details
-- image resizer (cloudinary)
 - share buttons
-- off canvas menu
+- off canvas menu for mobile
 - houzz
+- product list page
+- order detail page
+- calendar modal when merchant request change the delivery date
+
 
 
 ### done
@@ -90,6 +93,8 @@
 - tag in homepage use owl carousel as well
 - edit tipue search content. try to search: sucicakes, sosis solo, kimi, risotto
 - pagination
+- empty state
+- image resizer (cloudinary)
 
 
 
@@ -99,4 +104,6 @@
 - Using cloudinary for transformation in homepage, about and merchant guide
 - add pagination
 - add load more button in homepage
+
+
 

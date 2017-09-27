@@ -11,6 +11,7 @@ https://backtokimi.com
 
 body{
     background-color: #F5F7F6;
+    font-family: "Roboto";
 }
 
 button, a{
@@ -211,7 +212,7 @@ a.text-secondary:hover{
 }
 
 .text-red{
-    color: #CC555B;
+    color: #CC555B !important;
 }
 
 .text-gray-3{
@@ -232,6 +233,10 @@ a.text-secondary:hover{
 
 .text-oswald{
     font-family: 'Oswald';
+}
+
+.text-roboto{
+    font-family: 'Roboto';
 }
 
 .text-roboto-light{
@@ -1052,6 +1057,21 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
     color: #ffffff;
 }
 
+.button-primary{
+    font-family: 'Roboto';
+    color:white;
+    background: #fc9159;
+    font-size:12px;
+    border-radius: 2px;
+    padding: 3px 12px;
+    letter-spacing: 0.4px;
+}
+
+.button-primary:hover{
+    background: black;
+    color: #ffffff;
+}
+
 .button-red i, .button-green i{
     font-size: 20px;
 }
@@ -1122,6 +1142,10 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
     margin-top: -1px;
 }
 
+.va-middle{
+    vertical-align: middle !important;
+}
+
 
 /*about*/
 
@@ -1158,7 +1182,30 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
 }
 
 /*widgets*/
+.box{
+    margin-bottom:25px;
+    position: relative;
+}
+
+.box-header{
+    color: #4A4A4A;
+    display: block;
+    padding: 15px 0;
+    position: relative;
+}
+
+.box-header>.box-tools {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.box-header .form-control{
+    height: 30px !important;
+}
+
 .box h3{
+    font-family: Roboto;
     font-size: 18px;
     font-weight: 400;
     color: #4a4a4a;
@@ -1168,7 +1215,7 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
 .box p{
     color: #7d7d7d;
     font-size: 15px;
-    letter-spacing: 0.5px;
+    /*letter-spacing: 0.5px;*/
     margin-bottom: 0;
 }
 
@@ -1178,9 +1225,18 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
     color: #7b7b7b;
 }
 
-.box{
-    margin-bottom:25px;
+.label-success{
+    background: #42AB9E;
 }
+
+.label-danger{
+    background: darkred;
+}
+
+.label{
+    font-weight: normal;
+}
+
 
 /*widgets ends*/
 
@@ -1272,6 +1328,10 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
     background:#fc9159;
     padding: 15px;
     color: #ffffff;
+}
+
+.box-promo h3{
+    font-family:Roboto;
 }
 
 .box-ad p, .box-ad ul li{
@@ -1418,6 +1478,16 @@ ul.pagination li a{
 ul.pagination li.current a{
     background: #fc9159;
     color: #ffffff;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+    background:#fcfcfc;
+    color:#4A4A4A;
+}
+
+.edit-channel-form h2.title{
+    font-family: Roboto;
+    font-size: 24px;
 }
 
 
