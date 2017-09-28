@@ -20,12 +20,12 @@
 
     $('#buttonOpenSearchbar').on('click', function(){
         $('#helpText, #buttonOpenSearchbar').hide();
-        $('#searchbar, #buttonCloseSearchbar').show();
+        $('#searchbar, #buttonCloseSearchbar').removeClass('hide').addClass('show')();
     });
 
     $('#buttonCloseSearchbar').on('click', function(){
         $('#helpText, #buttonOpenSearchbar').show();
-        $('#searchbar, #buttonCloseSearchbar').hide();
+        $('#searchbar, #buttonCloseSearchbar').removeClass('show').addClass('hide');
 
     });
 

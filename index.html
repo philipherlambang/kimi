@@ -64,9 +64,9 @@
         <div class="row">
             <div class="col-md-4 col-sm-4">
                 <button class="pull-left search-button" id="buttonOpenSearchbar"><i class="fa fa-search" aria-hidden="true"></i></button>
-                <button class="pull-left search-button" id="buttonCloseSearchbar"><i class="fa fa-times" aria-hidden="true"></i></button>
+                <button class="pull-left search-button hide" id="buttonCloseSearchbar"><i class="fa fa-times" aria-hidden="true"></i></button>
 
-                <div id="searchbar">
+                <div id="searchbar" class="hide">
                     <div>
                         <div class="top-nav-searchbar">
                             <div class="input-group">
@@ -143,43 +143,18 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cart (2)</a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cart (0)</a>
                     <ul class="dropdown-menu">
                         <li>
                             <div class="cart-flyout">
-                                <h4 class="text-oswald">Recently Added Product(s)</h4>
+                                <h4 class="text-oswald text-center">Recently Added Product(s)</h4>
                                 <div class="row">
-                                    <div class="col-sm-2 col-xs-3 less-padding">
-                                        <img src="images/brownies.jpg" width="100%">
-                                    </div>
-                                    <div class="col-sm-8 col-xs-9">
-                                        <span class="text-gray-1">Brownies Chocolate</span>
-                                        <p class="text-gray-2">1 x 50.000</p>
-                                    </div>
-                                    <!--<div class="col-sm-2">-->
-                                    <!--<button><i class="fa fa-times-circle" aria-hidden="true"></i></button>-->
-                                    <!--</div>-->
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-sm-2 col-xs-3 less-padding">
-                                        <img src="images/lapisSurabaya.jpg" width="100%">
-                                    </div>
-                                    <div class="col-sm-8 col-xs-9">
-                                        <span class="text-gray-1">Lapis Surabaya</span>
-                                        <p class="text-gray-2">1 x 175.000</p>
-                                    </div>
-
-                                </div>
-                                <hr>
-
-                                <div class="row">
-                                    <div class="col-sm-6 col-xs-6 less-padding"><h4><small>Total</small><br><span>IDR 225.000</span></h4></div>
-                                    <div class="col-sm-6 col-xs-6 less-padding">
-                                        <a href="checkout2.html" class="button-green-top-nav btn pull-right btn-block text-oswald text-uppercase">View Cart</a>
+                                    <div class="col-xs-12 text-center">
+                                        <img src="images/IG_8.svg" width="50">
+                                        <div class="maya-tiny-padding"></div>
+                                        <p class="text-roboto-light">Your Basket is Empty</p>
                                     </div>
                                 </div>
-
                             </div>
                         </li>
                     </ul>
@@ -301,24 +276,24 @@
 
         <div class="row">
             <h2 class="default-userProductList-InfoBar-title text-center"><i class="fa fa-heart-o" aria-hidden="true"></i> This Week Favoourites</h2>
-            <div class="col-sm-6 col-md-4" data-behavior="sample_code">
-                <a href="productDetail.html" class="thumbnail_item thumbnail less-padding less-margin">
-                    <img src="https://res.cloudinary.com/kimithemes/image/upload/c_thumb,h_480,w_480/v1506329237/seafood_rd0j5y.jpg" alt="Seafood">
-                </a>
-                <div class="caption box">
-                    <h3>Seafood</h3>
-                    <div class="row">
-                        <div class="col-sm-8 col-xs-6">
-                            <p class="default-userProductList-CardList-price">Rp 45.000 / pcs</p>
-                            <span class="min-order">10 pcs min order</span>
-                        </div>
+            <!--<div class="col-sm-6 col-md-4" data-behavior="sample_code">-->
+                <!--<a href="productDetail.html" class="thumbnail_item thumbnail less-padding less-margin">-->
+                    <!--<img src="https://res.cloudinary.com/kimithemes/image/upload/c_thumb,h_480,w_480/v1506329237/seafood_rd0j5y.jpg" alt="Seafood">-->
+                <!--</a>-->
+                <!--<div class="caption box">-->
+                    <!--<h3>Seafood</h3>-->
+                    <!--<div class="row">-->
+                        <!--<div class="col-sm-8 col-xs-6">-->
+                            <!--<p class="default-userProductList-CardList-price">Rp 45.000 / pcs</p>-->
+                            <!--<span class="min-order">10 pcs min order</span>-->
+                        <!--</div>-->
 
-                        <div class="col-sm-4 col-xs-6">
-                            <button onclick="location.href='shoppingCart.html'" class="btn default-userProductList-CardList-button pull-right" role="button">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        <!--<div class="col-sm-4 col-xs-6">-->
+                            <!--<button onclick="location.href='shoppingCart.html'" class="btn default-userProductList-CardList-button pull-right" role="button">Add to Cart</button>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
 
             <div class="col-sm-6 col-md-4" data-behavior="sample_code">
                 <a href="productDetail.html" class="thumbnail_item thumbnail less-padding less-margin">
@@ -340,24 +315,24 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 col-md-4" data-behavior="sample_code">
-                <a href="productDetail.html" class="thumbnail_item thumbnail less-padding less-margin">
-                    <img src="https://res.cloudinary.com/kimithemes/image/upload/c_thumb,h_480,w_480/v1506329233/seafood_2_vcuolq.jpg" alt="Seafood">
-                </a>
-                <div class="caption box">
-                    <h3>Seafood</h3>
-                    <div class="row">
-                        <div class="col-sm-8 col-xs-6">
-                            <p class="default-userProductList-CardList-price">Rp 45.000 / pcs</p>
-                            <span class="min-order">5 pcs min order</span>
-                        </div>
+            <!--<div class="col-sm-6 col-md-4" data-behavior="sample_code">-->
+                <!--<a href="productDetail.html" class="thumbnail_item thumbnail less-padding less-margin">-->
+                    <!--<img src="https://res.cloudinary.com/kimithemes/image/upload/c_thumb,h_480,w_480/v1506329233/seafood_2_vcuolq.jpg" alt="Seafood">-->
+                <!--</a>-->
+                <!--<div class="caption box">-->
+                    <!--<h3>Seafood</h3>-->
+                    <!--<div class="row">-->
+                        <!--<div class="col-sm-8 col-xs-6">-->
+                            <!--<p class="default-userProductList-CardList-price">Rp 45.000 / pcs</p>-->
+                            <!--<span class="min-order">5 pcs min order</span>-->
+                        <!--</div>-->
 
-                        <div class="col-sm-4 col-xs-6">
-                            <button onclick="location.href='shoppingCart.html'" class="btn default-userProductList-CardList-button pull-right" role="button">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        <!--<div class="col-sm-4 col-xs-6">-->
+                            <!--<button onclick="location.href='shoppingCart.html'" class="btn default-userProductList-CardList-button pull-right" role="button">Add to Cart</button>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
 
             <div class="col-sm-6 col-md-4">
                 <a href="productDetail.html" class="thumbnail_item thumbnail less-padding less-margin">
@@ -398,24 +373,24 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 col-md-4" data-behavior="sample_code">
-                <a href="productDetail.html" class="thumbnail_item thumbnail less-padding less-margin">
-                    <img src="https://res.cloudinary.com/kimithemes/image/upload/c_thumb,h_480,w_480/v1506329234/cake_uv41o2.jpg" alt="cake">
-                </a>
-                <div class="caption box">
-                    <h3>Party Cake</h3>
-                    <div class="row">
-                        <div class="col-sm-8 col-xs-6">
-                            <p class="default-userProductList-CardList-price">Rp 45.000 / pcs</p>
-                            <span class="min-order">10 pcs min order</span>
-                        </div>
+            <!--<div class="col-sm-6 col-md-4" data-behavior="sample_code">-->
+                <!--<a href="productDetail.html" class="thumbnail_item thumbnail less-padding less-margin">-->
+                    <!--<img src="https://res.cloudinary.com/kimithemes/image/upload/c_thumb,h_480,w_480/v1506329234/cake_uv41o2.jpg" alt="cake">-->
+                <!--</a>-->
+                <!--<div class="caption box">-->
+                    <!--<h3>Party Cake</h3>-->
+                    <!--<div class="row">-->
+                        <!--<div class="col-sm-8 col-xs-6">-->
+                            <!--<p class="default-userProductList-CardList-price">Rp 45.000 / pcs</p>-->
+                            <!--<span class="min-order">10 pcs min order</span>-->
+                        <!--</div>-->
 
-                        <div class="col-sm-4 col-xs-6">
-                            <button onclick="location.href='shoppingCart.html'" class="btn default-userProductList-CardList-button pull-right" role="button">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        <!--<div class="col-sm-4 col-xs-6">-->
+                            <!--<button onclick="location.href='shoppingCart.html'" class="btn default-userProductList-CardList-button pull-right" role="button">Add to Cart</button>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
 
 
         </div>

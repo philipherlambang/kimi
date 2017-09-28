@@ -81,9 +81,7 @@
 - product list page
 - order detail page
 - calendar modal when merchant request change the delivery date
-- empty state shopping cart
 - find nice icons for editors pick, this week favourites, and feature merchant section
--
 
 
 
@@ -104,6 +102,7 @@
 - pagination
 - empty state
 - image resizer (cloudinary)
+- empty state shopping cart
 
 
 
