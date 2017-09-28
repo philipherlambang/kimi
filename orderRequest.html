@@ -243,7 +243,7 @@
                     <div class="col-xs-12 less-padding">
                         <div class="box">
                             <div class="box-header">
-                                <p class="text-roboto-light text-black">Semua Order Request akan terdaftar di sini, dan membutuhkan approval Anda. Pastikan Anda sanggup menerima order, <span class="text-red"> apabila merasa tidak sanggup menerima order tersebut, Anda dapat melakukan jadwal ulang di dalam order details</span></p>
+                                <p class="text-roboto-light text-black">Semua Order Request akan terdaftar di sini, dan membutuhkan approval Anda. <br>Pastikan Anda sanggup menerima order, <span class="text-red"> apabila merasa tidak sanggup menerima order tersebut, Anda dapat melakukan jadwal ulang di dalam order details.</span></p>
 
                                 <!--<div class="box-tools">-->
                                     <!--<div class="input-group input-group-sm" style="width: 150px;">-->
@@ -271,36 +271,36 @@
                                         <td>John Doe</td>
                                         <td>11-7-2014</td>
                                         <td>12-2014</td>
-                                        <td><span class="label label-danger">Waiting for your Approval</span></td>
+                                        <td><span class="label label-danger">Waiting your Approval</span></td>
                                         <td>5 Nasi Bakar Ayam Woku</td>
-                                        <td class="va-middle"><button class="btn button-primary">Details</button></td>
+                                        <td class="va-middle"><button class="btn button-primary" data-toggle="modal" data-target="#orderDetail">Details</button></td>
                                     </tr>
                                     <tr>
                                         <td>219</td>
                                         <td>Alexander Pierce</td>
                                         <td>11-7-2014</td>
                                         <td>12-7-2014</td>
-                                        <td><span class="label label-danger">Waiting for your Approval</span></td>
+                                        <td><span class="label label-danger">Waiting your Approval</span></td>
                                         <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                        <td class="va-middle"><button class="btn button-primary">Details</button></td>
+                                        <td class="va-middle"><button class="btn button-primary" data-toggle="modal" data-target="#myModal">Details</button></td>
                                     </tr>
                                     <tr>
                                         <td>657</td>
                                         <td>Bob Doe</td>
                                         <td>11-7-2014</td>
                                         <td>12-7-2014</td>
-                                        <td><span class="label label-danger">Waiting for your Approval</span></td>
+                                        <td><span class="label label-danger">Waiting your Approval</span></td>
                                         <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                        <td class="va-middle"><button class="btn button-primary">Details</button></td>
+                                        <td class="va-middle"><button class="btn button-primary" data-toggle="modal" data-target="#myModal">Details</button></td>
                                     </tr>
                                     <tr>
                                         <td>175</td>
                                         <td>Mike Doe</td>
                                         <td>11-7-2014</td>
                                         <td>12-7-2014</td>
-                                        <td><span class="label label-danger">Waiting for your Approval</span></td>
+                                        <td><span class="label label-danger">Waiting your Approval</span></td>
                                         <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                        <td class="va-middle"><button class="btn button-primary">Details</button></td>
+                                        <td class="va-middle"><button class="btn button-primary" data-toggle="modal" data-target="#myModal">Details</button></td>
                                     </tr>
                                 </table>
                             </div>
@@ -313,6 +313,140 @@
             </section>
             <div class="maya-small-padding"></div>
 
+            <!--modal order detail-->
+            <div class="modal fade" id="orderDetail" tabindex="-1" role="dialog" aria-labelledby="orderDetail">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Add Product</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-3">
+
+                                    <label for="file-upload" class="custom-file-upload">
+                                        <img src="images/add_photo_desktop.png" width="100%">
+                                    </label>
+                                    <input id="file-upload" type="file"/>
+                                </div>
+                                <div class="col-sm-3" style="position: relative;">
+                                    <img src="images/bolkus.png" width="100%">
+                                    <p class="text-base-image">Base image</p>
+                                </div>
+                                <div class="col-sm-3" style="position: relative;">
+                                    <img src="images/bolkus2.png" width="100%">
+                                    <div class="desktop-upload-photo-button-container">
+                                        <button class="btn button-red pull-left"><i class="fa fa-times" aria-hidden="true"></i></button>
+                                        <button class="btn button-green pull-right"><i class="fa fa-tag" aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3" style="position: relative;">
+                                    <img src="images/bolkus3.png" width="100%">
+                                    <div class="desktop-upload-photo-button-container">
+                                        <button class="btn button-red pull-left"><i class="fa fa-times" aria-hidden="true"></i></button>
+                                        <button class="btn button-green pull-right"><i class="fa fa-tag" aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p class="text-gray-2 helvetica-13" style="margin: 10px 0">
+                                        Base photo akan digunakan sebagai thumbnail dan photo utama. Checkout our <a href="#" class="text-secondary text-bold">recommended photo guidelines</a> and tips for product images look great on backtokimi.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h4 class="modal-title" style="margin-bottom: 10px;">Product</h4>
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="" placeholder="Nama Produk">
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <input type="number" class="form-control" id="" placeholder="Harga">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <input type="number" class="form-control" id="" placeholder="Berat (gram)">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <input type="number" class="form-control" id="" placeholder="Minimum Order">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-12">
+                                                <textarea class="form-control" rows="3" placeholder="Deskripsi Produk"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="clearfix" style="margin-bottom: 15px;"></div>
+
+
+                                    </form>
+                                </div>
+                            </div>
+
+
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h4 class="modal-title" style="margin-bottom: 10px;">Ukuran Produk</h4>
+                                    <p class="text-gray-2 helvetica-13">Diperlukan untuk produk yang memiliki volume dalam pengiriman. Contoh kue tart</p>
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <input type="number" class="form-control" id="" placeholder="Panjang (cm)">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <input type="number" class="form-control" id="" placeholder="Lebar (cm)">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <input type="number" class="form-control" id="" placeholder="Tinggi (cm)">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="clearfix" style="margin-bottom: 15px;"></div>
+
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> Produk memerlukan perlindungan khusus dalam pengiriman
+                                            </label>
+                                        </div>
+
+
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn button-red" data-dismiss="modal" aria-label="Close">Cancel</button>
+                            <button type="button" class="btn button-gray-3" data-dismiss="modal">Set as Draft</button>
+                            <button type="button" class="btn button-gray-3">Preview</button>
+                            <button type="button" class="btn button-green">Save and Publish</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
         </div>

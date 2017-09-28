@@ -1142,7 +1142,7 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
     background: #FCFCFC;
     border: 1px solid #E7EAEA;
     color: #fc9159;
-    font-weight:bold;
+    /*font-weight:bold;*/
 }
 
 .nav-stacked-kimi li a{
@@ -1152,7 +1152,7 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
     border-radius: 0;
     margin-top: 0;
     color: #4A4A4A;
-    font-weight:bold;
+    /*font-weight:bold;*/
     padding-top: 0;
     padding-bottom:0;
 }
@@ -1278,7 +1278,7 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
     transform: scale(1.1);
 }
 .caption.box {
-    padding: 15px 20px;
+    padding: 15px;
     background: white;
 }
 .caption.box h3 {
