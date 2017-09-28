@@ -243,7 +243,7 @@
                     <div class="col-xs-12 less-padding">
                         <div class="box">
                             <div class="box-header">
-                                <p class="text-roboto-light text-black">Semua Order Request akan terdaftar di sini, dan membutuhkan approval Anda. <br>Pastikan Anda sanggup menerima order, <span class="text-red"> apabila merasa tidak sanggup menerima order tersebut, Anda dapat melakukan jadwal ulang di dalam order details.</span></p>
+                                <p class="text-roboto-light">Semua Order Request akan terdaftar di sini, dan membutuhkan approval Anda. <br>Pastikan Anda sanggup menerima order, <span class="text-red"> apabila merasa tidak sanggup menerima order tersebut, Anda dapat melakukan jadwal ulang di dalam order details.</span></p>
 
                                 <!--<div class="box-tools">-->
                                     <!--<div class="input-group input-group-sm" style="width: 150px;">-->
@@ -269,8 +269,8 @@
                                     <tr>
                                         <td>183</td>
                                         <td>John Doe</td>
-                                        <td>11-7-2014</td>
-                                        <td>12-2014</td>
+                                        <td>11-10-2017</td>
+                                        <td>12-10-2017</td>
                                         <td><span class="label label-danger">Waiting your Approval</span></td>
                                         <td>5 Nasi Bakar Ayam Woku</td>
                                         <td class="va-middle"><button class="btn button-primary" data-toggle="modal" data-target="#orderDetail">Details</button></td>
@@ -278,20 +278,20 @@
                                     <tr>
                                         <td>219</td>
                                         <td>Alexander Pierce</td>
-                                        <td>11-7-2014</td>
-                                        <td>12-7-2014</td>
+                                        <td>11-10-2017</td>
+                                        <td>12-10-2017</td>
                                         <td><span class="label label-danger">Waiting your Approval</span></td>
                                         <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                        <td class="va-middle"><button class="btn button-primary" data-toggle="modal" data-target="#myModal">Details</button></td>
+                                        <td class="va-middle"><button class="btn button-primary" data-toggle="modal" data-target="#orderDetail">Details</button></td>
                                     </tr>
                                     <tr>
                                         <td>657</td>
                                         <td>Bob Doe</td>
-                                        <td>11-7-2014</td>
-                                        <td>12-7-2014</td>
+                                        <td>11-10-2017</td>
+                                        <td>12-10-2017</td>
                                         <td><span class="label label-danger">Waiting your Approval</span></td>
                                         <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                        <td class="va-middle"><button class="btn button-primary" data-toggle="modal" data-target="#myModal">Details</button></td>
+                                        <td class="va-middle"><button class="btn button-primary" data-toggle="modal" data-target="#orderDetail">Details</button></td>
                                     </tr>
                                     <tr>
                                         <td>175</td>
@@ -300,7 +300,7 @@
                                         <td>12-7-2014</td>
                                         <td><span class="label label-danger">Waiting your Approval</span></td>
                                         <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                        <td class="va-middle"><button class="btn button-primary" data-toggle="modal" data-target="#myModal">Details</button></td>
+                                        <td class="va-middle"><button class="btn button-primary" data-toggle="modal" data-target="#orderDetail">Details</button></td>
                                     </tr>
                                 </table>
                             </div>
@@ -319,131 +319,87 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Add Product</h4>
+                            <h4 class="modal-title" id="myModalLabel">Order Details</h4>
                         </div>
                         <div class="modal-body">
                             <div class="row">
-                                <div class="col-sm-3">
+                                <div class="col-sm-12">
+                                    <table class="table table-hover">
+                                        <tr>
+                                            <th colspan="2">Transaction ID. 10001</th>
+                                        </tr>
+                                        <tr>
+                                            <td width="30%">Requester</td>
+                                            <td>John Doe</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Order Delivery Date:</td>
+                                            <td>12-10-2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Delivery Address</td>
+                                            <td>Jalan Madrasah 2 no 30 D RT 08 RW 02 Kelurahan Sukabumi Utara Kecamatan Kebon Jeruk Jakarta Barat 11540</td>
+                                        </tr>
+                                    </table>
+                                </div>
 
-                                    <label for="file-upload" class="custom-file-upload">
-                                        <img src="images/add_photo_desktop.png" width="100%">
-                                    </label>
-                                    <input id="file-upload" type="file"/>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 box-body table-responsive no-padding">
+                                    <table class="table table-hover">
+                                        <tr>
+                                            <th>Qty</th>
+                                            <th>Product</th>
+                                            <th>Image</th>
+                                            <th>Keterangan</th>
+                                            <th>Subtotal</th>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Nasi Bakar Ayam Woku</td>
+                                            <td><img src="images/nasi_bakar_ayam_woku_2.jpg" width="60"></td>
+                                            <td>Add extra Chilly Sauce</td>
+                                            <td>Rp 115.000</td>
+                                        </tr>
+                                    </table>
                                 </div>
-                                <div class="col-sm-3" style="position: relative;">
-                                    <img src="images/bolkus.png" width="100%">
-                                    <p class="text-base-image">Base image</p>
-                                </div>
-                                <div class="col-sm-3" style="position: relative;">
-                                    <img src="images/bolkus2.png" width="100%">
-                                    <div class="desktop-upload-photo-button-container">
-                                        <button class="btn button-red pull-left"><i class="fa fa-times" aria-hidden="true"></i></button>
-                                        <button class="btn button-green pull-right"><i class="fa fa-tag" aria-hidden="true"></i></button>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3" style="position: relative;">
-                                    <img src="images/bolkus3.png" width="100%">
-                                    <div class="desktop-upload-photo-button-container">
-                                        <button class="btn button-red pull-left"><i class="fa fa-times" aria-hidden="true"></i></button>
-                                        <button class="btn button-green pull-right"><i class="fa fa-tag" aria-hidden="true"></i></button>
-                                    </div>
-                                </div>
+
                             </div>
 
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <p class="text-gray-2 helvetica-13" style="margin: 10px 0">
-                                        Base photo akan digunakan sebagai thumbnail dan photo utama. Checkout our <a href="#" class="text-secondary text-bold">recommended photo guidelines</a> and tips for product images look great on backtokimi.
+                                    <p class="text-roboto-light" style="margin: 10px 0">
+                                        Payment Method: Bank Transfer (BCA)
                                     </p>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <h4 class="modal-title" style="margin-bottom: 10px;">Product</h4>
-                                    <form>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="" placeholder="Nama Produk">
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-sm-4">
-                                                <div class="form-group">
-                                                    <input type="number" class="form-control" id="" placeholder="Harga">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-sm-4">
-                                                <div class="form-group">
-                                                    <input type="number" class="form-control" id="" placeholder="Berat (gram)">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-sm-4">
-                                                <div class="form-group">
-                                                    <input type="number" class="form-control" id="" placeholder="Minimum Order">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-sm-12">
-                                                <textarea class="form-control" rows="3" placeholder="Deskripsi Produk"></textarea>
-                                            </div>
-                                        </div>
-
-                                        <div class="clearfix" style="margin-bottom: 15px;"></div>
-
-
-                                    </form>
-                                </div>
-                            </div>
-
-
-
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <h4 class="modal-title" style="margin-bottom: 10px;">Ukuran Produk</h4>
-                                    <p class="text-gray-2 helvetica-13">Diperlukan untuk produk yang memiliki volume dalam pengiriman. Contoh kue tart</p>
-                                    <form>
-                                        <div class="row">
-                                            <div class="col-sm-4">
-                                                <div class="form-group">
-                                                    <input type="number" class="form-control" id="" placeholder="Panjang (cm)">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-sm-4">
-                                                <div class="form-group">
-                                                    <input type="number" class="form-control" id="" placeholder="Lebar (cm)">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-sm-4">
-                                                <div class="form-group">
-                                                    <input type="number" class="form-control" id="" placeholder="Tinggi (cm)">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="clearfix" style="margin-bottom: 15px;"></div>
-
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox"> Produk memerlukan perlindungan khusus dalam pengiriman
-                                            </label>
-                                        </div>
-
-
-
-                                    </form>
+                                    <p>Notes dari Admin Kimi:</p>
+                                    <ul>
+                                        <li class="text-roboto-light">Anda dapat melakukan request untuk penggantian tanggal.</li>
+                                        <li class="text-roboto-light">Apabila dicancel mohon diberikan alasan yang jelas.</li>
+                                        <li class="text-roboto-light">Estimasikan waktu pengerjaan Anda dengan cermat</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn button-red" data-dismiss="modal" aria-label="Close">Cancel</button>
-                            <button type="button" class="btn button-gray-3" data-dismiss="modal">Set as Draft</button>
-                            <button type="button" class="btn button-gray-3">Preview</button>
-                            <button type="button" class="btn button-green">Save and Publish</button>
+                        <div class="modal-footer hidden-xs">
+                            <button type="button" class="btn button-gray-3" data-dismiss="modal" aria-label="Close"><i class="fa fa-print" aria-hidden="true"></i> Print</button>
+                            <button type="button" class="btn button-red" data-dismiss="modal">Reject Order</button>
+                            <button type="button" class="btn button-primary"><i class="fa fa-calendar" aria-hidden="true"></i> Request Change Date</button>
+                            <button type="button" class="btn button-primary button-positive"><i class="fa fa-check-circle" aria-hidden="true"></i> Accept Order</button>
                         </div>
+
+                        <div class="modal-footer visible-xs">
+                            <div class="row">
+                                <div class="col-xs-6 less-padding"><button type="button" class="btn button-gray-3 btn-block" data-dismiss="modal" aria-label="Close"><i class="fa fa-print" aria-hidden="true"></i> Print</button></div>
+                                <div class="col-xs-6 less-padding"><button type="button" class="btn button-red btn-block" data-dismiss="modal">Reject Order</button></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-6 less-padding"><button type="button" class="btn button-primary btn-block"><i class="fa fa-calendar" aria-hidden="true"></i> Request Change Date</button></div>
+                                <div class="col-xs-6 less-padding"><button type="button" class="btn button-primary button-positive btn-block"><i class="fa fa-check-circle" aria-hidden="true"></i> Accept Order</button></div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
