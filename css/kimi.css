@@ -13,6 +13,7 @@ body{
     background-color: #F5F7F6;
     font-family: "Roboto";
     color:#4A4A4A;
+    padding-top: 0 !important;
 }
 
 button, a{
@@ -807,6 +808,7 @@ footer a:hover{
     height: 100%;
     background-color: #000;
     opacity: .4;
+    z-index: 9;
 }
 
 .item p{
@@ -1635,6 +1637,7 @@ ul.pagination li.current a{
         margin: auto;
         /*position: absolute;*/
         top: 0; left: 0; bottom: 0; right: 0;
+        z-index: 9;
     }
 
     .homepage-slider .item img{
@@ -1659,6 +1662,7 @@ ul.pagination li.current a{
         /*position: absolute;*/
         left: 0; bottom: 0; right: 0;
         padding-left: 0;
+        z-index: 9;
     }
 
     .homepage-slider .row-buttons{
@@ -1671,6 +1675,7 @@ ul.pagination li.current a{
         left: 0; right: 0; bottom: 0;
         padding: 0 20px;
         text-align: center;
+        z-index: 9;
     }
 
     .row-buttons a.button-outline{
@@ -1730,6 +1735,7 @@ ul.pagination li.current a{
         margin: auto;
         /*position: absolute;*/
         top: 0; left: 0; bottom: 0; right: 0;
+        z-index: 9;
     }
 
     .homepage-slider p{
@@ -1738,6 +1744,7 @@ ul.pagination li.current a{
         font-weight: 300;
         text-align: center;
         bottom: 200px;
+        z-index: 9;
     }
 
     .homepage-slider .row-buttons{
@@ -1750,6 +1757,7 @@ ul.pagination li.current a{
         left: 0; right: 0; bottom: 0;
         padding: 0 20px;
         text-align: center;
+        z-index: 9;
     }
 
     .row-buttons a.button-outline{
