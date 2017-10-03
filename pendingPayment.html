@@ -233,57 +233,163 @@
             </div>
         </div>
 
-        <div class="col-md-6">
-
-            <section class="edit-channel-form">
-                <h2 class="title less-margin">Order Request</h2>
-                <div style="margin: 0 auto; width: 150px;">
-                    <img src="images/IG_5.svg" width="150">
-                </div>
-                <p class="text-roboto text-center">There is no Order Request Right Now.</p>
-                <p class="text-roboto-light text-center">Promote Your Channel Now</p>
-                <p class="text-center"><button class="btn button-green">Promote My Channel</button></p>
-            </section>
-            <div class="maya-small-padding"></div>
+        <div class="col-md-9">
 
             <section class="edit-channel-form">
                 <h2 class="title less-margin">Pending Payment</h2>
-                <div style="margin: 25px auto; width: 150px;">
-                    <img src="images/wallet.png" width="150">
+
+                <!--table-->
+                <div class="row">
+                    <div class="col-xs-12 less-padding">
+                        <div class="box">
+                            <div class="box-header">
+                                <p class="text-roboto-light">Semua Pending Payment akan terdaftar di sini dan menunggu pembayaran dari buyer. Payment akan masuk ke rekening Kimi, dan akan ditransfer ke Rekening Bank Anda setiap minggunya di hari Rabu.</p>
+
+                                <!--<div class="box-tools">-->
+                                    <!--<div class="input-group input-group-sm" style="width: 150px;">-->
+                                        <!--<input type="text" name="table_search" class="form-control pull-right" placeholder="Search">-->
+                                        <!--<div class="input-group-btn">-->
+                                            <!--<button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body table-responsive no-padding">
+                                <table class="table table-hover table-header-gray">
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Requester</th>
+                                        <th>Request Date</th>
+                                        <th>Delivery Date</th>
+                                        <th>Status</th>
+                                        <th>Amount</th>
+                                        <th>Action</th>
+                                    </tr>
+                                    <tr>
+                                        <td>183</td>
+                                        <td>John Doe</td>
+                                        <td>11-10-2017</td>
+                                        <td>12-10-2017</td>
+                                        <td><span class="label label-warning">Pending Payment</span></td>
+                                        <td>IDR 51.135</td>
+                                        <td class="va-middle"><button class="btn button-primary" data-toggle="modal" data-target="#orderDetail">Details</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>219</td>
+                                        <td>Alexander Pierce</td>
+                                        <td>11-10-2017</td>
+                                        <td>12-10-2017</td>
+                                        <td><span class="label label-warning">Pending Payment</span></td>
+                                        <td>IDR 87.135</td>
+                                        <td class="va-middle"><button class="btn button-primary" data-toggle="modal" data-target="#orderDetail">Details</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>657</td>
+                                        <td>Bob Doe</td>
+                                        <td>11-10-2017</td>
+                                        <td>12-10-2017</td>
+                                        <td><span class="label label-warning">Pending Payment</span></td>
+                                        <td>IDR 45.135</td>
+                                        <td class="va-middle"><button class="btn button-primary" data-toggle="modal" data-target="#orderDetail">Details</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>175</td>
+                                        <td>Mike Doe</td>
+                                        <td>11-7-2014</td>
+                                        <td>12-7-2014</td>
+                                        <td><span class="label label-warning">Pending Payment</span></td>
+                                        <td>IDR 32.135</td>
+                                        <td class="va-middle"><button class="btn button-primary" data-toggle="modal" data-target="#orderDetail">Details</button></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
                 </div>
-                <p class="text-roboto text-center">There is no Pending Payment Right Now.</p>
-                <p class="text-roboto-light text-center">Semua payment yang bersifat pending akan terdaftar di sini.</p>
+                <!--table ends-->
             </section>
             <div class="maya-small-padding"></div>
 
-            <section class="edit-channel-form">
-                <h2 class="title less-margin">Pickup Schedule</h2>
-                <div style="margin: 25px auto; width: 150px;">
-                    <img src="images/courier.png" width="150">
+            <!--modal order detail-->
+            <div class="modal fade" id="orderDetail" tabindex="-1" role="dialog" aria-labelledby="orderDetail">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Order Details</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <table class="table table-hover">
+                                        <tr>
+                                            <th colspan="2">Transaction ID. 10001</th>
+                                        </tr>
+                                        <tr>
+                                            <td width="30%">Requester</td>
+                                            <td>John Doe</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Order Delivery Date:</td>
+                                            <td>12-10-2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Delivery Address</td>
+                                            <td>Jalan Madrasah 2 no 30 D RT 08 RW 02 Kelurahan Sukabumi Utara Kecamatan Kebon Jeruk Jakarta Barat 11540</td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 box-body table-responsive no-padding">
+                                    <table class="table table-hover">
+                                        <tr>
+                                            <th>Qty</th>
+                                            <th>Product</th>
+                                            <th>Image</th>
+                                            <th>Keterangan</th>
+                                            <th>Subtotal</th>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Nasi Bakar Ayam Woku</td>
+                                            <td><img src="images/nasi_bakar_ayam_woku_2.jpg" width="60"></td>
+                                            <td>Add extra Chilly Sauce</td>
+                                            <td>Rp 115.000</td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p class="text-roboto-light" style="margin: 10px 0">
+                                        Payment Method: Bank Transfer (BCA)
+                                    </p>
+                                    <p>Notes dari Admin Kimi:</p>
+                                    <ul>
+                                        <li class="text-roboto-light">Anda dapat melakukan request untuk penggantian tanggal.</li>
+                                        <li class="text-roboto-light">Apabila dicancel mohon diberikan alasan yang jelas.</li>
+                                        <li class="text-roboto-light">Estimasikan waktu pengerjaan Anda dengan cermat</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="text-roboto text-center">There is no Paid Orders and Pick Up Orders Right Now</p>
-                <p class="text-roboto-light text-center">Semua order yang sudah siap diambil oleh kurir kami akan terdaftar di sini.</p>
-            </section>
-
-        </div>
-
-
-
-        <div class="col-md-3">
-            <div class="box-promo">
-                <h3>Penjualan Melesat dengan Premium Account</h3>
-                <p>Premium Merchant menyediakan berbagai fitur istimewa untuk meningkatkan penjualan Anda.</p>
-                <ul>
-                    <li>Penjualan Meningkat</li>
-                    <li>Prioritas Promosi</li>
-                    <li>50% tambahan promosi di berbagai channel ads</li>
-                    <li>Premium Support</li>
-                </ul>
-                <div class="maya-small-padding"></div>
-
-                <button class="btn btn-block button button-outline">Join Premium Merchant</button>
             </div>
+
+
         </div>
+
+
+
+
 
     </div>
 </div>
