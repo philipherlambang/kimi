@@ -13,13 +13,14 @@ body{
     background-color: #F5F7F6;
     font-family: "Roboto";
     color:#4A4A4A;
+    padding-top: 0 !important;
 }
 
 button, a{
     cursor: pointer;
 }
 
-a{color:#fc9159}
+a{color:#8b0000}
 
 .search-button{
     background: none;
@@ -106,7 +107,7 @@ a{color:#fc9159}
 }
 
 a.button-green-top-nav{
-    background: #fc9159;
+    background: #8b0000;
     color:white;
     border: none;
     border-radius: 0;
@@ -114,6 +115,11 @@ a.button-green-top-nav{
     padding-left: 30px;
     padding-right: 30px;
     font-weight: 500;
+}
+
+a.button-green-top-nav:focus{
+    color:white;
+    border: 1px solid darkred;
 }
 
 a.button-green-top-nav:hover{
@@ -126,7 +132,7 @@ a.button-green-top-nav:hover{
 }
 
 .button-green-free{
-    background: #fc9159;
+    background: #8b0000;
     color:white;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -139,7 +145,7 @@ a.button-green-top-nav:hover{
 }
 
 .merchant-menu li a:hover{
-    color:#fc9159 !important;
+    color:#8b0000 !important;
 }
 
 .box-bg-white{
@@ -179,7 +185,7 @@ a.button-green-top-nav:hover{
 }
 
 .breadcrumb li a{
-    color: #fc9159;
+    color: #8b0000;
 }
 
 .breadcrumb li a:hover{
@@ -204,7 +210,7 @@ a.button-green-top-nav:hover{
 }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
-    background: #fc9159 !important;
+    background: #8b0000 !important;
 }
 
 a.text-secondary:hover{
@@ -218,7 +224,7 @@ a.text-secondary:hover{
 }
 
 .text-secondary{
-    color:#fc9159;
+    color:#8b0000;
 }
 
 .text-red{
@@ -310,14 +316,19 @@ a.text-secondary:hover{
 
 /*override*/
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover
+{
     background: none;
-    color:#fc9159 !important;
+    color:rgb(231,108,94) !important;
 }
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
     background: none;
-    color: #fc9159;
+    color: rgb(231,108,94);
 }
 
 .navbar-header.pull-left {
@@ -465,8 +476,8 @@ a.text-secondary:hover{
 }
 
 .bt-circle:hover{
-    border: 1px solid #fc9159;
-    color:#fc9159;
+    border: 1px solid #8b0000;
+    color:#8b0000;
 }
 
 .bt-circle i{
@@ -565,11 +576,12 @@ button, a{
 }
 
 .default-userProductList-CardList-button{
-    background: #fc9159;
+    background: #8b0000;
     font-family: Oswald;
     color: white;
     text-transform: uppercase;
     border-radius: 0;
+    border: 1px solid #8b0000;
 }
 
 .default-userProductList-CardList-button:hover{
@@ -583,14 +595,14 @@ button, a{
 }
 
 .button-add-to-bag{
-    background: #fc9159;
+    background: #8b0000;
     color: #ffffff;
     padding: 15px 25px;
     font-size: 16px;
     font-weight: 500;
     border: none;
     border-radius: 2px;
-    border: 1px solid #fc9159;
+    border: 1px solid #8b0000;
 }
 
 .button-add-to-bag:hover{
@@ -625,7 +637,7 @@ button, a{
 
 .dropdown-menu>li>a:hover{
     background: none;
-    color:#fc9159;
+    color:#8b0000;
 }
 
 .form-control{
@@ -684,11 +696,18 @@ button, a{
     box-shadow: none;
 }
 
+.basic-info-container{
+    background: white;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E7EAEA;
+}
+
 
 /*footer*/
 
 footer{
-    background: #676767;
+    background: #333333;
     padding: 30px 0 100px 0;
     margin-top: 100px;
 }
@@ -704,8 +723,13 @@ footer p, footer address{
     color: #ffffff;
 }
 
+footer .social-icons-wrapper a {
+    font-size: 32px;
+    margin-right: 10px;
+}
+
 footer a:hover{
-    color:#fc9159;
+    color:#8b0000;
 }
 
 .social-icons-wrapper a{
@@ -807,6 +831,7 @@ footer a:hover{
     height: 100%;
     background-color: #000;
     opacity: .4;
+    z-index: 9;
 }
 
 .item p{
@@ -822,6 +847,7 @@ footer a:hover{
     position: absolute;
     bottom: 10px;
     padding-left: 10px;
+    z-index: 9;
 }
 
 .item .small-text-overlay{
@@ -833,6 +859,7 @@ footer a:hover{
     color: white;
     font-weight: 300;
     padding-left: 10px;
+    z-index: 9;
 }
 
 #tipue_search_input {
@@ -1013,8 +1040,8 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
 }
 
 .product-detail-tag-container button:hover{
-    background: #fc9159;
-    border: 1px solid #fc9159;
+    background: #8b0000;
+    border: 1px solid #8b0000;
     color:#ffffff;
 }
 
@@ -1070,7 +1097,7 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
 .button-green{
     font-family: Helvetica;
     color:white;
-    background: #fc9159;
+    background: #8b0000;
     font-size:12px;
     border-radius: 2px;
     padding: 3px 12px;
@@ -1085,7 +1112,7 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
 .button-primary{
     font-family: 'Roboto';
     color:white;
-    background: #fc9159;
+    background: #8b0000;
     font-size:12px;
     border-radius: 2px;
     padding: 3px 12px;
@@ -1118,7 +1145,7 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
 }
 
 .button-add-product{
-    background: #fc9159;
+    background: #8b0000;
     color:#fff;
     border-radius: 2px;
     margin-bottom: 10px;
@@ -1134,7 +1161,7 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
 }
 
 .text-base-image{
-    background: #fc9159;
+    background: #8b0000;
     color:white;
     position: absolute;
     width: 80%;
@@ -1147,7 +1174,7 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
 .nav-pills>li.active>a, .nav-stacked-kimi li a:hover, .nav-pills>li.active>a:hover{
     background: #FCFCFC;
     border: 1px solid #E7EAEA;
-    color: #fc9159;
+    color: #8b0000;
     /*font-weight:bold;*/
 }
 
@@ -1270,6 +1297,7 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
 .thumbnail_item {
     position: relative;
     overflow: hidden;
+    margin-bottom: 0;
 }
 .thumbnail_item img {
     max-width: 100%;
@@ -1357,7 +1385,7 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
 /*article metainfo ends*/
 
 .box-promo{
-    background:#fc9159;
+    background:#8b0000;
     padding: 15px;
     color: #ffffff;
 }
@@ -1380,7 +1408,7 @@ input#file-upload[type="file"], input#file-upload-mobile[type="file"] {
 
 .button-outline:hover{
     background: white;
-    color: #fc9159;
+    color: #8b0000;
 }
 
 .button-connect-facebook{
@@ -1508,7 +1536,7 @@ ul.pagination li a{
 
 
 ul.pagination li.current a{
-    background: #fc9159;
+    background: #8b0000;
     color: #ffffff;
 }
 
@@ -1522,7 +1550,7 @@ ul.pagination li.current a{
     font-size: 24px;
 }
 
-#orderDetail .table-hover th{
+#orderDetail .table-hover th, .table-header-gray th{
     background: #f5f5f5;
 }
 
@@ -1541,7 +1569,7 @@ ul.pagination li.current a{
     .navbar-toggle .icon-bar{
         height: 4px;
         background-color: #333 !important;
-        /*background-color: #fc9159 !important;*/
+        /*background-color: #8b0000 !important;*/
     }
 
     .navbar-toggle .icon-bar+.icon-bar{
@@ -1635,6 +1663,7 @@ ul.pagination li.current a{
         margin: auto;
         /*position: absolute;*/
         top: 0; left: 0; bottom: 0; right: 0;
+        z-index: 9;
     }
 
     .homepage-slider .item img{
@@ -1659,6 +1688,7 @@ ul.pagination li.current a{
         /*position: absolute;*/
         left: 0; bottom: 0; right: 0;
         padding-left: 0;
+        z-index: 9;
     }
 
     .homepage-slider .row-buttons{
@@ -1671,6 +1701,7 @@ ul.pagination li.current a{
         left: 0; right: 0; bottom: 0;
         padding: 0 20px;
         text-align: center;
+        z-index: 9;
     }
 
     .row-buttons a.button-outline{
@@ -1710,6 +1741,11 @@ ul.pagination li.current a{
         position: relative;
     }
 
+    .searchbar-mobile button i{
+        font-size: 18px;
+        line-height: 30px;
+    }
+
 }
 
 /* large desktop */
@@ -1730,6 +1766,7 @@ ul.pagination li.current a{
         margin: auto;
         /*position: absolute;*/
         top: 0; left: 0; bottom: 0; right: 0;
+        z-index: 9;
     }
 
     .homepage-slider p{
@@ -1738,6 +1775,7 @@ ul.pagination li.current a{
         font-weight: 300;
         text-align: center;
         bottom: 200px;
+        z-index: 9;
     }
 
     .homepage-slider .row-buttons{
@@ -1750,6 +1788,7 @@ ul.pagination li.current a{
         left: 0; right: 0; bottom: 0;
         padding: 0 20px;
         text-align: center;
+        z-index: 9;
     }
 
     .row-buttons a.button-outline{
@@ -1764,5 +1803,9 @@ ul.pagination li.current a{
 
     .row-buttons a.button-outline:hover{
         color:#333;
+    }
+
+    .top-nav-searchbar .input-group{
+        width: 300px;
     }
 }
