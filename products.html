@@ -1,0 +1,463 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Kimi is a curated foods and beverages artisans.">
+    <meta name="author" content="Philip Herlambang">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+
+    <meta name="twitter:card" content="summary">
+    <meta name="title" content="Back to Kimi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Language" content="en-id">
+
+
+    <!-- open graph metadata facebook, slack, whatsapp line -->
+    <meta property="fb:app_id" content="150112802189143"/>
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Back to Kimi" />
+    <meta property='og:site_name' content='Kimi | Curated Foods and Beverages' />
+    <meta property="og:url" content="http://kimistatic.s3-website-ap-southeast-1.amazonaws.com/" />
+    <meta property="og:description" content="Kimi is a curated foods and beverages artisans." />
+    <meta property='og:image' content="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/apple-touch-icon.png" />
+
+
+    <!-- open graph metadata twitter -->
+    <meta name="twitter:title" content="Back to Kimi">
+    <meta name="twitter:url" content="http://www.backtokimi.com">
+    <meta name="twitter:description" content="Kimi is a curated foods and beverages artisans.">
+    <meta name="twitter:image" content="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/apple-touch-icon.png">
+    <meta name="twitter:site" content="@backtokimi">
+
+
+    <link rel="icon" href="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/favicon.ico">
+    <link rel="apple-touch-icon" href="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/apple-touch-icon.png">
+
+    <title>Articles</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/kimi.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/owl_carousel/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl_carousel/owl.theme.default.css">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid hidden-xs">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <button class="pull-left search-button" id="buttonOpenSearchbar"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <button class="pull-left search-button" id="buttonCloseSearchbar" style="display: none;"><i class="fa fa-times" aria-hidden="true"></i></button>
+
+                <div id="searchbar" style="display: none;">
+                    <div>
+                        <div class="top-nav-searchbar">
+                            <div class="input-group">
+                                <form action="search.html">
+                                    <input class="form-control" type="text" name="q" id="tipue_search_input" placeholder="Search for" autofocus="autofocus">
+                                </form>
+                            </div><!-- /input-group -->
+                        </div>
+                    </div>
+                </div>
+                <p class="help-text hidden-sm hidden-md" id="helpText">Find any troubles? Drop us an email at <a href="mailto:grow@backtokimi.com" class="text-secondary">grow@backtokimi.com</a> </p>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <p class="text-center logo-container"><a href="index.html"><img src="images/logo.png" width="100"></a></p>
+            </div>
+            <div class="col-md-4 less-padding-right">
+                <a href="registerMerchant.html" class="btn pull-right button-green-top-nav">Be Kimi Merchant</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background: white;">
+        <div class="navbar-header pull-left">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar icon-short"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar icon-medium"></span>
+            </button>
+        </div>
+        <div class="visible-xs logo-center">
+            <p class="text-center logo-container visible-xs"><a href="index.html"><img src="images/logo.png" width="90"></a></p>
+        </div>
+        <div class="visible-xs pull-right">
+            <button class="pull-left search-button-mobile" id="buttonOpenSearchbarMobile"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="fly-searchbar" style="display: none;">
+            <div class="top-nav-searchbar searchbar-mobile">
+                <div class="input-group">
+                    <form action="search.html">
+                        <input class="form-control" type="text" name="q" id="tipue_search_input" placeholder="Search for" autofocus="autofocus">
+                    </form>
+                    <button class="pull-right" id="buttonCloseSearchbarMobile"><i class="fa fa-times" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Shop</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="merchantGuide.html">Chef Guide</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Location <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="chefDirectory.html">Jakarta Barat</a></li>
+                        <li><a href="chefDirectory.html">Jakarta Selatan</a></li>
+                        <li><a href="chefDirectory.html">Jakarta Pusat</a></li>
+                        <li><a href="chefDirectory.html">Jakarta Utara</a></li>
+                        <li><a href="chefDirectory.html">Jakarta Timur</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="chefDirectory.html">Depok</a></li>
+                        <li><a href="chefDirectory.html">Tangerang</a></li>
+                    </ul>
+                </li>
+                <li><a href="questions.html">FAQs</a></li>
+                <li><a href="about.html">About Kimi</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="chefDirectory.html">Chef Directory</a></li>
+                <li><a href="login.html">Login / Register</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cart (2)</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="cart-flyout">
+                                <h4 class="text-oswald">Recently Added Product(s)</h4>
+                                <div class="row">
+                                    <div class="col-sm-2 col-xs-3 less-padding">
+                                        <img src="images/brownies.jpg" width="100%">
+                                    </div>
+                                    <div class="col-sm-8 col-xs-9">
+                                        <span class="text-gray-1">Brownies Chocolate</span>
+                                        <p class="text-gray-2">1 x 50.000</p>
+                                    </div>
+                                    <!--<div class="col-sm-2">-->
+                                    <!--<button><i class="fa fa-times-circle" aria-hidden="true"></i></button>-->
+                                    <!--</div>-->
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-2 col-xs-3 less-padding">
+                                        <img src="images/lapisSurabaya.jpg" width="100%">
+                                    </div>
+                                    <div class="col-sm-8 col-xs-9">
+                                        <span class="text-gray-1">Lapis Surabaya</span>
+                                        <p class="text-gray-2">1 x 175.000</p>
+                                    </div>
+
+                                </div>
+                                <hr>
+
+                                <div class="row">
+                                    <div class="col-sm-6 col-xs-6 less-padding"><h4><small>Total</small><br><span>IDR 225.000</span></h4></div>
+                                    <div class="col-sm-6 col-xs-6 less-padding">
+                                        <a href="checkout2.html" class="button-green-top-nav btn pull-right btn-block text-oswald text-uppercase">View Cart</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid less-padding kimi-container">
+    <div>
+        <div>
+            <div class="small-slider owl-carousel owl-theme">
+                <a href="products.html" class="item">
+                    <div class="scrim"></div>
+                    <span class="small-text-overlay">5 Products</span>
+                    <p>Rice</p>
+                    <img src="images/tag_nasi.jpg" width="100%">
+                </a>
+                <a href="products.html" class="item">
+                    <div class="scrim"></div>
+                    <span class="small-text-overlay">15 Products</span>
+                    <p>Doughnut</p>
+                    <img src="images/tag_doughnut.jpg" width="100%">
+                </a>
+                <a href="products.html" class="item">
+                    <div class="scrim"></div>
+                    <span class="small-text-overlay">52 Products</span>
+                    <p>Breads</p>
+                    <img src="images/tag_bread.jpg" width="100%">
+                </a>
+                <a href="products.html" class="item">
+                    <div class="scrim"></div>
+                    <span class="small-text-overlay">100 Products</span>
+                    <p>Cakes</p>
+                    <img src="images/tag_cake.jpg" width="100%">
+                </a>
+                <a href="products.html" class="item">
+                    <div class="scrim"></div>
+                    <span class="small-text-overlay">10 Products</span>
+                    <p>Coffee</p>
+                    <img src="images/tag_coffee.jpg" width="100%">
+                </a>
+                <a href="products.html" class="item">
+                    <div class="scrim"></div>
+                    <span class="small-text-overlay">10 Products</span>
+                    <p>Fast Food</p>
+                    <img src="images/tag_fastfood.jpg" width="100%">
+                </a>
+                <a href="products.html" class="item">
+                    <div class="scrim"></div>
+                    <span class="small-text-overlay">10 Products</span>
+                    <p>healthy Food</p>
+                    <img src="images/tag_healthy.jpg" width="100%">
+                </a>
+                <a href="products.html" class="item">
+                    <div class="scrim"></div>
+                    <span class="small-text-overlay">5 Products</span>
+                    <p>Juice</p>
+                    <img src="images/tag_juice.jpg" width="100%">
+                </a>
+                <a href="products.html" class="item">
+                    <div class="scrim"></div>
+                    <span class="small-text-overlay">20 Products</span>
+                    <p>Korean Food</p>
+                    <img src="images/tag_korean.jpg" width="100%">
+                </a>
+                <a href="products.html" class="item">
+                    <div class="scrim"></div>
+                    <span class="small-text-overlay">10 Products</span>
+                    <p>Noodles</p>
+                    <img src="images/tag_noodle.jpg" width="100%">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="maya-tiny-padding"></div>
+    <div>
+        <!--breadcrumb start-->
+        <!--<ol class="breadcrumb hidden-xs">-->
+            <!--<li><a href="index.html">Home</a></li>-->
+            <!--<li>Articles</li>-->
+        <!--</ol>-->
+
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-roboto-light">30 Products in Category <strong>Healthy</strong></p>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a href="articleDetails.html" class="thumbnail_item thumbnail less-padding" style="margin-bottom: 0;">
+                    <img src="images/article0.jpg" alt="article title">
+                </a>
+                <div class="caption box">
+                    <h3>Lemon Seafood Risotto</h3>
+                    <div class="row">
+                        <div class="col-sm-8 col-xs-6">
+                            <p>Kimi Editorial's Pick</p>
+                            <span class="last-text">September 14, 2017</span>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-6">
+                            <a href="profile.html">
+                                <img src="images/face1.jpg" width="40" class="pull-right img-circle">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <a href="articleDetails.html" class="thumbnail_item thumbnail less-padding" style="margin-bottom: 0;">
+                    <img src="images/article1.jpg" alt="article title">
+                </a>
+                <div class="caption box">
+                    <h3>Lemon Seafood Risotto</h3>
+                    <div class="row">
+                        <div class="col-sm-8 col-xs-6">
+                            <p>Kimi Editorial's Pick</p>
+                            <span class="last-text">September 14, 2017</span>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-6">
+                            <a href="profile.html">
+                                <img src="images/face2.jpg" width="40" class="pull-right img-circle">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <a href="articleDetails.html" class="thumbnail_item thumbnail less-padding" style="margin-bottom: 0;">
+                    <img src="images/article2.jpg" alt="article title">
+                </a>
+                <div class="caption box">
+                    <h3>Lemon Seafood Risotto</h3>
+                    <div class="row">
+                        <div class="col-sm-8 col-xs-6">
+                            <p>Kimi Editorial's Pick</p>
+                            <span class="last-text">September 14, 2017</span>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-6">
+                            <a href="profile.html">
+                                <img src="images/face3.jpg" width="40" class="pull-right img-circle">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <a href="articleDetails.html" class="thumbnail_item thumbnail less-padding" style="margin-bottom: 0;">
+                    <img src="images/article3.jpg" alt="article title">
+                </a>
+                <div class="caption box">
+                    <h3>Lemon Seafood Risotto</h3>
+                    <div class="row">
+                        <div class="col-sm-8 col-xs-6">
+                            <p>Kimi Editorial's Pick</p>
+                            <span class="last-text">September 14, 2017</span>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-6">
+                            <a href="profile.html">
+                                <img src="images/face4.jpg" width="40" class="pull-right img-circle">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <a href="articleDetails.html" class="thumbnail_item thumbnail less-padding" style="margin-bottom: 0;">
+                    <img src="images/article4.jpg" alt="article title">
+                </a>
+                <div class="caption box">
+                    <h3>Lemon Seafood Risotto</h3>
+                    <div class="row">
+                        <div class="col-sm-8 col-xs-6">
+                            <p>Kimi Editorial's Pick</p>
+                            <span class="last-text">September 14, 2017</span>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-6">
+                            <a href="profile.html">
+                                <img src="images/face3.jpg" width="40" class="pull-right img-circle">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <a href="articleDetails.html" class="thumbnail_item thumbnail less-padding" style="margin-bottom: 0;">
+                    <img src="images/article5.jpg" alt="article title">
+                </a>
+                <div class="caption box">
+                    <h3>Lemon Seafood Risotto</h3>
+                    <div class="row">
+                        <div class="col-sm-8 col-xs-6">
+                            <p>Kimi Editorial's Pick</p>
+                            <span class="last-text">September 14, 2017</span>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-6">
+                            <a href="profile.html">
+                                <img src="images/face1.jpg" width="40" class="pull-right img-circle">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="product-detail-tag-container col-md-4 col-md-offset-4 visible-xs text-center">
+                <button class="btn outline-white-button text-center">Load More</button>
+            </div>
+
+            <div class="col-md-12 hidden-xs text-center">
+                <!--pagination-->
+                <nav aria-label="Page navigation">
+                    <ul class="pagination">
+                        <li class="current"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                    </ul>
+                </nav>
+                <!--pagination ends-->
+            </div>
+        </div>
+    </div>
+
+</div><!-- /.container -->
+
+<!--include footer-->
+<div class="include-footer"></div>
+
+
+<script src="./js/jquery.min.js"></script>
+
+<!-- owl carousel -->
+<script src="js/owl_carousel/owl.carousel.js"></script>
+
+<!--boostrap js-->
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="./js/bootstrap.min.js"></script>
+
+<!--kimi basic js-->
+<script src="js/kimi.js"></script>
+
+<script>
+    $('.small-slider').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        dots: false,
+        responsive:{
+            0:{
+                items:3.5
+            },
+            600:{
+                items:6
+            },
+            1000:{
+                items:8
+            }
+        }
+    })
+</script>
+
+</body>
+</html>

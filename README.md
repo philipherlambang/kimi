@@ -59,7 +59,6 @@
 
 ### Todo list
 - Product Management
-- Order Management
 - library widget
 - invoice / order details
 - tables
@@ -69,7 +68,6 @@
 - 404
 - validation form
 - notification page
-- empty state
 - profile
 - shop the articles
 - terms and conditions
@@ -78,8 +76,6 @@
 - share buttons
 - off canvas menu for mobile
 - houzz
-- product list page
-- order detail page
 - calendar modal when merchant request change the delivery date
 - find nice icons for editors pick, this week favourites, and feature merchant section
 
@@ -103,15 +99,25 @@
 - empty state
 - image resizer (cloudinary)
 - empty state shopping cart
+- Order Management
+- product list page
+- order detail page (modal)
+- empty state (shopping cart, order request, pending payment, pickup schedule)
 
 
 
-### Update September 25
+### Update September 25th
 - Add featured merchant,
 - Update styling for cart in mobile view,
 - Using cloudinary for transformation in homepage, about and merchant guide
 - add pagination
 - add load more button in homepage
+
+
+### Update October 5th
+- Add product list page
+- update css
+- update Channel Dashboard
 
 
 
