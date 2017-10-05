@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Kimi is a curated foods and beverages artisans.">
+    <meta name="author" content="Johnson Chandra, Allysa Prabandani, Philipus Herlambang, Maya Editorial">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+
+    <meta name="twitter:card" content="summary">
+    <meta name="title" content="Back to Kimi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Language" content="en-id">
+
+
+    <!-- open graph metadata facebook, slack, whatsapp line -->
+    <meta property="fb:app_id" content="150112802189143"/>
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Back to Kimi" />
+    <meta property='og:site_name' content='Kimi | Curated Foods and Beverages' />
+    <meta property="og:url" content="http://kimistatic.s3-website-ap-southeast-1.amazonaws.com/" />
+    <meta property="og:description" content="Kimi is a curated foods and beverages artisans." />
+    <meta property='og:image' content="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/apple-touch-icon.png" />
+
+
+    <!-- open graph metadata twitter -->
+    <meta name="twitter:title" content="Back to Kimi">
+    <meta name="twitter:url" content="http://www.backtokimi.com">
+    <meta name="twitter:description" content="Kimi is a curated foods and beverages artisans.">
+    <meta name="twitter:image" content="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/apple-touch-icon.png">
+    <meta name="twitter:site" content="@backtokimi">
+
+
+    <link rel="icon" href="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/favicon.ico">
+    <link rel="apple-touch-icon" href="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/apple-touch-icon.png">
+
+    <title>Sucicakes</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/kimi.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+
+
+    <div class="container-fluid hidden-xs">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <button class="pull-left search-button" id="buttonOpenSearchbar"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <button class="pull-left search-button" id="buttonCloseSearchbar" style="display: none;"><i class="fa fa-times" aria-hidden="true"></i></button>
+
+                <div id="searchbar" style="display: none;">
+                    <div>
+                        <div class="top-nav-searchbar">
+                            <div class="input-group">
+                                <form action="search.html">
+                                    <input class="form-control" type="text" name="q" id="tipue_search_input" placeholder="Search for" autofocus="autofocus">
+                                </form>
+                            </div><!-- /input-group -->
+                        </div>
+                    </div>
+                </div>
+                <p class="help-text hidden-sm hidden-md" id="helpText">Find any troubles? Drop us an email at <a href="mailto:grow@backtokimi.com" class="text-secondary">grow@backtokimi.com</a> </p>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <p class="text-center logo-container"><a href="index.html"><img src="images/logo.png" width="100"></a></p>
+            </div>
+            <div class="col-md-4 less-padding-right">
+                <a href="registerMerchant.html" class="btn pull-right button-green-top-nav">Be Kimi Merchant</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background: white;">
+        <div class="navbar-header pull-left" style="border-right: 1px solid #E6EAEA; padding-right: 10px; margin-right: 0px; padding-left: 10px;">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar icon-short"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar icon-medium"></span>
+            </button>
+        </div>
+        <div class="visible-xs" style="width: 70%; float: left;">
+            <p class="text-center logo-container visible-xs"><a href="index.html"><img src="images/logo.png" width="90"></a></p>
+        </div>
+        <div class="visible-xs pull-right">
+            <button class="pull-left search-button-mobile" id="buttonOpenSearchbarMobile"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="fly-searchbar" style="display: none;">
+            <div class="top-nav-searchbar searchbar-mobile">
+                <div class="input-group">
+                    <form action="search.html">
+                        <input class="form-control" type="text" name="q" id="tipue_search_input" placeholder="Search for" autofocus="autofocus">
+                    </form>
+                    <button class="pull-right" id="buttonCloseSearchbarMobile"><i class="fa fa-times" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aurelia Suci <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="channelEdit.html">Edit Seller Information</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="channelEdit.html">Settings</a></li>
+                        <li><a href="#">Notifications</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="merchantGuide.html">Chef Guide</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Location <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="chefDirectory.html">Jakarta Barat</a></li>
+                        <li><a href="chefDirectory.html">Jakarta Selatan</a></li>
+                        <li><a href="chefDirectory.html">Jakarta Pusat</a></li>
+                        <li><a href="chefDirectory.html">Jakarta Utara</a></li>
+                        <li><a href="chefDirectory.html">Jakarta Timur</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="chefDirectory.html">Depok</a></li>
+                        <li><a href="chefDirectory.html">Tangerang</a></li>
+                    </ul>
+                </li>
+                <li><a href="questions.html">FAQs</a></li>
+                <li><a href="about.html">About Kimi</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="chefDirectory.html">Chef Directory</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cart (2)</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="cart-flyout">
+                                <h4 class="text-oswald">Recently Added Product(s)</h4>
+                                <div class="row">
+                                    <div class="col-sm-2 col-xs-3 less-padding">
+                                        <img src="images/brownies.jpg" width="100%">
+                                    </div>
+                                    <div class="col-sm-8 col-xs-9">
+                                        <span class="text-gray-1">Brownies Chocolate</span>
+                                        <p class="text-gray-2">1 x 50.000</p>
+                                    </div>
+                                    <!--<div class="col-sm-2">-->
+                                    <!--<button><i class="fa fa-times-circle" aria-hidden="true"></i></button>-->
+                                    <!--</div>-->
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-2 col-xs-3 less-padding">
+                                        <img src="images/lapisSurabaya.jpg" width="100%">
+                                    </div>
+                                    <div class="col-sm-8 col-xs-9">
+                                        <span class="text-gray-1">Lapis Surabaya</span>
+                                        <p class="text-gray-2">1 x 175.000</p>
+                                    </div>
+
+                                </div>
+                                <hr>
+
+                                <div class="row">
+                                    <div class="col-sm-6 col-xs-6 less-padding"><h4><small>Total</small><br><span>IDR 225.000</span></h4></div>
+                                    <div class="col-sm-6 col-xs-6 less-padding">
+                                        <a href="checkout2.html" class="button-green-top-nav btn pull-right btn-block text-oswald text-uppercase">View Cart</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+
+    <!--merchant menu-->
+    <div class="container-fluid merchant-menu hidden-xs">
+        <ul class="nav navbar-nav">
+            <li><a href="channelDashboard.html">Dashboard</a></li>
+            <li><a href="channelEdit.html">Edit Seller Information</a> </li>
+            <li class="active"><a href="productManagement.html">Products Management</a></li>
+            <li><a href="orderManagement.html">Order Management</a></li>
+            <li><a href="#">Notifications</a></li>
+        </ul>
+    </div>
+    <!--merchant menu ends-->
+</nav>
+
+<div class="container-fluid kimi-container">
+    <ol class="breadcrumb hidden-xs">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="channelDashboard.html">Channel Dashboard</a></li>
+        <li>Channel Edit</li>
+    </ol>
+</div>
+
+<div class="container-fluid" style="padding-bottom: 50px; padding-top: 20px;">
+    <div class="row">
+        <div class="col-md-3">
+            <ul class="nav nav-pills nav-stacked nav-stacked-kimi">
+                <li role="presentation" class="active"><a href="orderManagement.html">All Products</a></li>
+                <li role="presentation"><a href="activeProduct.html">Active Products</a></li>
+                <li role="presentation"><a href="draftProduct.html.html">Draft Products</a></li>
+                <li role="presentation"><a href="productCategories.html">Product Categories</a></li>
+            </ul>
+
+            <div style="background: #FCFCFC; border: 1px solid #E7EAEA; margin-top: 30px; padding: 15px;">
+                <h2>Sucicakes</h2>
+                <h4>This week Sales:</h4>
+                <h2>Rp 40.000</h2>
+                <p>Anda belum berlangganan <a href="#" class="text-secondary">Premium Merchant</a> </p>
+                <p>Berminat jadi Premium Merchant?
+                    Coba gratis selama 1 bulan.
+                    <a href="#" class="text-secondary"> Klik disini</a></p>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+
+            <div class="row">
+                <div class="col-sm-6 col-md-4 hidden-xs">
+                    <a href="#" class="thumbnail less-padding default-userProductList-CardList-thumbnail" data-toggle="modal" data-target="#uploadProductDesktop">
+                        <img src="images/add_product.png" alt="">
+                    </a>
+
+                </div>
+
+                <!-- Modal Desktop -->
+                <div class="modal fade" id="uploadProductDesktop" tabindex="-1" role="dialog" aria-labelledby="uploadProductDesktop">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Add Product</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-sm-3">
+
+                                        <label for="file-upload" class="custom-file-upload">
+                                            <img src="images/add_photo_desktop.png" width="100%">
+                                        </label>
+                                        <input id="file-upload" type="file"/>
+                                    </div>
+                                    <div class="col-sm-3" style="position: relative;">
+                                        <img src="images/bolkus.png" width="100%">
+                                        <p class="text-base-image">Base image</p>
+                                    </div>
+                                    <div class="col-sm-3" style="position: relative;">
+                                        <img src="images/bolkus2.png" width="100%">
+                                        <div class="desktop-upload-photo-button-container">
+                                            <button class="btn button-red pull-left"><i class="fa fa-times" aria-hidden="true"></i></button>
+                                            <button class="btn button-green pull-right"><i class="fa fa-tag" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3" style="position: relative;">
+                                        <img src="images/bolkus3.png" width="100%">
+                                        <div class="desktop-upload-photo-button-container">
+                                            <button class="btn button-red pull-left"><i class="fa fa-times" aria-hidden="true"></i></button>
+                                            <button class="btn button-green pull-right"><i class="fa fa-tag" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <p class="text-gray-2 helvetica-13" style="margin: 10px 0">
+                                            Base photo akan digunakan sebagai thumbnail dan photo utama. Checkout our <a href="#" class="text-secondary text-bold">recommended photo guidelines</a> and tips for product images look great on backtokimi.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h4 class="modal-title" style="margin-bottom: 10px;">Product</h4>
+                                        <form>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="" placeholder="Nama Produk">
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <input type="number" class="form-control" id="" placeholder="Harga">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <input type="number" class="form-control" id="" placeholder="Berat (gram)">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <input type="number" class="form-control" id="" placeholder="Minimum Order">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-12">
+                                                    <textarea class="form-control" rows="3" placeholder="Deskripsi Produk"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="clearfix" style="margin-bottom: 15px;"></div>
+
+
+                                        </form>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h4 class="modal-title" style="margin-bottom: 10px;">Ukuran Produk</h4>
+                                        <p class="text-gray-2 helvetica-13">Diperlukan untuk produk yang memiliki volume dalam pengiriman. Contoh kue tart</p>
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <input type="number" class="form-control" id="" placeholder="Panjang (cm)">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <input type="number" class="form-control" id="" placeholder="Lebar (cm)">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <input type="number" class="form-control" id="" placeholder="Tinggi (cm)">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="clearfix" style="margin-bottom: 15px;"></div>
+
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"> Produk memerlukan perlindungan khusus dalam pengiriman
+                                                </label>
+                                            </div>
+
+
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn button-red" data-dismiss="modal" aria-label="Close">Cancel</button>
+                                <button type="button" class="btn button-gray-3" data-dismiss="modal">Set as Draft</button>
+                                <button type="button" class="btn button-gray-3">Preview</button>
+                                <button type="button" class="btn button-green">Save and Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Modal Mobile-->
+                <div class="modal fade" id="uploadProductMobile" tabindex="-1" role="dialog" aria-labelledby="uploadProductMobile">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="">Add Product</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row mobile-upload-interface">
+                                    <div class="col-xs-3">
+                                        <label for="file-upload" class="custom-file-upload">
+                                            <img src="images/add_photo_mobile.png" width="100%">
+                                        </label>
+                                        <input id="file-upload-mobile" type="file"/>
+                                    </div>
+                                    <div class="col-xs-3" style="position: relative;">
+                                        <img src="images/bolkus.png" width="100%">
+
+                                    </div>
+                                    <div class="col-xs-3" style="position: relative;">
+                                        <img src="images/bolkus2.png" width="100%">
+
+                                    </div>
+                                    <div class="col-xs-3" style="position: relative;">
+                                        <img src="images/bolkus3.png" width="100%">
+                                    </div>
+
+                                    <div class="col-xs-6" style="margin-top: 20px;">
+                                        <button class="btn button-gray-2">Add Photo</button>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <p class="text-gray-2 helvetica-13 text-center" style="margin: 10px 0">
+                                            Base photo akan digunakan sebagai thumbnail dan photo utama. Checkout our <a href="#" class="text-secondary text-bold">recommended photo guidelines</a> and tips for product images look great on backtokimi.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h4 class="modal-title" style="margin-bottom: 10px;">Product</h4>
+                                        <form>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="" placeholder="Nama Produk">
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <input type="number" class="form-control" id="" placeholder="Harga">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <input type="number" class="form-control" id="" placeholder="Berat (gram)">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <input type="number" class="form-control" id="" placeholder="Minimum Order">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-12">
+                                                    <textarea class="form-control" rows="3" placeholder="Deskripsi Produk"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="clearfix" style="margin-bottom: 15px;"></div>
+
+
+                                        </form>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h4 class="modal-title" style="margin-bottom: 10px;">Ukuran Produk</h4>
+                                        <p class="text-gray-2 helvetica-13">Diperlukan untuk produk yang memiliki volume dalam pengiriman. Contoh kue tart</p>
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <input type="number" class="form-control" id="" placeholder="Panjang (cm)">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <input type="number" class="form-control" id="" placeholder="Lebar (cm)">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <input type="number" class="form-control" id="" placeholder="Tinggi (cm)">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="clearfix" style="margin-bottom: 15px;"></div>
+
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"> Produk memerlukan perlindungan khusus dalam pengiriman
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer footer-button-mobile-interface">
+                                <div class="col-xs-3">
+                                    <button type="button" class="btn button-red btn-block" data-dismiss="modal" aria-label="Close">Cancel</button>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button type="button" class="btn button-gray-3 btn-block" data-dismiss="modal">Draft</button>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button type="button" class="btn button-gray-3 btn-block">Preview</button>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button type="button" class="btn button-green btn-block">Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-sm-6 visible-xs">
+                    <h3 class="text-red">My Products</h3>
+                    <p>Currently you have 5 products<a href="#" class="text-red pull-right">Urutkan</a></p>
+
+                    <button class="btn btn-block button-add-product" data-toggle="modal" data-target="#uploadProductMobile"><i class="fa fa-plus" aria-hidden="true"></i> Add Product</button>
+                    <div class="maya-small-padding"></div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <a href="productDetail.html" class="thumbnail_item thumbnail less-padding less-margin">
+                        <img src="images/sosisSolo.jpg" alt="sosis solo">
+                    </a>
+                    <div class="caption box">
+                        <h3>Sosis Solo Sucicakes</h3>
+                        <div class="row">
+                            <div class="col-sm-8 col-xs-6">
+                                <p class="default-userProductList-CardList-price">Rp 4.500 / pcs</p>
+                                <span class="min-order">10 pcs min order</span>
+                            </div>
+
+                            <div class="col-sm-4 col-xs-6">
+                                <button class="btn default-userProductList-CardList-button pull-right hidden-xs"
+                                        role="button"
+                                        data-toggle="modal"
+                                        data-target="#uploadProductDesktop"
+                                >Edit
+
+                                </button>
+
+                                <button
+                                        class="btn default-userProductList-CardList-button pull-right visible-xs"
+                                        role="button"
+                                        data-toggle="modal"
+                                        data-target="#uploadProductMobile"
+                                >Edit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4">
+                    <a href="productDetail.html" class="thumbnail_item thumbnail less-padding less-margin">
+                        <img src="images/nasi_bakar_ayam_woku_2.jpg" alt="nasi bakar ayam woku">
+                    </a>
+                    <div class="caption box">
+                        <h3>Nasi Bakar Ayam Woku</h3>
+                        <div class="row">
+                            <div class="col-sm-8 col-xs-6">
+                                <p class="default-userProductList-CardList-price">Rp 23.000 / pcs</p>
+                                <span class="min-order">10 pcs min order</span>
+                            </div>
+
+                            <div class="col-sm-4 col-xs-6">
+                                <button class="btn default-userProductList-CardList-button pull-right hidden-xs"
+                                        role="button"
+                                        data-toggle="modal"
+                                        data-target="#uploadProductDesktop"
+                                >Edit
+
+                                </button>
+
+                                <button
+                                        class="btn default-userProductList-CardList-button pull-right visible-xs"
+                                        role="button"
+                                        data-toggle="modal"
+                                        data-target="#uploadProductMobile"
+                                >Edit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4">
+                    <a href="productDetail.html" class="thumbnail_item thumbnail less-padding less-margin">
+                        <img src="images/seafood_square.jpg" alt="Seafood">
+                    </a>
+                    <div class="caption box">
+                        <h3>Seafood</h3>
+                        <div class="row">
+                            <div class="col-sm-8 col-xs-6">
+                                <p class="default-userProductList-CardList-price">Rp 23.000 / pcs</p>
+                                <span class="min-order">10 pcs min order</span>
+                            </div>
+
+                            <div class="col-sm-4 col-xs-6">
+                                <button class="btn default-userProductList-CardList-button pull-right hidden-xs"
+                                        role="button"
+                                        data-toggle="modal"
+                                        data-target="#uploadProductDesktop"
+                                >Edit
+
+                                </button>
+
+                                <button
+                                        class="btn default-userProductList-CardList-button pull-right visible-xs"
+                                        role="button"
+                                        data-toggle="modal"
+                                        data-target="#uploadProductMobile"
+                                >Edit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4">
+                    <a href="productDetail.html" class="thumbnail_item thumbnail less-padding less-margin">
+                        <img src="images/cake_square.jpg" alt="cake">
+                    </a>
+                    <div class="caption box">
+                        <h3>Cake</h3>
+                        <div class="row">
+                            <div class="col-sm-8 col-xs-6">
+                                <p class="default-userProductList-CardList-price">Rp 23.000 / pcs</p>
+                                <span class="min-order">10 pcs min order</span>
+                            </div>
+
+                            <div class="col-sm-4 col-xs-6">
+                                <button class="btn default-userProductList-CardList-button pull-right hidden-xs"
+                                        role="button"
+                                        data-toggle="modal"
+                                        data-target="#uploadProductDesktop"
+                                >Edit
+
+                                </button>
+
+                                <button
+                                        class="btn default-userProductList-CardList-button pull-right visible-xs"
+                                        role="button"
+                                        data-toggle="modal"
+                                        data-target="#uploadProductMobile"
+                                >Edit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4">
+                    <a href="productDetail.html" class="thumbnail_item thumbnail less-padding less-margin">
+                        <img src="images/risotto_square.jpg" alt="risotto lemon">
+                    </a>
+                    <div class="caption box">
+                        <h3>Lemon Risotto</h3>
+                        <div class="row">
+                            <div class="col-sm-8 col-xs-6">
+                                <p class="default-userProductList-CardList-price">Rp 45.000 / pcs</p>
+                                <span class="min-order">10 pcs min order</span>
+                            </div>
+
+                            <div class="col-sm-4 col-xs-6">
+                                <button class="btn default-userProductList-CardList-button pull-right hidden-xs"
+                                        role="button"
+                                        data-toggle="modal"
+                                        data-target="#uploadProductDesktop"
+                                >Edit
+
+                                </button>
+
+                                <button
+                                        class="btn default-userProductList-CardList-button pull-right visible-xs"
+                                        role="button"
+                                        data-toggle="modal"
+                                        data-target="#uploadProductMobile"
+                                >Edit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+</div>
+
+<!--include footer-->
+<div class="include-footer"></div>
+
+
+<script src="./js/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="./js/bootstrap.min.js"></script>
+
+<!--kimi basic js-->
+<script src="js/kimi.js"></script>
+
+</body>
+</html>
