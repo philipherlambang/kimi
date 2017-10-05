@@ -1746,6 +1746,10 @@ ul.pagination li.current a{
         line-height: 30px;
     }
 
+    #buttonOpenSearchbarMobile {
+        padding: 0px 10px;
+    }
+
 }
 
 /* large desktop */

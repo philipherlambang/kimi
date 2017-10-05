@@ -1,5 +1,5 @@
 ### Kimi Themes
-**Kimi Themes** is a responsive Kimi web template. Based on **[Bootstrap 3](https://github.com/twbs/bootstrap)** framework. Fits to desktop HD, desktop, tablet and portrait. Check out the live preview on the link below.
+**Kimi Themes** is a responsive e-commerce or marketplace template. Based on **[Bootstrap 3](https://github.com/twbs/bootstrap)** framework. Fits to desktop HD, desktop, tablet and portrait. Check out the live preview on the link below.
 
 **Preview on [Kimi Themes](https://philipherlambang.github.io/kimi/)**
 **Find and use it any way you want**
@@ -7,9 +7,12 @@
 
 ![](https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/preview.jpg)
 
-### Image Credits
+### Credits
 - [Unsplash](https://unsplash.com/)
 - [Uifaces](http://uifaces.com/)
+- [Tipue Search](http://www.tipue.com/search/)
+- [Owl Carousel 2](https://owlcarousel2.github.io/OwlCarousel2/)
+- [Font Awesome](http://fontawesome.io/)
 
 
 ### Existing Site Map
