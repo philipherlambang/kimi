@@ -61,7 +61,6 @@
 
 
 ### Todo list
-- Product Management
 - library widget
 - invoice / order details
 - tables
@@ -106,6 +105,7 @@
 - product list page
 - order detail page (modal)
 - empty state (shopping cart, order request, pending payment, pickup schedule)
+- Product Management
 
 
 
